@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="ALARM_TYPES" org.eventb.core.type="ℙ(ALARM_TYPES)"/>
+        <org.eventb.core.poIdentifier name="ALARM_STATES" org.eventb.core.type="ℙ(ALARM_STATES)"/>
+        <org.eventb.core.poIdentifier name="MAX_TEMPERATURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_PRESSURE_ALRM" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="VoltageAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="PressureAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_VOLTAGE_LOW" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BatteryAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_BATTERY_THRESHOLD" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_VOLTAGE_HIGH" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_BATTERY_TIME" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="NoAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="TemperatureAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="MIN_BATTERY_TIME" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Acknowledged" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="MIN_VOLTAGE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_TEMPERATURE_THRESHOLD" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Inactive" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_PRESSURE_THRESHOLD" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_VOLTAGE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MIN_TEMPERATURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Active" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="MIN_PRESSURE_ALRM" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_ctx.bpo|org.eventb.core.poFile#alrm_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(ALARM_STATES,{Inactive},{Active},{Acknowledged})" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm6UAQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(ALARM_TYPES,{NoAlarm},{BatteryAlarm},{VoltageAlarm},{PressureAlarm},{TemperatureAlarm})" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm67EAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="MIN_BATTERY_TIME=5" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm7iIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="MAX_BATTERY_TIME=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm8JMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="CRITICAL_BATTERY_THRESHOLD=3" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm8JMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="MIN_VOLTAGE=5" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm8wQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="MAX_VOLTAGE=8" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm9XUAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="CRITICAL_VOLTAGE_LOW=3" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm9-YAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="CRITICAL_VOLTAGE_HIGH=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm9-YQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="MIN_PRESSURE_ALRM=2" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm-lcAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="MAX_PRESSURE_ALRM=8" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm-lcQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="CRITICAL_PRESSURE_THRESHOLD=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm_MgAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="MIN_TEMPERATURE=3" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm_zkAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="MAX_TEMPERATURE=8" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm_zkQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="CRITICAL_TEMPERATURE_THRESHOLD=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnAaoAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="CRITICAL_BATTERY_THRESHOLD&lt;MIN_BATTERY_TIME" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnBBsAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="MIN_BATTERY_TIME&lt;MAX_BATTERY_TIME" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnBowAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="CRITICAL_VOLTAGE_LOW&lt;MIN_VOLTAGE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnCP0AUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="MIN_VOLTAGE&lt;MAX_VOLTAGE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnDd8AUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="MAX_VOLTAGE&lt;CRITICAL_VOLTAGE_HIGH" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnDd8QUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="MIN_PRESSURE_ALRM&lt;MAX_PRESSURE_ALRM" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnEFAAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD21" org.eventb.core.predicate="MAX_PRESSURE_ALRM&lt;CRITICAL_PRESSURE_THRESHOLD" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnEsEAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD22" org.eventb.core.predicate="MIN_TEMPERATURE&lt;MAX_TEMPERATURE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnEsEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD23" org.eventb.core.predicate="MAX_TEMPERATURE&lt;CRITICAL_TEMPERATURE_THRESHOLD" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnFTIAUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

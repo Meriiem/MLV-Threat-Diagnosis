@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="CONTROLLER_STATES" org.eventb.core.type="ℙ(CONTROLLER_STATES)"/>
+        <org.eventb.core.poIdentifier name="VENTILATION_MODES" org.eventb.core.type="ℙ(VENTILATION_MODES)"/>
+        <org.eventb.core.poIdentifier name="MIN_INSP_PRESSURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="DEFAULT_RESP_RATE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="DEFAULT_INSP_PRESSURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_INSP_PRESSURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_RESP_RATE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="VentilationOff_C" org.eventb.core.type="CONTROLLER_STATES"/>
+        <org.eventb.core.poIdentifier name="MIN_RESP_RATE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="DEFAULT_INSP_PRESSURE_FAILSAFE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PCV" org.eventb.core.type="VENTILATION_MODES"/>
+        <org.eventb.core.poIdentifier name="SelfTest_C" org.eventb.core.type="CONTROLLER_STATES"/>
+        <org.eventb.core.poIdentifier name="PSV_C" org.eventb.core.type="CONTROLLER_STATES"/>
+        <org.eventb.core.poIdentifier name="FailSafe_C" org.eventb.core.type="CONTROLLER_STATES"/>
+        <org.eventb.core.poIdentifier name="DEFAULT_RESP_RATE_FAILSAFE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_IE_RATIO" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PSV" org.eventb.core.type="VENTILATION_MODES"/>
+        <org.eventb.core.poIdentifier name="MIN_IE_RATIO" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="PCV_C" org.eventb.core.type="CONTROLLER_STATES"/>
+        <org.eventb.core.poIdentifier name="DEFAULT_IE_RATIO" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="StartUp_C" org.eventb.core.type="CONTROLLER_STATES"/>
+        <org.eventb.core.poIdentifier name="PowerOff_C" org.eventb.core.type="CONTROLLER_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/ctrl_ctx.bpo|org.eventb.core.poFile#ctrl_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(CONTROLLER_STATES,{PowerOff_C},{StartUp_C},{SelfTest_C},{VentilationOff_C},{PCV_C},{PSV_C},{FailSafe_C})" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97kHMQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(VENTILATION_MODES,{PCV},{PSV})" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97kuQAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="MIN_RESP_RATE=8" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97lVUAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="MAX_RESP_RATE=12" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97l8YAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="DEFAULT_RESP_RATE=10" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97mjcAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="DEFAULT_RESP_RATE_FAILSAFE=11" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97nKgAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="MIN_INSP_PRESSURE=5" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97nKgQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="MAX_INSP_PRESSURE=15" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97oYoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE=10" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97o_sAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE_FAILSAFE=12" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97pmwAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="MIN_IE_RATIO=1" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97qN0AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="MAX_IE_RATIO=3" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97q04AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="DEFAULT_IE_RATIO=2" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97rb8AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="MIN_RESP_RATE&lt;MAX_RESP_RATE" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97sDAAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="MIN_INSP_PRESSURE&lt;MAX_INSP_PRESSURE" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97tRIAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="MIN_IE_RATIO&lt;MAX_IE_RATIO" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97t4MAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="DEFAULT_RESP_RATE∈MIN_RESP_RATE ‥ MAX_RESP_RATE" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97t4MQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE∈MIN_INSP_PRESSURE ‥ MAX_INSP_PRESSURE" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97vGUAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="DEFAULT_IE_RATIO∈MIN_IE_RATIO ‥ MAX_IE_RATIO" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97vtYAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="DEFAULT_RESP_RATE_FAILSAFE∈MIN_RESP_RATE ‥ MAX_RESP_RATE" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97vtYQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE_FAILSAFE∈MIN_INSP_PRESSURE ‥ MAX_INSP_PRESSURE" org.eventb.core.source="/MLV_Meriem_Thesis/ctrl_ctx.buc|org.eventb.core.contextFile#ctrl_ctx|org.eventb.core.axiom#_97wUcAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

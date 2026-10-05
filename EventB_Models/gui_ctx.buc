@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1770570504015" org.eventb.texttools.text_representation="context gui_ctx&#10;sets&#10;  GUI_STATES&#10;constants&#10;  PowerOff_GUI PowerOn_GUI SelfTest_GUI Menu_GUI Ventilation_GUI AlarmScreen_GUI Start_GUI Frozen_GUI&#10;axioms&#10;  @axm1 partition(GUI_STATES, {PowerOff_GUI}, {PowerOn_GUI}, {SelfTest_GUI}, {Menu_GUI}, {Ventilation_GUI}, {AlarmScreen_GUI}, {Start_GUI}, {Frozen_GUI})&#10;&#10;end&#10;" version="3">
+    <org.eventb.core.carrierSet name="_xu25wAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="GUI_STATES"/>
+    <org.eventb.core.constant name="_xu4H4AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PowerOff_GUI"/>
+    <org.eventb.core.constant name="_xu4u8AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PowerOn_GUI"/>
+    <org.eventb.core.constant name="_xu5WAAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="SelfTest_GUI"/>
+    <org.eventb.core.constant name="_xu59EAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="Menu_GUI"/>
+    <org.eventb.core.constant name="_xu6kIAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="Ventilation_GUI"/>
+    <org.eventb.core.constant name="_xu7LMAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="AlarmScreen_GUI"/>
+    <org.eventb.core.constant name="_xu7yQAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="Start_GUI"/>
+    <org.eventb.core.constant name="_xu7yQQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="Frozen_GUI"/>
+    <org.eventb.core.axiom name="_xu8ZUAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(GUI_STATES, {PowerOff_GUI}, {PowerOn_GUI}, {SelfTest_GUI}, {Menu_GUI}, {Ventilation_GUI}, {AlarmScreen_GUI}, {Start_GUI}, {Frozen_GUI})"/>
+</org.eventb.core.contextFile>

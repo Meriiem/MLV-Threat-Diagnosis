@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="GUI_STATES" org.eventb.core.type="ℙ(GUI_STATES)"/>
+        <org.eventb.core.poIdentifier name="PowerOff_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="AlarmScreen_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Menu_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Ventilation_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="SelfTest_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Frozen_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="PowerOn_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Start_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poPredicate name="Ventilation_GUJ" org.eventb.core.predicate="partition(GUI_STATES,{PowerOff_GUI},{PowerOn_GUI},{SelfTest_GUI},{Menu_GUI},{Ventilation_GUI},{AlarmScreen_GUI},{Start_GUI},{Frozen_GUI})" org.eventb.core.source="/MLV_Meriem_Thesis/gui_ctx.buc|org.eventb.core.contextFile#gui_ctx|org.eventb.core.axiom#_xu8ZUAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="is_alarm_displayed" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="gui_state" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayee"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒PowerOff_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayee"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒PowerOff_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayee" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayee" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayee" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="PowerOn_System/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayef"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒PowerOn_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19PlwAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#PowerOn_System\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="PowerOn_System/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayef"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒PowerOn_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19PlwAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#PowerOn_System\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayef" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayef" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayef" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=PowerOff_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19PlwAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19QM0AUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="StartSelfTest_System/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeg"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒SelfTest_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19Ra8AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StartSelfTest_System\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="StartSelfTest_System/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeg"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒SelfTest_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19Ra8AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StartSelfTest_System\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayeg" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayeg" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayeg" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=PowerOn_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19Ra8AUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19SCAAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="SelfTestComplete_System/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒Menu_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19SpEQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#SelfTestComplete_System\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="SelfTestComplete_System/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Menu_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19SpEQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#SelfTestComplete_System\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayeh" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayeh" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayeh" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=SelfTest_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19SpEQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19TQIAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="NavigateToVentilation_GUI/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayei"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒Ventilation_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19UeQQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#NavigateToVentilation_GUI\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="NavigateToVentilation_GUI/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayei"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Ventilation_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19UeQQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#NavigateToVentilation_GUI\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayei" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayei" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayei" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=Menu_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19UeQQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19VFUAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19UeQQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19VsYAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="is_gui_frozen=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19UeQQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19WTcAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="StartVentilation_System_PCV/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayej"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒Start_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19W6gAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StartVentilation_System_PCV\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="StartVentilation_System_PCV/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayej"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Start_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19W6gAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StartVentilation_System_PCV\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayej" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayej" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayej" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=Ventilation_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19W6gAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19XhkAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19W6gAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19XhkQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="is_gui_frozen=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19W6gAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19YvsAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="StartVentilation_System_PSV/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayek"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒Start_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19ZWwQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StartVentilation_System_PSV\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="StartVentilation_System_PSV/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayek"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Start_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19ZWwQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StartVentilation_System_PSV\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayek" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayek" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayek" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=Ventilation_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19ZWwQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19Z90AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19ZWwQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19ak4AUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="is_gui_frozen=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19ZWwQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19ak4QUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="StopVentilation_System/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayel"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_gui_frozen=TRUE⇒Ventilation_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19bL8QUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StopVentilation_System\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="StopVentilation_System/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayel"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Ventilation_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19bL8QUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#StopVentilation_System\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayel" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayel" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayel" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state=Start_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19bL8QUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19caEAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19bL8QUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19caEQUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="FreezeGUI/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayem"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE=TRUE⇒Frozen_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19doMAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#FreezeGUI\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="FreezeGUI/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayem"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Frozen_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19doMAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#FreezeGUI\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayem" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayem" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayem" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_gui_frozen=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19doMAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19doMQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="gui_state≠PowerOff_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19doMAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19ePQAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="UnfreezeGUI/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayen"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒Menu_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19fdYAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#UnfreezeGUI\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="UnfreezeGUI/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayen"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒Menu_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19fdYAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#UnfreezeGUI\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayen" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayen" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayen" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_gui_frozen=TRUE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19fdYAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19gEcAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19fdYAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19gEcQUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivateBatteryAlarm/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒AlarmScreen_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19hSkQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivateBatteryAlarm\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivateBatteryAlarm/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE=TRUE⇒AlarmScreen_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19hSkQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivateBatteryAlarm\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayeo" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayeo" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayeo" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19hSkQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19hSkgUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivateVoltageAlarm/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒AlarmScreen_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19jHwQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivateVoltageAlarm\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivateVoltageAlarm/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayep"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE=TRUE⇒AlarmScreen_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19jHwQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivateVoltageAlarm\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayep" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayep" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayep" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19jHwQUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19ju0AUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivatePressureAlarm/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒AlarmScreen_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19k88QUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivatePressureAlarm\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivatePressureAlarm/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayeq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE=TRUE⇒AlarmScreen_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19k88QUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivatePressureAlarm\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayeq" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayeq" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayeq" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19k88QUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19lkAAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivateTemperatureAlarm/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒AlarmScreen_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19myIAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivateTemperatureAlarm\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivateTemperatureAlarm/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayer"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="TRUE=TRUE⇒AlarmScreen_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19myIAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#ActivateTemperatureAlarm\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayer" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayer" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayer" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_alarm_displayed=FALSE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19myIAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19nZMAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="DeactivateAlarm_System/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayes"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒Ventilation_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19oAQgUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#DeactivateAlarm_System\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DeactivateAlarm_System/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayes"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒Ventilation_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19oAQgUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#DeactivateAlarm_System\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayes" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayes" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayes" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="is_alarm_displayed=TRUE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19oAQgUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19onUAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="PowerOff_System/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayet"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒PowerOff_GUI=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19qcgAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#PowerOff_System\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="PowerOff_System/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTALLHYPis_alarm_displayet"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=TRUE⇒PowerOff_GUI∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19qcgAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poSequent#PowerOff_System\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTis_alarm_displayet" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="gui_state'" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="is_gui_frozen'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="is_alarm_displayed'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPis_alarm_displayet" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#EVTIDENTis_alarm_displayet" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TRUE=TRUE" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.event#_19qcgAUQEfG0KMbH6evA-Q|org.eventb.core.guard#_19rDkAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_mch.bpo|org.eventb.core.poFile#gui_mch|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gui_state∈GUI_STATES" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19MicAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="is_alarm_displayed∈BOOL" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19NJgAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="is_gui_frozen∈BOOL" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19NwkAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="is_gui_frozen=TRUE⇒gui_state=Frozen_GUI" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoAUQEfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="is_alarm_displayed=TRUE⇒gui_state∈{AlarmScreen_GUI,Frozen_GUI}" org.eventb.core.source="/MLV_Meriem_Thesis/gui_mch.bum|org.eventb.core.machineFile#gui_mch|org.eventb.core.invariant#_19OXoQUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

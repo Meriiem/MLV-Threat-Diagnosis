@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="GUI_STATES" org.eventb.core.type="ℙ(GUI_STATES)"/>
+        <org.eventb.core.poIdentifier name="PowerOff_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="AlarmScreen_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Menu_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Ventilation_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="SelfTest_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Frozen_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="PowerOn_GUI" org.eventb.core.type="GUI_STATES"/>
+        <org.eventb.core.poIdentifier name="Start_GUI" org.eventb.core.type="GUI_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/gui_ctx.bpo|org.eventb.core.poFile#gui_ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(GUI_STATES,{PowerOff_GUI},{PowerOn_GUI},{SelfTest_GUI},{Menu_GUI},{Ventilation_GUI},{AlarmScreen_GUI},{Start_GUI},{Frozen_GUI})" org.eventb.core.source="/MLV_Meriem_Thesis/gui_ctx.buc|org.eventb.core.contextFile#gui_ctx|org.eventb.core.axiom#_xu8ZUAUQEfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

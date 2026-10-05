@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1770570585866" org.eventb.texttools.text_representation="context ctrl_ctx&#10;sets&#10;  CONTROLLER_STATES&#10;  VENTILATION_MODES&#10;constants&#10;  PowerOff_C StartUp_C SelfTest_C VentilationOff_C PCV_C PSV_C FailSafe_C&#10;  PCV PSV&#10;&#10;  MIN_RESP_RATE MAX_RESP_RATE DEFAULT_RESP_RATE&#10;  MIN_INSP_PRESSURE MAX_INSP_PRESSURE DEFAULT_INSP_PRESSURE&#10;  MIN_IE_RATIO MAX_IE_RATIO DEFAULT_IE_RATIO&#10;&#10;  DEFAULT_RESP_RATE_FAILSAFE&#10;  DEFAULT_INSP_PRESSURE_FAILSAFE&#10;axioms&#10;  @axm1 partition(CONTROLLER_STATES, {PowerOff_C}, {StartUp_C}, {SelfTest_C}, {VentilationOff_C}, {PCV_C}, {PSV_C}, {FailSafe_C})&#10;  @axm2 partition(VENTILATION_MODES, {PCV}, {PSV})&#10;&#10;  @axm3  MIN_RESP_RATE = 8&#10;  @axm4  MAX_RESP_RATE = 12&#10;  @axm5  DEFAULT_RESP_RATE = 10&#10;  @axm6  DEFAULT_RESP_RATE_FAILSAFE = 11&#10;&#10;  @axm7  MIN_INSP_PRESSURE = 5&#10;  @axm8  MAX_INSP_PRESSURE = 15&#10;  @axm9  DEFAULT_INSP_PRESSURE = 10&#10;  @axm10 DEFAULT_INSP_PRESSURE_FAILSAFE = 12&#10;&#10;  @axm11 MIN_IE_RATIO = 1&#10;  @axm12 MAX_IE_RATIO = 3&#10;  @axm13 DEFAULT_IE_RATIO = 2&#10;&#10;  @axm14 MIN_RESP_RATE &lt; MAX_RESP_RATE&#10;  @axm15 MIN_INSP_PRESSURE &lt; MAX_INSP_PRESSURE&#10;  @axm16 MIN_IE_RATIO &lt; MAX_IE_RATIO&#10;&#10;  @axm17 DEFAULT_RESP_RATE ∈ MIN_RESP_RATE‥MAX_RESP_RATE&#10;  @axm18 DEFAULT_INSP_PRESSURE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE&#10;  @axm19 DEFAULT_IE_RATIO ∈ MIN_IE_RATIO‥MAX_IE_RATIO&#10;  @axm20 DEFAULT_RESP_RATE_FAILSAFE ∈ MIN_RESP_RATE‥MAX_RESP_RATE&#10;  @axm21 DEFAULT_INSP_PRESSURE_FAILSAFE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE&#10;&#10;end&#10;" version="3">
+    <org.eventb.core.carrierSet name="_97cLYAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="CONTROLLER_STATES"/>
+    <org.eventb.core.carrierSet name="_97cLYQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="VENTILATION_MODES"/>
+    <org.eventb.core.constant name="_97cycAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PowerOff_C"/>
+    <org.eventb.core.constant name="_97dZgAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="StartUp_C"/>
+    <org.eventb.core.constant name="_97dZgQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="SelfTest_C"/>
+    <org.eventb.core.constant name="_97enoAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="VentilationOff_C"/>
+    <org.eventb.core.constant name="_97fOsAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PCV_C"/>
+    <org.eventb.core.constant name="_97fOsQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PSV_C"/>
+    <org.eventb.core.constant name="_97f1wAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="FailSafe_C"/>
+    <org.eventb.core.constant name="_97f1wQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PCV"/>
+    <org.eventb.core.constant name="_97gc0AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="PSV"/>
+    <org.eventb.core.constant name="_97gc0QUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_RESP_RATE"/>
+    <org.eventb.core.constant name="_97hD4AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_RESP_RATE"/>
+    <org.eventb.core.constant name="_97hD4QUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_RESP_RATE"/>
+    <org.eventb.core.constant name="_97hq8AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_INSP_PRESSURE"/>
+    <org.eventb.core.constant name="_97hq8QUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_INSP_PRESSURE"/>
+    <org.eventb.core.constant name="_97iSAAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_INSP_PRESSURE"/>
+    <org.eventb.core.constant name="_97iSAQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_IE_RATIO"/>
+    <org.eventb.core.constant name="_97i5EAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_IE_RATIO"/>
+    <org.eventb.core.constant name="_97jgIAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_IE_RATIO"/>
+    <org.eventb.core.constant name="_97jgIQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_RESP_RATE_FAILSAFE"/>
+    <org.eventb.core.constant name="_97kHMAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_INSP_PRESSURE_FAILSAFE"/>
+    <org.eventb.core.axiom name="_97kHMQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(CONTROLLER_STATES, {PowerOff_C}, {StartUp_C}, {SelfTest_C}, {VentilationOff_C}, {PCV_C}, {PSV_C}, {FailSafe_C})"/>
+    <org.eventb.core.axiom name="_97kuQAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(VENTILATION_MODES, {PCV}, {PSV})"/>
+    <org.eventb.core.axiom name="_97lVUAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm3" org.eventb.core.predicate="MIN_RESP_RATE = 8"/>
+    <org.eventb.core.axiom name="_97l8YAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm4" org.eventb.core.predicate="MAX_RESP_RATE = 12"/>
+    <org.eventb.core.axiom name="_97mjcAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm5" org.eventb.core.predicate="DEFAULT_RESP_RATE = 10"/>
+    <org.eventb.core.axiom name="_97nKgAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm6" org.eventb.core.predicate="DEFAULT_RESP_RATE_FAILSAFE = 11"/>
+    <org.eventb.core.axiom name="_97nKgQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm7" org.eventb.core.predicate="MIN_INSP_PRESSURE = 5"/>
+    <org.eventb.core.axiom name="_97oYoAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm8" org.eventb.core.predicate="MAX_INSP_PRESSURE = 15"/>
+    <org.eventb.core.axiom name="_97o_sAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm9" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE = 10"/>
+    <org.eventb.core.axiom name="_97pmwAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm10" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE_FAILSAFE = 12"/>
+    <org.eventb.core.axiom name="_97qN0AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm11" org.eventb.core.predicate="MIN_IE_RATIO = 1"/>
+    <org.eventb.core.axiom name="_97q04AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm12" org.eventb.core.predicate="MAX_IE_RATIO = 3"/>
+    <org.eventb.core.axiom name="_97rb8AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm13" org.eventb.core.predicate="DEFAULT_IE_RATIO = 2"/>
+    <org.eventb.core.axiom name="_97sDAAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm14" org.eventb.core.predicate="MIN_RESP_RATE &lt; MAX_RESP_RATE"/>
+    <org.eventb.core.axiom name="_97tRIAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm15" org.eventb.core.predicate="MIN_INSP_PRESSURE &lt; MAX_INSP_PRESSURE"/>
+    <org.eventb.core.axiom name="_97t4MAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm16" org.eventb.core.predicate="MIN_IE_RATIO &lt; MAX_IE_RATIO"/>
+    <org.eventb.core.axiom name="_97t4MQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm17" org.eventb.core.predicate="DEFAULT_RESP_RATE ∈ MIN_RESP_RATE‥MAX_RESP_RATE"/>
+    <org.eventb.core.axiom name="_97vGUAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm18" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE"/>
+    <org.eventb.core.axiom name="_97vtYAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm19" org.eventb.core.predicate="DEFAULT_IE_RATIO ∈ MIN_IE_RATIO‥MAX_IE_RATIO"/>
+    <org.eventb.core.axiom name="_97vtYQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm20" org.eventb.core.predicate="DEFAULT_RESP_RATE_FAILSAFE ∈ MIN_RESP_RATE‥MAX_RESP_RATE"/>
+    <org.eventb.core.axiom name="_97wUcAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="axm21" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE_FAILSAFE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE"/>
+</org.eventb.core.contextFile>

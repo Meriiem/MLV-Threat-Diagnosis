@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1769876946515" org.eventb.texttools.text_representation="context Ventilator_Ctx&#10;sets&#10;  ALARM_STATES&#10;  ALARM_TYPES&#10;  CONTROLLER_STATES&#10;  VENTILATION_MODES&#10;  GUI_STATES&#10;constants&#10;  Inactive Active Acknowledged&#10;  NoAlarm BatteryAlarm VoltageAlarm PressureAlarm TemperatureAlarm&#10;&#10;  PowerOff_C StartUp_C SelfTest_C VentilationOff_C PCV_C PSV_C FailSafe_C&#10;  PCV PSV&#10;&#10;  PowerOff_GUI PowerOn_GUI SelfTest_GUI Menu_GUI Ventilation_GUI AlarmScreen_GUI Start_GUI Frozen_GUI&#10;&#10;  MIN_BATTERY_TIME MAX_BATTERY_TIME&#10;  MIN_VOLTAGE MAX_VOLTAGE&#10;  MIN_PRESSURE_ALRM MAX_PRESSURE_ALRM&#10;  MIN_TEMPERATURE MAX_TEMPERATURE&#10;  CRITICAL_BATTERY_THRESHOLD&#10;  CRITICAL_VOLTAGE_LOW CRITICAL_VOLTAGE_HIGH&#10;  CRITICAL_PRESSURE_THRESHOLD&#10;  CRITICAL_TEMPERATURE_THRESHOLD&#10;&#10;  /* settings ranges + defaults */&#10;  MIN_RESP_RATE MAX_RESP_RATE DEFAULT_RESP_RATE&#10;  MIN_INSP_PRESSURE MAX_INSP_PRESSURE DEFAULT_INSP_PRESSURE&#10;  MIN_IE_RATIO MAX_IE_RATIO DEFAULT_IE_RATIO&#10;&#10;  /* failsafe defaults */&#10;  DEFAULT_RESP_RATE_FAILSAFE&#10;  DEFAULT_INSP_PRESSURE_FAILSAFE&#10;axioms&#10;  @axm1 partition(ALARM_STATES, {Inactive}, {Active}, {Acknowledged})&#10;  @axm2 partition(ALARM_TYPES, {NoAlarm}, {BatteryAlarm}, {VoltageAlarm}, {PressureAlarm}, {TemperatureAlarm})&#10;  @axm3 partition(CONTROLLER_STATES, {PowerOff_C}, {StartUp_C}, {SelfTest_C}, {VentilationOff_C}, {PCV_C}, {PSV_C}, {FailSafe_C})&#10;  @axm4 partition(VENTILATION_MODES, {PCV}, {PSV})&#10;  @axm5 partition(GUI_STATES, {PowerOff_GUI}, {PowerOn_GUI}, {SelfTest_GUI}, {Menu_GUI}, {Ventilation_GUI}, {AlarmScreen_GUI}, {Start_GUI}, {Frozen_GUI})&#10;&#10;  /* numeric constants (tune if you want, but keep ordering consistent) */&#10;  @axm6  MIN_BATTERY_TIME = 5&#10;  @axm7  MAX_BATTERY_TIME = 10&#10;  @axm8  CRITICAL_BATTERY_THRESHOLD = 3&#10;&#10;  @axm9  MIN_VOLTAGE = 5&#10;  @axm10 MAX_VOLTAGE = 8&#10;  @axm11 CRITICAL_VOLTAGE_LOW = 3&#10;  @axm12 CRITICAL_VOLTAGE_HIGH = 10&#10;&#10;  @axm13 MIN_PRESSURE_ALRM = 2&#10;  @axm14 MAX_PRESSURE_ALRM = 8&#10;  @axm15 CRITICAL_PRESSURE_THRESHOLD = 10&#10;&#10;  @axm16 MIN_TEMPERATURE = 3&#10;  @axm17 MAX_TEMPERATURE = 8&#10;  @axm18 CRITICAL_TEMPERATURE_THRESHOLD = 10&#10;&#10;  @axm19 MIN_RESP_RATE = 8&#10;  @axm20 MAX_RESP_RATE = 12&#10;  @axm21 DEFAULT_RESP_RATE = 10&#10;  @axm22 DEFAULT_RESP_RATE_FAILSAFE = 11&#10;&#10;  @axm23 MIN_INSP_PRESSURE = 5&#10;  @axm24 MAX_INSP_PRESSURE = 15&#10;  @axm25 DEFAULT_INSP_PRESSURE = 10&#10;  @axm26 DEFAULT_INSP_PRESSURE_FAILSAFE = 12&#10;&#10;  @axm27 MIN_IE_RATIO = 1&#10;  @axm28 MAX_IE_RATIO = 3&#10;  @axm29 DEFAULT_IE_RATIO = 2&#10;&#10;  /* order constraints */&#10;  @axm30 CRITICAL_BATTERY_THRESHOLD &lt; MIN_BATTERY_TIME&#10;  @axm31 MIN_BATTERY_TIME &lt; MAX_BATTERY_TIME&#10;&#10;  @axm32 CRITICAL_VOLTAGE_LOW &lt; MIN_VOLTAGE&#10;  @axm33 MIN_VOLTAGE &lt; MAX_VOLTAGE&#10;  @axm34 MAX_VOLTAGE &lt; CRITICAL_VOLTAGE_HIGH&#10;&#10;  @axm35 MIN_PRESSURE_ALRM &lt; MAX_PRESSURE_ALRM&#10;  @axm36 MAX_PRESSURE_ALRM &lt; CRITICAL_PRESSURE_THRESHOLD&#10;&#10;  @axm37 MIN_TEMPERATURE &lt; MAX_TEMPERATURE&#10;  @axm38 MAX_TEMPERATURE &lt; CRITICAL_TEMPERATURE_THRESHOLD&#10;&#10;  @axm39 MIN_RESP_RATE &lt; MAX_RESP_RATE&#10;  @axm40 MIN_INSP_PRESSURE &lt; MAX_INSP_PRESSURE&#10;  @axm41 MIN_IE_RATIO &lt; MAX_IE_RATIO&#10;&#10;  @axm42 DEFAULT_RESP_RATE ∈ MIN_RESP_RATE‥MAX_RESP_RATE&#10;  @axm43 DEFAULT_INSP_PRESSURE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE&#10;  @axm44 DEFAULT_IE_RATIO ∈ MIN_IE_RATIO‥MAX_IE_RATIO&#10;  @axm45 DEFAULT_RESP_RATE_FAILSAFE ∈ MIN_RESP_RATE‥MAX_RESP_RATE&#10;  @axm46 DEFAULT_INSP_PRESSURE_FAILSAFE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE&#10;&#10;end&#10;" version="3">
+    <org.eventb.core.carrierSet name="_T7vigP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="ALARM_STATES"/>
+    <org.eventb.core.carrierSet name="_T7wJkP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="ALARM_TYPES"/>
+    <org.eventb.core.carrierSet name="_T7wwoP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="CONTROLLER_STATES"/>
+    <org.eventb.core.carrierSet name="_T7wwof6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="VENTILATION_MODES"/>
+    <org.eventb.core.carrierSet name="_T7xXsP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="GUI_STATES"/>
+    <org.eventb.core.constant name="_T7x-wP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Inactive"/>
+    <org.eventb.core.constant name="_T7yl0P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Active"/>
+    <org.eventb.core.constant name="_T7zM4P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Acknowledged"/>
+    <org.eventb.core.constant name="_T7zz8P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="NoAlarm"/>
+    <org.eventb.core.constant name="_T7zz8f6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="BatteryAlarm"/>
+    <org.eventb.core.constant name="_T70bAP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="VoltageAlarm"/>
+    <org.eventb.core.constant name="_T71CEP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PressureAlarm"/>
+    <org.eventb.core.constant name="_T71pIP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="TemperatureAlarm"/>
+    <org.eventb.core.constant name="_T72QMP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PowerOff_C"/>
+    <org.eventb.core.constant name="_T723QP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="StartUp_C"/>
+    <org.eventb.core.constant name="_T73eUP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="SelfTest_C"/>
+    <org.eventb.core.constant name="_T74FYP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="VentilationOff_C"/>
+    <org.eventb.core.constant name="_T74FYf6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PCV_C"/>
+    <org.eventb.core.constant name="_T75TgP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PSV_C"/>
+    <org.eventb.core.constant name="_T756kP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="FailSafe_C"/>
+    <org.eventb.core.constant name="_T76hoP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PCV"/>
+    <org.eventb.core.constant name="_T76hof6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PSV"/>
+    <org.eventb.core.constant name="_T77vwP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PowerOff_GUI"/>
+    <org.eventb.core.constant name="_T78W0P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="PowerOn_GUI"/>
+    <org.eventb.core.constant name="_T7894P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="SelfTest_GUI"/>
+    <org.eventb.core.constant name="_T79k8P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Menu_GUI"/>
+    <org.eventb.core.constant name="_T7-MAP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Ventilation_GUI"/>
+    <org.eventb.core.constant name="_9rDK0P7BEfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="AlarmScreen_GUI"/>
+    <org.eventb.core.constant name="_T7_aIP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Start_GUI"/>
+    <org.eventb.core.constant name="_T7_aIf6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="Frozen_GUI"/>
+    <org.eventb.core.constant name="_T8ABMP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_BATTERY_TIME"/>
+    <org.eventb.core.constant name="_T8AoQP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_BATTERY_TIME"/>
+    <org.eventb.core.constant name="_T8FgwP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_TEMPERATURE"/>
+    <org.eventb.core.constant name="_T8AoQf6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="CRITICAL_BATTERY_THRESHOLD"/>
+    <org.eventb.core.constant name="_T8B2YP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_VOLTAGE"/>
+    <org.eventb.core.constant name="_T8B2Yf6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_VOLTAGE"/>
+    <org.eventb.core.constant name="_T8DrkP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_PRESSURE_ALRM"/>
+    <org.eventb.core.constant name="_T8Drkf6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_PRESSURE_ALRM"/>
+    <org.eventb.core.constant name="_9rHcQP7BEfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="CRITICAL_VOLTAGE_LOW"/>
+    <org.eventb.core.constant name="_9rIDUP7BEfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="CRITICAL_VOLTAGE_HIGH"/>
+    <org.eventb.core.constant name="_T8ESoP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="CRITICAL_PRESSURE_THRESHOLD"/>
+    <org.eventb.core.constant name="_T8E5sP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_TEMPERATURE"/>
+    <org.eventb.core.constant name="_T8Fgwf6-EfCTduuwtCyW0Q" org.eventb.core.comment="settings ranges + defaults " org.eventb.core.generated="false" org.eventb.core.identifier="CRITICAL_TEMPERATURE_THRESHOLD"/>
+    <org.eventb.core.constant name="_T8Gu4P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_RESP_RATE"/>
+    <org.eventb.core.constant name="_T8Gu4f6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_RESP_RATE"/>
+    <org.eventb.core.constant name="_T8NckP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_RESP_RATE"/>
+    <org.eventb.core.constant name="_T8HV8P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_INSP_PRESSURE"/>
+    <org.eventb.core.constant name="_T8H9AP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_INSP_PRESSURE"/>
+    <org.eventb.core.constant name="_T8OqsP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_INSP_PRESSURE"/>
+    <org.eventb.core.constant name="_T8H9Af6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MIN_IE_RATIO"/>
+    <org.eventb.core.constant name="_T8IkEP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="MAX_IE_RATIO"/>
+    <org.eventb.core.constant name="_T8PRwP6-EfCTduuwtCyW0Q" org.eventb.core.comment="failsafe defaults " org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_IE_RATIO"/>
+    <org.eventb.core.constant name="_T8RG8P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_RESP_RATE_FAILSAFE"/>
+    <org.eventb.core.constant name="_T8RuAP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.identifier="DEFAULT_INSP_PRESSURE_FAILSAFE"/>
+    <org.eventb.core.axiom name="_T8ZCwP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(ALARM_STATES, {Inactive}, {Active}, {Acknowledged})"/>
+    <org.eventb.core.axiom name="_T8aQ4P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(ALARM_TYPES, {NoAlarm}, {BatteryAlarm}, {VoltageAlarm}, {PressureAlarm}, {TemperatureAlarm})"/>
+    <org.eventb.core.axiom name="_T8bfAP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(CONTROLLER_STATES, {PowerOff_C}, {StartUp_C}, {SelfTest_C}, {VentilationOff_C}, {PCV_C}, {PSV_C}, {FailSafe_C})"/>
+    <org.eventb.core.axiom name="_T8cGEP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm4" org.eventb.core.predicate="partition(VENTILATION_MODES, {PCV}, {PSV})"/>
+    <org.eventb.core.axiom name="_T8ctIP6-EfCTduuwtCyW0Q" org.eventb.core.comment="numeric constants (tune if you want, but keep ordering consistent) " org.eventb.core.generated="false" org.eventb.core.label="axm5" org.eventb.core.predicate="partition(GUI_STATES, {PowerOff_GUI}, {PowerOn_GUI}, {SelfTest_GUI}, {Menu_GUI}, {Ventilation_GUI}, {AlarmScreen_GUI}, {Start_GUI}, {Frozen_GUI})"/>
+    <org.eventb.core.axiom name="_T8d7QP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm6" org.eventb.core.predicate="MIN_BATTERY_TIME = 5"/>
+    <org.eventb.core.axiom name="_T8eiUP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm7" org.eventb.core.predicate="MAX_BATTERY_TIME = 10"/>
+    <org.eventb.core.axiom name="_T8fJYP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm8" org.eventb.core.predicate="CRITICAL_BATTERY_THRESHOLD = 3"/>
+    <org.eventb.core.axiom name="_T8gXgP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm9" org.eventb.core.predicate="MIN_VOLTAGE = 5"/>
+    <org.eventb.core.axiom name="_T8g-kP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm10" org.eventb.core.predicate="MAX_VOLTAGE = 8"/>
+    <org.eventb.core.axiom name="_T8hloP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm11" org.eventb.core.predicate="CRITICAL_VOLTAGE_LOW = 3"/>
+    <org.eventb.core.axiom name="_T8izwP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm12" org.eventb.core.predicate="CRITICAL_VOLTAGE_HIGH = 10"/>
+    <org.eventb.core.axiom name="_T8ja0P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm13" org.eventb.core.predicate="MIN_PRESSURE_ALRM = 2"/>
+    <org.eventb.core.axiom name="_T8ko8P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm14" org.eventb.core.predicate="MAX_PRESSURE_ALRM = 8"/>
+    <org.eventb.core.axiom name="_T8lQAP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm15" org.eventb.core.predicate="CRITICAL_PRESSURE_THRESHOLD = 10"/>
+    <org.eventb.core.axiom name="_T8meIP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm16" org.eventb.core.predicate="MIN_TEMPERATURE = 3"/>
+    <org.eventb.core.axiom name="_T8nsQP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm17" org.eventb.core.predicate="MAX_TEMPERATURE = 8"/>
+    <org.eventb.core.axiom name="_T8oTUP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm18" org.eventb.core.predicate="CRITICAL_TEMPERATURE_THRESHOLD = 10"/>
+    <org.eventb.core.axiom name="_T8o6YP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm19" org.eventb.core.predicate="MIN_RESP_RATE = 8"/>
+    <org.eventb.core.axiom name="_T8phcP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm20" org.eventb.core.predicate="MAX_RESP_RATE = 12"/>
+    <org.eventb.core.axiom name="_T8qvkP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm21" org.eventb.core.predicate="DEFAULT_RESP_RATE = 10"/>
+    <org.eventb.core.axiom name="_T8rWoP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm22" org.eventb.core.predicate="DEFAULT_RESP_RATE_FAILSAFE = 11"/>
+    <org.eventb.core.axiom name="_T8skwP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm23" org.eventb.core.predicate="MIN_INSP_PRESSURE = 5"/>
+    <org.eventb.core.axiom name="_T8tL0P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm24" org.eventb.core.predicate="MAX_INSP_PRESSURE = 15"/>
+    <org.eventb.core.axiom name="_T8ty4P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm25" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE = 10"/>
+    <org.eventb.core.axiom name="_T8vBAP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm26" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE_FAILSAFE = 12"/>
+    <org.eventb.core.axiom name="_T8voEP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm27" org.eventb.core.predicate="MIN_IE_RATIO = 1"/>
+    <org.eventb.core.axiom name="_T8w2MP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm28" org.eventb.core.predicate="MAX_IE_RATIO = 3"/>
+    <org.eventb.core.axiom name="_T8xdQP6-EfCTduuwtCyW0Q" org.eventb.core.comment="order constraints " org.eventb.core.generated="false" org.eventb.core.label="axm29" org.eventb.core.predicate="DEFAULT_IE_RATIO = 2"/>
+    <org.eventb.core.axiom name="_T8yrYP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm30" org.eventb.core.predicate="CRITICAL_BATTERY_THRESHOLD &lt; MIN_BATTERY_TIME"/>
+    <org.eventb.core.axiom name="_T8z5gP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm31" org.eventb.core.predicate="MIN_BATTERY_TIME &lt; MAX_BATTERY_TIME"/>
+    <org.eventb.core.axiom name="_T80gkP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm32" org.eventb.core.predicate="CRITICAL_VOLTAGE_LOW &lt; MIN_VOLTAGE"/>
+    <org.eventb.core.axiom name="_T81usP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm33" org.eventb.core.predicate="MIN_VOLTAGE &lt; MAX_VOLTAGE"/>
+    <org.eventb.core.axiom name="_T82VwP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm34" org.eventb.core.predicate="MAX_VOLTAGE &lt; CRITICAL_VOLTAGE_HIGH"/>
+    <org.eventb.core.axiom name="_T84K8P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm35" org.eventb.core.predicate="MIN_PRESSURE_ALRM &lt; MAX_PRESSURE_ALRM"/>
+    <org.eventb.core.axiom name="_T85ZEP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm36" org.eventb.core.predicate="MAX_PRESSURE_ALRM &lt; CRITICAL_PRESSURE_THRESHOLD"/>
+    <org.eventb.core.axiom name="_T86nMP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm37" org.eventb.core.predicate="MIN_TEMPERATURE &lt; MAX_TEMPERATURE"/>
+    <org.eventb.core.axiom name="_T86nMf6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm38" org.eventb.core.predicate="MAX_TEMPERATURE &lt; CRITICAL_TEMPERATURE_THRESHOLD"/>
+    <org.eventb.core.axiom name="_T871UP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm39" org.eventb.core.predicate="MIN_RESP_RATE &lt; MAX_RESP_RATE"/>
+    <org.eventb.core.axiom name="_T88cYP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm40" org.eventb.core.predicate="MIN_INSP_PRESSURE &lt; MAX_INSP_PRESSURE"/>
+    <org.eventb.core.axiom name="_T89DcP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm41" org.eventb.core.predicate="MIN_IE_RATIO &lt; MAX_IE_RATIO"/>
+    <org.eventb.core.axiom name="_T8-RkP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm42" org.eventb.core.predicate="DEFAULT_RESP_RATE ∈ MIN_RESP_RATE‥MAX_RESP_RATE"/>
+    <org.eventb.core.axiom name="_T8-4oP6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm43" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE"/>
+    <org.eventb.core.axiom name="_T9At0P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm44" org.eventb.core.predicate="DEFAULT_IE_RATIO ∈ MIN_IE_RATIO‥MAX_IE_RATIO"/>
+    <org.eventb.core.axiom name="_T9BU4P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm45" org.eventb.core.predicate="DEFAULT_RESP_RATE_FAILSAFE ∈ MIN_RESP_RATE‥MAX_RESP_RATE"/>
+    <org.eventb.core.axiom name="_T9B78P6-EfCTduuwtCyW0Q" org.eventb.core.generated="false" org.eventb.core.label="axm46" org.eventb.core.predicate="DEFAULT_INSP_PRESSURE_FAILSAFE ∈ MIN_INSP_PRESSURE‥MAX_INSP_PRESSURE"/>
+</org.eventb.core.contextFile>

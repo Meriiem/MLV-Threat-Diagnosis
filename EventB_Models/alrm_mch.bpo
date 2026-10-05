@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="ALARM_TYPES" org.eventb.core.type="ℙ(ALARM_TYPES)"/>
+        <org.eventb.core.poIdentifier name="ALARM_STATES" org.eventb.core.type="ℙ(ALARM_STATES)"/>
+        <org.eventb.core.poIdentifier name="MAX_TEMPERATURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_PRESSURE_ALRM" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="VoltageAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="PressureAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_VOLTAGE_LOW" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BatteryAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_BATTERY_THRESHOLD" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_VOLTAGE_HIGH" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_BATTERY_TIME" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="NoAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="TemperatureAlarm" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="MIN_BATTERY_TIME" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Acknowledged" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="MIN_VOLTAGE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_TEMPERATURE_THRESHOLD" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Inactive" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="CRITICAL_PRESSURE_THRESHOLD" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MAX_VOLTAGE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="MIN_TEMPERATURE" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Active" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="MIN_PRESSURE_ALRM" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLE" org.eventb.core.predicate="partition(ALARM_STATES,{Inactive},{Active},{Acknowledged})" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm6UAQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLF" org.eventb.core.predicate="partition(ALARM_TYPES,{NoAlarm},{BatteryAlarm},{VoltageAlarm},{PressureAlarm},{TemperatureAlarm})" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm67EAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLG" org.eventb.core.predicate="MIN_BATTERY_TIME=5" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm7iIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLH" org.eventb.core.predicate="MAX_BATTERY_TIME=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm8JMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLI" org.eventb.core.predicate="CRITICAL_BATTERY_THRESHOLD=3" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm8JMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLJ" org.eventb.core.predicate="MIN_VOLTAGE=5" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm8wQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLK" org.eventb.core.predicate="MAX_VOLTAGE=8" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm9XUAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLL" org.eventb.core.predicate="CRITICAL_VOLTAGE_LOW=3" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm9-YAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLM" org.eventb.core.predicate="CRITICAL_VOLTAGE_HIGH=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm9-YQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLN" org.eventb.core.predicate="MIN_PRESSURE_ALRM=2" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm-lcAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLO" org.eventb.core.predicate="MAX_PRESSURE_ALRM=8" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm-lcQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLP" org.eventb.core.predicate="CRITICAL_PRESSURE_THRESHOLD=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm_MgAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLQ" org.eventb.core.predicate="MIN_TEMPERATURE=3" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm_zkAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLR" org.eventb.core.predicate="MAX_TEMPERATURE=8" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_Jm_zkQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLS" org.eventb.core.predicate="CRITICAL_TEMPERATURE_THRESHOLD=10" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnAaoAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLT" org.eventb.core.predicate="CRITICAL_BATTERY_THRESHOLD&lt;MIN_BATTERY_TIME" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnBBsAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLU" org.eventb.core.predicate="MIN_BATTERY_TIME&lt;MAX_BATTERY_TIME" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnBowAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLV" org.eventb.core.predicate="CRITICAL_VOLTAGE_LOW&lt;MIN_VOLTAGE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnCP0AUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLW" org.eventb.core.predicate="MIN_VOLTAGE&lt;MAX_VOLTAGE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnDd8AUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLX" org.eventb.core.predicate="MAX_VOLTAGE&lt;CRITICAL_VOLTAGE_HIGH" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnDd8QUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLY" org.eventb.core.predicate="MIN_PRESSURE_ALRM&lt;MAX_PRESSURE_ALRM" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnEFAAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOLZ" org.eventb.core.predicate="MAX_PRESSURE_ALRM&lt;CRITICAL_PRESSURE_THRESHOLD" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnEsEAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOL[" org.eventb.core.predicate="MIN_TEMPERATURE&lt;MAX_TEMPERATURE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnEsEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="CRITICAL_TEMPERATURE_THRESHOL\" org.eventb.core.predicate="MAX_TEMPERATURE&lt;CRITICAL_TEMPERATURE_THRESHOLD" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_ctx.buc|org.eventb.core.contextFile#alrm_ctx|org.eventb.core.axiom#_JnFTIAUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_state" org.eventb.core.type="ALARM_STATES"/>
+        <org.eventb.core.poIdentifier name="temperature_reading" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="voltage_level" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="pressure_reading" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="battery_level" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="alarm_type" org.eventb.core.type="ALARM_TYPES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="MAX_BATTERY_TIME∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw4aEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw4aEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="MIN_VOLTAGE∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5BIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5BIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="MIN_PRESSURE_ALRM∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="MIN_TEMPERATURE∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Inactive=Inactive⇔NoAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinh"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Inactive∈{Active,Acknowledged}⇒NoAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinh" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="temperature_reading'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="voltage_level'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="pressure_reading'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="battery_level'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinh" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinh" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="DecrementBattery/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readini"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="battery_level − 1∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw4aEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw62UAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw4aEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#DecrementBattery\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readini" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="battery_level'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readini" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readini" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="battery_level&gt;0" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw62UAUREfG0KMbH6evA-Q|org.eventb.core.guard#_Nw62UQUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ChangeVoltage/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinj"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="v∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5BIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw7dYQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5BIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ChangeVoltage\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinj" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="v" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="voltage_level'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinj" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinj" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="v∈0 ‥ 2∗CRITICAL_VOLTAGE_HIGH" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw7dYQUREfG0KMbH6evA-Q|org.eventb.core.guard#_Nw8rgQUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ChangePressure/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readink"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="p∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw9SkQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ChangePressure\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readink" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="pressure_reading'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readink" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readink" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈0 ‥ 2∗CRITICAL_PRESSURE_THRESHOLD" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw9SkQUREfG0KMbH6evA-Q|org.eventb.core.guard#_Nw95oQUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ChangeTemperature/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinl"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw_HwAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ChangeTemperature\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinl" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="temperature_reading'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinl" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinl" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="t∈0 ‥ 2∗CRITICAL_TEMPERATURE_THRESHOLD" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_Nw_HwAUREfG0KMbH6evA-Q|org.eventb.core.guard#_Nw_u0AUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivateBatteryAlarm/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinm"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active=Inactive⇔BatteryAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxAV4QUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivateBatteryAlarm\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivateBatteryAlarm/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinm"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active∈{Active,Acknowledged}⇒BatteryAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxAV4QUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivateBatteryAlarm\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinm" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinm" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinm" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state=Inactive" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxAV4QUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxA88AUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="battery_level≤MIN_BATTERY_TIME" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxAV4QUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxBkAAUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivateVoltageAlarm/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinn"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active=Inactive⇔VoltageAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxCyIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivateVoltageAlarm\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivateVoltageAlarm/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinn"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active∈{Active,Acknowledged}⇒VoltageAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxCyIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivateVoltageAlarm\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinn" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinn" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinn" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state=Inactive" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxCyIAUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxCyIQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="voltage_level≤MIN_VOLTAGE∨voltage_level&gt;MAX_VOLTAGE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxCyIAUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxCyIgUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivatePressureAlarm/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readino"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active=Inactive⇔PressureAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxEAQQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivatePressureAlarm\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivatePressureAlarm/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readino"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active∈{Active,Acknowledged}⇒PressureAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxEAQQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivatePressureAlarm\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readino" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readino" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readino" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state=Inactive" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxEAQQUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxFOYAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pressure_reading≤MIN_PRESSURE_ALRM∨pressure_reading&gt;MAX_PRESSURE_ALRM" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxEAQQUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxFOYQUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ActivateTemperatureAlarm/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinp"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active=Inactive⇔TemperatureAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxF1cgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivateTemperatureAlarm\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ActivateTemperatureAlarm/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinp"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Active∈{Active,Acknowledged}⇒TemperatureAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxF1cgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#ActivateTemperatureAlarm\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinp" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinp" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinp" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state=Inactive" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxF1cgUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxGcgAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="temperature_reading≤MIN_TEMPERATURE∨temperature_reading&gt;MAX_TEMPERATURE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxF1cgUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxHDkAUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="AcknowledgeAlarm/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Acknowledged=Inactive⇔alarm_type=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxHqoAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#AcknowledgeAlarm\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="AcknowledgeAlarm/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Acknowledged∈{Active,Acknowledged}⇒alarm_type≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxHqoAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#AcknowledgeAlarm\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinq" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinq" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinq" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state=Active" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxHqoAUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxHqoQUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="DeactivateAlarm_System/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinr"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Inactive=Inactive⇔NoAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxIRsQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#DeactivateAlarm_System\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DeactivateAlarm_System/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readinr"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Inactive∈{Active,Acknowledged}⇒NoAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxIRsQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#DeactivateAlarm_System\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readinr" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readinr" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readinr" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state∈{Active,Acknowledged}" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxIRsQUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxJf0AUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="(alarm_type=BatteryAlarm⇒battery_level≥MIN_BATTERY_TIME)∧(alarm_type=VoltageAlarm⇒voltage_level≥MIN_VOLTAGE∧voltage_level≤MAX_VOLTAGE)∧(alarm_type=PressureAlarm⇒pressure_reading≥MIN_PRESSURE_ALRM∧pressure_reading≤MAX_PRESSURE_ALRM)∧(alarm_type=TemperatureAlarm⇒temperature_reading≥MIN_TEMPERATURE∧temperature_reading≤MAX_TEMPERATURE)" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxIRsQUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxJf0QUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="PowerOff_System/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readins"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Inactive=Inactive⇔NoAlarm=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxKt8QUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#PowerOff_System\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="PowerOff_System/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTALLHYPtemperature_readins"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Inactive∈{Active,Acknowledged}⇒NoAlarm≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxKt8QUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poSequent#PowerOff_System\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtemperature_readins" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="alarm_type'" org.eventb.core.type="ALARM_TYPES"/>
+        <org.eventb.core.poIdentifier name="alarm_state'" org.eventb.core.type="ALARM_STATES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtemperature_readins" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#EVTIDENTtemperature_readins" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TRUE=TRUE" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.event#_NxKt8QUREfG0KMbH6evA-Q|org.eventb.core.guard#_NxLVAAUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/MLV_Meriem_Thesis/alrm_mch.bpo|org.eventb.core.poFile#alrm_mch|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="alarm_state∈ALARM_STATES" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw3zAQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="alarm_type∈ALARM_TYPES" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw4aEAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="battery_level∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw4aEQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="voltage_level∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5BIAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="pressure_reading∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMAUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="temperature_reading∈ℕ" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMQUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="alarm_state=Inactive⇔alarm_type=NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw5oMgUREfG0KMbH6evA-Q"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="alarm_state∈{Active,Acknowledged}⇒alarm_type≠NoAlarm" org.eventb.core.source="/MLV_Meriem_Thesis/alrm_mch.bum|org.eventb.core.machineFile#alrm_mch|org.eventb.core.invariant#_Nw6PQAUREfG0KMbH6evA-Q"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1770570532339" org.eventb.texttools.text_representation="machine gui_mch sees gui_ctx&#10;&#10;variables&#10;  gui_state&#10;  is_alarm_displayed&#10;  is_gui_frozen&#10;&#10;invariants&#10;  @inv1 gui_state ∈ GUI_STATES&#10;  @inv2 is_alarm_displayed ∈ BOOL&#10;  @inv3 is_gui_frozen ∈ BOOL&#10;  @inv4 is_gui_frozen = TRUE ⇒ gui_state = Frozen_GUI&#10;  @inv5 is_alarm_displayed = TRUE ⇒ gui_state ∈ {AlarmScreen_GUI, Frozen_GUI}&#10;&#10;events&#10;  event INITIALISATION&#10;  then&#10;    @act1 gui_state ≔ PowerOff_GUI&#10;    @act2 is_alarm_displayed ≔ FALSE&#10;    @act3 is_gui_frozen ≔ FALSE&#10;  end&#10;&#10;  event PowerOn_System&#10;  where&#10;    @grd1 gui_state = PowerOff_GUI&#10;  then&#10;    @act1 gui_state ≔ PowerOn_GUI&#10;  end&#10;&#10;  event StartSelfTest_System&#10;  where&#10;    @grd1 gui_state = PowerOn_GUI&#10;  then&#10;    @act1 gui_state ≔ SelfTest_GUI&#10;  end&#10;&#10;  event SelfTestComplete_System&#10;  where&#10;    @grd1 gui_state = SelfTest_GUI&#10;  then&#10;    @act1 gui_state ≔ Menu_GUI&#10;  end&#10;&#10;  event NavigateToVentilation_GUI&#10;  where&#10;    @grd1 gui_state = Menu_GUI&#10;    @grd2 is_alarm_displayed = FALSE&#10;    @grd3 is_gui_frozen = FALSE&#10;  then&#10;    @act1 gui_state ≔ Ventilation_GUI&#10;  end&#10;&#10;  event StartVentilation_System_PCV&#10;  where&#10;    @grd1 gui_state = Ventilation_GUI&#10;    @grd2 is_alarm_displayed = FALSE&#10;    @grd3 is_gui_frozen = FALSE&#10;  then&#10;    @act1 gui_state ≔ Start_GUI&#10;  end&#10;&#10;  event StartVentilation_System_PSV&#10;  where&#10;    @grd1 gui_state = Ventilation_GUI&#10;    @grd2 is_alarm_displayed = FALSE&#10;    @grd3 is_gui_frozen = FALSE&#10;  then&#10;    @act1 gui_state ≔ Start_GUI&#10;  end&#10;&#10;  event StopVentilation_System&#10;  where&#10;    @grd1 gui_state = Start_GUI&#10;    @grd2 is_alarm_displayed = FALSE&#10;  then&#10;    @act1 gui_state ≔ Ventilation_GUI&#10;  end&#10;&#10;  event FreezeGUI&#10;  where&#10;    @grd1 is_gui_frozen = FALSE&#10;    @grd2 gui_state ≠ PowerOff_GUI&#10;  then&#10;    @act1 gui_state ≔ Frozen_GUI&#10;    @act2 is_gui_frozen ≔ TRUE&#10;  end&#10;&#10;  event UnfreezeGUI&#10;  where&#10;    @grd1 is_gui_frozen = TRUE&#10;    @grd2 is_alarm_displayed = FALSE&#10;  then&#10;    @act1 is_gui_frozen ≔ FALSE&#10;    @act2 gui_state ≔ Menu_GUI&#10;  end&#10;&#10;  event ActivateBatteryAlarm&#10;  where&#10;    @grd1 is_alarm_displayed = FALSE&#10;  then&#10;    @act1 is_alarm_displayed ≔ TRUE&#10;    @act2 is_gui_frozen ≔ FALSE&#10;    @act3 gui_state ≔ AlarmScreen_GUI&#10;  end&#10;&#10;  event ActivateVoltageAlarm&#10;  where&#10;    @grd1 is_alarm_displayed = FALSE&#10;  then&#10;    @act1 is_alarm_displayed ≔ TRUE&#10;    @act2 is_gui_frozen ≔ FALSE&#10;    @act3 gui_state ≔ AlarmScreen_GUI&#10;  end&#10;&#10;  event ActivatePressureAlarm&#10;  where&#10;    @grd1 is_alarm_displayed = FALSE&#10;  then&#10;    @act1 is_alarm_displayed ≔ TRUE&#10;    @act2 is_gui_frozen ≔ FALSE&#10;    @act3 gui_state ≔ AlarmScreen_GUI&#10;  end&#10;&#10;  event ActivateTemperatureAlarm&#10;  where&#10;    @grd1 is_alarm_displayed = FALSE&#10;  then&#10;    @act1 is_alarm_displayed ≔ TRUE&#10;    @act2 is_gui_frozen ≔ FALSE&#10;    @act3 gui_state ≔ AlarmScreen_GUI&#10;  end&#10;&#10;  event DeactivateAlarm_System&#10;  where&#10;    @grd1 is_alarm_displayed = TRUE&#10;  then&#10;    @act1 is_alarm_displayed ≔ FALSE&#10;    @act2 is_gui_frozen ≔ FALSE&#10;    @act3 gui_state ≔ Ventilation_GUI&#10;  end&#10;&#10;  event PowerOff_System&#10;  where&#10;    @grd1 TRUE = TRUE&#10;  then&#10;    @act1 gui_state ≔ PowerOff_GUI&#10;    @act2 is_alarm_displayed ≔ FALSE&#10;    @act3 is_gui_frozen ≔ FALSE&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.seesContext name="_19Hp8AUQEfG0KMbH6evA-Q" org.eventb.core.target="gui_ctx"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="_19JfIAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ PowerOff_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19KGMAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19KGMQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="_19LUUAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="gui_state"/>
+    <org.eventb.core.variable name="_19LUUQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="is_alarm_displayed"/>
+    <org.eventb.core.variable name="_19L7YAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.identifier="is_gui_frozen"/>
+    <org.eventb.core.invariant name="_19MicAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="inv1" org.eventb.core.predicate="gui_state ∈ GUI_STATES"/>
+    <org.eventb.core.invariant name="_19NJgAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="inv2" org.eventb.core.predicate="is_alarm_displayed ∈ BOOL"/>
+    <org.eventb.core.invariant name="_19NwkAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="inv3" org.eventb.core.predicate="is_gui_frozen ∈ BOOL"/>
+    <org.eventb.core.invariant name="_19OXoAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="inv4" org.eventb.core.predicate="is_gui_frozen = TRUE ⇒ gui_state = Frozen_GUI"/>
+    <org.eventb.core.invariant name="_19OXoQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="inv5" org.eventb.core.predicate="is_alarm_displayed = TRUE ⇒ gui_state ∈ {AlarmScreen_GUI, Frozen_GUI}"/>
+    <org.eventb.core.event name="_19PlwAUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="PowerOn_System">
+        <org.eventb.core.guard name="_19QM0AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = PowerOff_GUI"/>
+        <org.eventb.core.action name="_19Qz4AUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ PowerOn_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19Ra8AUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="StartSelfTest_System">
+        <org.eventb.core.guard name="_19SCAAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = PowerOn_GUI"/>
+        <org.eventb.core.action name="_19SpEAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ SelfTest_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19SpEQUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="SelfTestComplete_System">
+        <org.eventb.core.guard name="_19TQIAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = SelfTest_GUI"/>
+        <org.eventb.core.action name="_19UeQAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Menu_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19UeQQUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="NavigateToVentilation_GUI">
+        <org.eventb.core.guard name="_19VFUAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = Menu_GUI"/>
+        <org.eventb.core.guard name="_19VsYAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.guard name="_19WTcAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="is_gui_frozen = FALSE"/>
+        <org.eventb.core.action name="_19WTcQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Ventilation_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19W6gAUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="StartVentilation_System_PCV">
+        <org.eventb.core.guard name="_19XhkAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = Ventilation_GUI"/>
+        <org.eventb.core.guard name="_19XhkQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.guard name="_19YvsAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="is_gui_frozen = FALSE"/>
+        <org.eventb.core.action name="_19ZWwAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Start_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19ZWwQUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="StartVentilation_System_PSV">
+        <org.eventb.core.guard name="_19Z90AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = Ventilation_GUI"/>
+        <org.eventb.core.guard name="_19ak4AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.guard name="_19ak4QUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="is_gui_frozen = FALSE"/>
+        <org.eventb.core.action name="_19bL8AUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Start_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19bL8QUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="StopVentilation_System">
+        <org.eventb.core.guard name="_19caEAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="gui_state = Start_GUI"/>
+        <org.eventb.core.guard name="_19caEQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.action name="_19dBIAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Ventilation_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19doMAUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="FreezeGUI">
+        <org.eventb.core.guard name="_19doMQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_gui_frozen = FALSE"/>
+        <org.eventb.core.guard name="_19ePQAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="gui_state ≠ PowerOff_GUI"/>
+        <org.eventb.core.action name="_19ePQQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Frozen_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19e2UAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ TRUE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19fdYAUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="UnfreezeGUI">
+        <org.eventb.core.guard name="_19gEcAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_gui_frozen = TRUE"/>
+        <org.eventb.core.guard name="_19gEcQUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.action name="_19grgAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19hSkAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Menu_GUI" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19hSkQUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ActivateBatteryAlarm">
+        <org.eventb.core.guard name="_19hSkgUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.action name="_19h5oAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ TRUE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19h5oQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19jHwAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ AlarmScreen_GUI" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19jHwQUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ActivateVoltageAlarm">
+        <org.eventb.core.guard name="_19ju0AUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.action name="_19kV4AUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ TRUE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19kV4QUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19k88AUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ AlarmScreen_GUI" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19k88QUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ActivatePressureAlarm">
+        <org.eventb.core.guard name="_19lkAAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.action name="_19mLEAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ TRUE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19mLEQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19mLEgUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ AlarmScreen_GUI" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19myIAUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ActivateTemperatureAlarm">
+        <org.eventb.core.guard name="_19nZMAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_alarm_displayed = FALSE"/>
+        <org.eventb.core.action name="_19nZMQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ TRUE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19oAQAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19oAQQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ AlarmScreen_GUI" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19oAQgUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="DeactivateAlarm_System">
+        <org.eventb.core.guard name="_19onUAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="is_alarm_displayed = TRUE"/>
+        <org.eventb.core.action name="_19pOYAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19pOYQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19pOYgUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ Ventilation_GUI" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_19qcgAUQEfG0KMbH6evA-Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="PowerOff_System">
+        <org.eventb.core.guard name="_19rDkAUQEfG0KMbH6evA-Q" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="TRUE = TRUE"/>
+        <org.eventb.core.action name="_19rDkQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="gui_state ≔ PowerOff_GUI" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_19rqoAUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_alarm_displayed ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_19rqoQUQEfG0KMbH6evA-Q" org.eventb.core.assignment="is_gui_frozen ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
