@@ -1,0 +1,6 @@
+diagnostic_classifier,mean_initial_f1,mean_best_observed_f1,mean_fitted_plateau_f1,mean_gain,mean_rate_k,mean_x95_percent,mean_r_squared
+LightGBM,82.7322,89.8278,89.8443,7.1121,0.715994,4.4244,0.998651
+XGBoost,81.2089,88.2311,88.2638,7.0549,0.707264,4.4573,0.998653
+Gradient Boosting,81.4656,88.7211,88.738,7.2725,0.720125,4.3935,0.999145
+Random Forest,50.3422,55.9856,56.0166,5.6743,0.750649,4.3179,0.992785
+Logistic Regression,19.5556,24.32,24.3298,4.7742,0.69384,4.5122,0.998788

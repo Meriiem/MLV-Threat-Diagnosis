@@ -1,0 +1,136 @@
+initial_set,system_id,candidate_id,fault_count,fault_order,affected_components,threat_types,edit_targets,selection_order,mapping_status
+5-5-5,M002,,1,single,ALRM,Sensor Initialisation Tampering,INITIALISATION/@act6,1,single_base_mutant
+5-5-5,M012,,1,single,CTRL,Ventilation Delivery Failures,StartVentilation_System_PCV/@act3,2,single_base_mutant
+5-5-5,M027,,1,single,GUI,GUI Access Control Bypass,FreezeGUI/@grd2,3,single_base_mutant
+5-5-5,M013,,1,single,CTRL,Respiratory Parameter Violations,StopVentilation_System/@act4,4,single_base_mutant
+5-5-5,M023,,1,single,GUI,GUI Freeze Mechanism Failures,UnfreezeGUI/@act2,5,single_base_mutant
+5-5-5,M048,D_M006_M023,2,double,GUI+ALRM,GUI Freeze Mechanism Failures + Alarm Activation Faults,UnfreezeGUI/@act2+ActivateVoltageAlarm/@grd2,6,exact_mapping
+5-5-5,M037,D_M017_M018,2,double,CTRL+CTRL,Fail-Safe Degradation,EscalateToFailSafe/@act3+EscalateToFailSafe/@act4,7,exact_mapping
+5-5-5,M052,D_M011_M021,2,double,GUI+CTRL,GUI Access Control Bypass + Unauthorized Controller Startup,INITIALISATION/@act13+INITIALISATION/@act7,8,exact_mapping
+5-5-5,M038,D_M015_M016,2,double,CTRL+CTRL,Respiratory Parameter Violations,IncrementRespRate/@grd2+DecrementRespRate/@grd2,9,exact_mapping
+5-5-5,M032,D_M001_M003,2,double,ALRM+ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4+INITIALISATION/@act5,10,exact_mapping
+5-5-5,M070,T_M004_M011_M021,3,triple,GUI+CTRL+ALRM,GUI Access Control Bypass + Unauthorized Controller Startup + Alarm Activation Faults,INITIALISATION/@act13+INITIALISATION/@act7+INITIALISATION/@act3,11,exact_mapping
+5-5-5,M066,T_M014_M015_M016,3,triple,CTRL+CTRL+CTRL,Respiratory Parameter Violations + Ventilation Delivery Failures,IncrementRespRate/@grd2+DecrementRespRate/@grd2+EscalateToFailSafe/@act2,12,exact_mapping
+5-5-5,M061,T_M001_M002_M003,3,triple,ALRM+ALRM+ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4+INITIALISATION/@act5+INITIALISATION/@act6,13,exact_mapping
+5-5-5,M068,T_M024_M025_M028,3,triple,GUI+GUI+GUI,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures,NavigateToVentilation_GUI/@grd3+SelfTestComplete_System/@act2+StartVentilation_System_PCV/@act2,14,exact_mapping
+5-5-5,M063,T_M005_M009_M010,3,triple,ALRM+ALRM+ALRM,Alarm Lifecycle Faults + Alarm Activation Faults,AcknowledgeAlarm/@act1+DeactivateAlarm_System/@act2+ActivateBatteryAlarm/@grd2,15,exact_mapping
+10-10-10,M002,,1,single,ALRM,Sensor Initialisation Tampering,INITIALISATION/@act6,1,single_base_mutant
+10-10-10,M012,,1,single,CTRL,Ventilation Delivery Failures,StartVentilation_System_PCV/@act3,2,single_base_mutant
+10-10-10,M027,,1,single,GUI,GUI Access Control Bypass,FreezeGUI/@grd2,3,single_base_mutant
+10-10-10,M013,,1,single,CTRL,Respiratory Parameter Violations,StopVentilation_System/@act4,4,single_base_mutant
+10-10-10,M023,,1,single,GUI,GUI Freeze Mechanism Failures,UnfreezeGUI/@act2,5,single_base_mutant
+10-10-10,M005,,1,single,ALRM,Alarm Activation Faults,ActivateBatteryAlarm/@grd2,6,single_base_mutant
+10-10-10,M011,,1,single,CTRL,Unauthorized Controller Startup,INITIALISATION/@act7,7,single_base_mutant
+10-10-10,M017,,1,single,CTRL,Fail-Safe Degradation,EscalateToFailSafe/@act3,8,single_base_mutant
+10-10-10,M026,,1,single,GUI,GUI Display & Navigation Failures,ActivateBatteryAlarm/@act3,9,single_base_mutant
+10-10-10,M009,,1,single,ALRM,Alarm Lifecycle Faults,AcknowledgeAlarm/@act1,10,single_base_mutant
+10-10-10,M048,D_M006_M023,2,double,GUI+ALRM,GUI Freeze Mechanism Failures + Alarm Activation Faults,UnfreezeGUI/@act2+ActivateVoltageAlarm/@grd2,11,exact_mapping
+10-10-10,M037,D_M017_M018,2,double,CTRL+CTRL,Fail-Safe Degradation,EscalateToFailSafe/@act3+EscalateToFailSafe/@act4,12,exact_mapping
+10-10-10,M052,D_M011_M021,2,double,GUI+CTRL,GUI Access Control Bypass + Unauthorized Controller Startup,INITIALISATION/@act13+INITIALISATION/@act7,13,exact_mapping
+10-10-10,M038,D_M015_M016,2,double,CTRL+CTRL,Respiratory Parameter Violations,IncrementRespRate/@grd2+DecrementRespRate/@grd2,14,exact_mapping
+10-10-10,M032,D_M001_M003,2,double,ALRM+ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4+INITIALISATION/@act5,15,exact_mapping
+10-10-10,M053,D_M019_M028,2,double,GUI+CTRL,GUI Display & Navigation Failures + Ventilation Delivery Failures,SelfTestComplete_System/@act2+StopVentilation_System/@act1,16,exact_mapping
+10-10-10,M034,D_M009_M010,2,double,ALRM+ALRM,Alarm Lifecycle Faults,AcknowledgeAlarm/@act1+DeactivateAlarm_System/@act2,17,exact_mapping
+10-10-10,M045,D_M027_M030,2,double,GUI+GUI,GUI Display & Navigation Failures + GUI Access Control Bypass,PowerOff_System/@act7+FreezeGUI/@grd2,18,exact_mapping
+10-10-10,M031,D_M004_M005,2,double,ALRM+ALRM,Alarm Activation Faults,INITIALISATION/@act3+ActivateBatteryAlarm/@grd2,19,exact_mapping
+10-10-10,M043,D_M024_M028,2,double,GUI+GUI,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures,NavigateToVentilation_GUI/@grd3+SelfTestComplete_System/@act2,20,exact_mapping
+10-10-10,M070,T_M004_M011_M021,3,triple,GUI+CTRL+ALRM,GUI Access Control Bypass + Unauthorized Controller Startup + Alarm Activation Faults,INITIALISATION/@act13+INITIALISATION/@act7+INITIALISATION/@act3,21,exact_mapping
+10-10-10,M066,T_M014_M015_M016,3,triple,CTRL+CTRL+CTRL,Respiratory Parameter Violations + Ventilation Delivery Failures,IncrementRespRate/@grd2+DecrementRespRate/@grd2+EscalateToFailSafe/@act2,22,exact_mapping
+10-10-10,M061,T_M001_M002_M003,3,triple,ALRM+ALRM+ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4+INITIALISATION/@act5+INITIALISATION/@act6,23,exact_mapping
+10-10-10,M068,T_M024_M025_M028,3,triple,GUI+GUI+GUI,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures,NavigateToVentilation_GUI/@grd3+SelfTestComplete_System/@act2+StartVentilation_System_PCV/@act2,24,exact_mapping
+10-10-10,M063,T_M005_M009_M010,3,triple,ALRM+ALRM+ALRM,Alarm Lifecycle Faults + Alarm Activation Faults,AcknowledgeAlarm/@act1+DeactivateAlarm_System/@act2+ActivateBatteryAlarm/@grd2,25,exact_mapping
+10-10-10,M065,T_M012_M019_M020,3,triple,CTRL+CTRL+CTRL,Ventilation Delivery Failures,SelectPCV_System/@act1+StartVentilation_System_PCV/@act3+StopVentilation_System/@act1,26,exact_mapping
+10-10-10,M080,T_M017_M022_M023,3,triple,GUI+GUI+CTRL,GUI Freeze Mechanism Failures + Fail-Safe Degradation,FreezeGUI/@act2+UnfreezeGUI/@act2+EscalateToFailSafe/@act3,27,exact_mapping
+10-10-10,M078,T_M002_M026_M029,3,triple,GUI+GUI+ALRM,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures + Sensor Initialisation Tampering,UnfreezeGUI/@act1+ActivateBatteryAlarm/@act3+INITIALISATION/@act6,28,exact_mapping
+10-10-10,M073,T_M008_M012_M025,3,triple,GUI+CTRL+ALRM,GUI Display & Navigation Failures + Ventilation Delivery Failures + Alarm Activation Faults,StartVentilation_System_PCV/@act2+StartVentilation_System_PCV/@act3+ActivateTemperatureAlarm/@grd2,29,exact_mapping
+10-10-10,M064,T_M011_M017_M018,3,triple,CTRL+CTRL+CTRL,Unauthorized Controller Startup + Fail-Safe Degradation,INITIALISATION/@act7+EscalateToFailSafe/@act3+EscalateToFailSafe/@act4,30,exact_mapping
+30-30-30,M001,,1,single,ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4,1,single_base_mutant
+30-30-30,M002,,1,single,ALRM,Sensor Initialisation Tampering,INITIALISATION/@act6,2,single_base_mutant
+30-30-30,M003,,1,single,ALRM,Sensor Initialisation Tampering,INITIALISATION/@act5,3,single_base_mutant
+30-30-30,M004,,1,single,ALRM,Alarm Activation Faults,INITIALISATION/@act3,4,single_base_mutant
+30-30-30,M005,,1,single,ALRM,Alarm Activation Faults,ActivateBatteryAlarm/@grd2,5,single_base_mutant
+30-30-30,M006,,1,single,ALRM,Alarm Activation Faults,ActivateVoltageAlarm/@grd2,6,single_base_mutant
+30-30-30,M007,,1,single,ALRM,Alarm Activation Faults,ActivatePressureAlarm/@grd2,7,single_base_mutant
+30-30-30,M008,,1,single,ALRM,Alarm Activation Faults,ActivateTemperatureAlarm/@grd2,8,single_base_mutant
+30-30-30,M009,,1,single,ALRM,Alarm Lifecycle Faults,AcknowledgeAlarm/@act1,9,single_base_mutant
+30-30-30,M010,,1,single,ALRM,Alarm Lifecycle Faults,DeactivateAlarm_System/@act2,10,single_base_mutant
+30-30-30,M011,,1,single,CTRL,Unauthorized Controller Startup,INITIALISATION/@act7,11,single_base_mutant
+30-30-30,M012,,1,single,CTRL,Ventilation Delivery Failures,StartVentilation_System_PCV/@act3,12,single_base_mutant
+30-30-30,M013,,1,single,CTRL,Respiratory Parameter Violations,StopVentilation_System/@act4,13,single_base_mutant
+30-30-30,M014,,1,single,CTRL,Ventilation Delivery Failures,EscalateToFailSafe/@act2,14,single_base_mutant
+30-30-30,M015,,1,single,CTRL,Respiratory Parameter Violations,IncrementRespRate/@grd2,15,single_base_mutant
+30-30-30,M016,,1,single,CTRL,Respiratory Parameter Violations,DecrementRespRate/@grd2,16,single_base_mutant
+30-30-30,M017,,1,single,CTRL,Fail-Safe Degradation,EscalateToFailSafe/@act3,17,single_base_mutant
+30-30-30,M018,,1,single,CTRL,Fail-Safe Degradation,EscalateToFailSafe/@act4,18,single_base_mutant
+30-30-30,M019,,1,single,CTRL,Ventilation Delivery Failures,StopVentilation_System/@act1,19,single_base_mutant
+30-30-30,M020,,1,single,CTRL,Ventilation Delivery Failures,SelectPCV_System/@act1,20,single_base_mutant
+30-30-30,M021,,1,single,GUI,GUI Access Control Bypass,INITIALISATION/@act13,21,single_base_mutant
+30-30-30,M022,,1,single,GUI,GUI Freeze Mechanism Failures,FreezeGUI/@act2,22,single_base_mutant
+30-30-30,M023,,1,single,GUI,GUI Freeze Mechanism Failures,UnfreezeGUI/@act2,23,single_base_mutant
+30-30-30,M024,,1,single,GUI,GUI Freeze Mechanism Failures,NavigateToVentilation_GUI/@grd3,24,single_base_mutant
+30-30-30,M025,,1,single,GUI,GUI Display & Navigation Failures,StartVentilation_System_PCV/@act2,25,single_base_mutant
+30-30-30,M026,,1,single,GUI,GUI Display & Navigation Failures,ActivateBatteryAlarm/@act3,26,single_base_mutant
+30-30-30,M027,,1,single,GUI,GUI Access Control Bypass,FreezeGUI/@grd2,27,single_base_mutant
+30-30-30,M028,,1,single,GUI,GUI Display & Navigation Failures,SelfTestComplete_System/@act2,28,single_base_mutant
+30-30-30,M029,,1,single,GUI,GUI Freeze Mechanism Failures,UnfreezeGUI/@act1,29,single_base_mutant
+30-30-30,M030,,1,single,GUI,GUI Display & Navigation Failures,PowerOff_System/@act7,30,single_base_mutant
+30-30-30,M031,D_M004_M005,2,double,ALRM+ALRM,Alarm Activation Faults,INITIALISATION/@act3+ActivateBatteryAlarm/@grd2,31,exact_mapping
+30-30-30,M032,D_M001_M003,2,double,ALRM+ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4+INITIALISATION/@act5,32,exact_mapping
+30-30-30,M033,D_M007_M008,2,double,ALRM+ALRM,Alarm Activation Faults,ActivatePressureAlarm/@grd2+ActivateTemperatureAlarm/@grd2,33,exact_mapping
+30-30-30,M034,D_M009_M010,2,double,ALRM+ALRM,Alarm Lifecycle Faults,AcknowledgeAlarm/@act1+DeactivateAlarm_System/@act2,34,exact_mapping
+30-30-30,M035,D_M002_M006,2,double,ALRM+ALRM,Sensor Initialisation Tampering + Alarm Activation Faults,INITIALISATION/@act6+ActivateVoltageAlarm/@grd2,35,exact_mapping
+30-30-30,M036,D_M012_M019,2,double,CTRL+CTRL,Ventilation Delivery Failures,StartVentilation_System_PCV/@act3+StopVentilation_System/@act1,36,exact_mapping
+30-30-30,M037,D_M017_M018,2,double,CTRL+CTRL,Fail-Safe Degradation,EscalateToFailSafe/@act3+EscalateToFailSafe/@act4,37,exact_mapping
+30-30-30,M038,D_M015_M016,2,double,CTRL+CTRL,Respiratory Parameter Violations,IncrementRespRate/@grd2+DecrementRespRate/@grd2,38,exact_mapping
+30-30-30,M039,,2,double,CTRL+CTRL,Ventilation Delivery Failures,SelectPCV_System/@act1+SelectPSV_System/@act1,39,partial_mapping
+30-30-30,M040,,2,double,CTRL+CTRL,Unauthorized Controller Startup + Respiratory Parameter Violations,INITIALISATION/@act7+StopVentilation_System/@act4,40,partial_mapping
+30-30-30,M041,D_M022_M023,2,double,GUI+GUI,GUI Freeze Mechanism Failures,FreezeGUI/@act2+UnfreezeGUI/@act2,41,exact_mapping
+30-30-30,M042,,2,double,GUI+GUI,GUI Access Control Bypass + GUI Freeze Mechanism Failures,INITIALISATION/@act13+INITIALISATION/@act15,42,partial_mapping
+30-30-30,M043,D_M024_M028,2,double,GUI+GUI,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures,NavigateToVentilation_GUI/@grd3+SelfTestComplete_System/@act2,43,exact_mapping
+30-30-30,M044,,2,double,GUI+GUI,GUI Display & Navigation Failures,StartVentilation_System_PCV/@act2+StartVentilation_System_PSV/@act2,44,partial_mapping
+30-30-30,M045,D_M027_M030,2,double,GUI+GUI,GUI Display & Navigation Failures + GUI Access Control Bypass,PowerOff_System/@act7+FreezeGUI/@grd2,45,exact_mapping
+30-30-30,M046,D_M005_M022,2,double,GUI+ALRM,GUI Freeze Mechanism Failures + Alarm Activation Faults,FreezeGUI/@act2+ActivateBatteryAlarm/@grd2,46,exact_mapping
+30-30-30,M047,D_M001_M021,2,double,GUI+ALRM,GUI Access Control Bypass + Sensor Initialisation Tampering,INITIALISATION/@act13+INITIALISATION/@act4,47,exact_mapping
+30-30-30,M048,D_M006_M023,2,double,GUI+ALRM,GUI Freeze Mechanism Failures + Alarm Activation Faults,UnfreezeGUI/@act2+ActivateVoltageAlarm/@grd2,48,exact_mapping
+30-30-30,M049,D_M008_M026,2,double,GUI+ALRM,GUI Display & Navigation Failures + Alarm Activation Faults,ActivateBatteryAlarm/@act3+ActivateTemperatureAlarm/@grd2,49,exact_mapping
+30-30-30,M050,,2,double,GUI+ALRM,GUI Freeze Mechanism Failures + Alarm Activation Faults,NavigateToVentilation_GUI/@grd2+ActivatePressureAlarm/@grd2,50,partial_mapping
+30-30-30,M051,D_M017_M022,2,double,GUI+CTRL,GUI Freeze Mechanism Failures + Fail-Safe Degradation,FreezeGUI/@act2+EscalateToFailSafe/@act3,51,exact_mapping
+30-30-30,M052,D_M011_M021,2,double,GUI+CTRL,GUI Access Control Bypass + Unauthorized Controller Startup,INITIALISATION/@act13+INITIALISATION/@act7,52,exact_mapping
+30-30-30,M053,D_M019_M028,2,double,GUI+CTRL,GUI Display & Navigation Failures + Ventilation Delivery Failures,SelfTestComplete_System/@act2+StopVentilation_System/@act1,53,exact_mapping
+30-30-30,M054,D_M012_M025,2,double,GUI+CTRL,GUI Display & Navigation Failures + Ventilation Delivery Failures,StartVentilation_System_PCV/@act2+StartVentilation_System_PCV/@act3,54,exact_mapping
+30-30-30,M055,D_M020_M029,2,double,GUI+CTRL,GUI Freeze Mechanism Failures + Ventilation Delivery Failures,UnfreezeGUI/@act1+SelectPCV_System/@act1,55,exact_mapping
+30-30-30,M056,D_M005_M017,2,double,CTRL+ALRM,Fail-Safe Degradation + Alarm Activation Faults,EscalateToFailSafe/@act3+ActivateBatteryAlarm/@grd2,56,exact_mapping
+30-30-30,M057,D_M001_M019,2,double,CTRL+ALRM,Ventilation Delivery Failures + Sensor Initialisation Tampering,StopVentilation_System/@act1+INITIALISATION/@act4,57,exact_mapping
+30-30-30,M058,D_M007_M015,2,double,CTRL+ALRM,Respiratory Parameter Violations + Alarm Activation Faults,IncrementRespRate/@grd2+ActivatePressureAlarm/@grd2,58,exact_mapping
+30-30-30,M059,D_M002_M011,2,double,CTRL+ALRM,Unauthorized Controller Startup + Sensor Initialisation Tampering,INITIALISATION/@act7+INITIALISATION/@act6,59,exact_mapping
+30-30-30,M060,D_M009_M012,2,double,CTRL+ALRM,Ventilation Delivery Failures + Alarm Lifecycle Faults,StartVentilation_System_PCV/@act3+AcknowledgeAlarm/@act1,60,exact_mapping
+30-30-30,M061,T_M001_M002_M003,3,triple,ALRM+ALRM+ALRM,Sensor Initialisation Tampering,INITIALISATION/@act4+INITIALISATION/@act5+INITIALISATION/@act6,61,exact_mapping
+30-30-30,M062,T_M004_M007_M008,3,triple,ALRM+ALRM+ALRM,Alarm Activation Faults,INITIALISATION/@act3+ActivatePressureAlarm/@grd2+ActivateTemperatureAlarm/@grd2,62,exact_mapping
+30-30-30,M063,T_M005_M009_M010,3,triple,ALRM+ALRM+ALRM,Alarm Lifecycle Faults + Alarm Activation Faults,AcknowledgeAlarm/@act1+DeactivateAlarm_System/@act2+ActivateBatteryAlarm/@grd2,63,exact_mapping
+30-30-30,M064,T_M011_M017_M018,3,triple,CTRL+CTRL+CTRL,Unauthorized Controller Startup + Fail-Safe Degradation,INITIALISATION/@act7+EscalateToFailSafe/@act3+EscalateToFailSafe/@act4,64,exact_mapping
+30-30-30,M065,T_M012_M019_M020,3,triple,CTRL+CTRL+CTRL,Ventilation Delivery Failures,SelectPCV_System/@act1+StartVentilation_System_PCV/@act3+StopVentilation_System/@act1,65,exact_mapping
+30-30-30,M066,T_M014_M015_M016,3,triple,CTRL+CTRL+CTRL,Respiratory Parameter Violations + Ventilation Delivery Failures,IncrementRespRate/@grd2+DecrementRespRate/@grd2+EscalateToFailSafe/@act2,66,exact_mapping
+30-30-30,M067,T_M021_M022_M023,3,triple,GUI+GUI+GUI,GUI Access Control Bypass + GUI Freeze Mechanism Failures,INITIALISATION/@act13+FreezeGUI/@act2+UnfreezeGUI/@act2,67,exact_mapping
+30-30-30,M068,T_M024_M025_M028,3,triple,GUI+GUI+GUI,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures,NavigateToVentilation_GUI/@grd3+SelfTestComplete_System/@act2+StartVentilation_System_PCV/@act2,68,exact_mapping
+30-30-30,M069,,3,triple,GUI+GUI+GUI,GUI Display & Navigation Failures + GUI Freeze Mechanism Failures,PowerOff_System/@act7+INITIALISATION/@act15+UnfreezeGUI/@act1,69,partial_mapping
+30-30-30,M070,T_M004_M011_M021,3,triple,GUI+CTRL+ALRM,GUI Access Control Bypass + Unauthorized Controller Startup + Alarm Activation Faults,INITIALISATION/@act13+INITIALISATION/@act7+INITIALISATION/@act3,70,exact_mapping
+30-30-30,M071,T_M006_M020_M022,3,triple,GUI+CTRL+ALRM,GUI Freeze Mechanism Failures + Ventilation Delivery Failures + Alarm Activation Faults,FreezeGUI/@act2+SelectPCV_System/@act1+ActivateVoltageAlarm/@grd2,71,exact_mapping
+30-30-30,M072,T_M007_M017_M026,3,triple,GUI+CTRL+ALRM,GUI Display & Navigation Failures + Fail-Safe Degradation + Alarm Activation Faults,ActivateBatteryAlarm/@act3+EscalateToFailSafe/@act3+ActivatePressureAlarm/@grd2,72,exact_mapping
+30-30-30,M073,T_M008_M012_M025,3,triple,GUI+CTRL+ALRM,GUI Display & Navigation Failures + Ventilation Delivery Failures + Alarm Activation Faults,StartVentilation_System_PCV/@act2+StartVentilation_System_PCV/@act3+ActivateTemperatureAlarm/@grd2,73,exact_mapping
+30-30-30,M074,T_M009_M019_M023,3,triple,GUI+CTRL+ALRM,GUI Freeze Mechanism Failures + Ventilation Delivery Failures + Alarm Lifecycle Faults,UnfreezeGUI/@act2+StopVentilation_System/@act1+AcknowledgeAlarm/@act1,74,exact_mapping
+30-30-30,M075,T_M003_M015_M028,3,triple,GUI+CTRL+ALRM,GUI Display & Navigation Failures + Respiratory Parameter Violations + Sensor Initialisation Tampering,SelfTestComplete_System/@act2+IncrementRespRate/@grd2+INITIALISATION/@act5,75,exact_mapping
+30-30-30,M076,T_M005_M021_M022,3,triple,GUI+GUI+ALRM,GUI Access Control Bypass + GUI Freeze Mechanism Failures + Alarm Activation Faults,INITIALISATION/@act13+FreezeGUI/@act2+ActivateBatteryAlarm/@grd2,76,exact_mapping
+30-30-30,M077,T_M007_M024_M030,3,triple,GUI+GUI+ALRM,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures + Alarm Activation Faults,NavigateToVentilation_GUI/@grd3+PowerOff_System/@act7+ActivatePressureAlarm/@grd2,77,exact_mapping
+30-30-30,M078,T_M002_M026_M029,3,triple,GUI+GUI+ALRM,GUI Freeze Mechanism Failures + GUI Display & Navigation Failures + Sensor Initialisation Tampering,UnfreezeGUI/@act1+ActivateBatteryAlarm/@act3+INITIALISATION/@act6,78,exact_mapping
+30-30-30,M079,T_M011_M021_M028,3,triple,GUI+GUI+CTRL,GUI Access Control Bypass + GUI Display & Navigation Failures + Unauthorized Controller Startup,INITIALISATION/@act13+SelfTestComplete_System/@act2+INITIALISATION/@act7,79,exact_mapping
+30-30-30,M080,T_M017_M022_M023,3,triple,GUI+GUI+CTRL,GUI Freeze Mechanism Failures + Fail-Safe Degradation,FreezeGUI/@act2+UnfreezeGUI/@act2+EscalateToFailSafe/@act3,80,exact_mapping
+30-30-30,M081,,3,triple,GUI+GUI+CTRL,GUI Display & Navigation Failures + Ventilation Delivery Failures,StartVentilation_System_PCV/@act2+StartVentilation_System_PSV/@act2+SelectPCV_System/@act1,81,partial_mapping
+30-30-30,M082,T_M006_M008_M026,3,triple,GUI+ALRM+ALRM,GUI Display & Navigation Failures + Alarm Activation Faults,ActivateBatteryAlarm/@act3+ActivateVoltageAlarm/@grd2+ActivateTemperatureAlarm/@grd2,82,exact_mapping
+30-30-30,M083,T_M001_M002_M027,3,triple,GUI+ALRM+ALRM,GUI Access Control Bypass + Sensor Initialisation Tampering,FreezeGUI/@grd2+INITIALISATION/@act4+INITIALISATION/@act6,83,exact_mapping
+30-30-30,M084,,3,triple,GUI+ALRM+ALRM,GUI Freeze Mechanism Failures + Alarm Lifecycle Faults + Alarm Activation Faults,NavigateToVentilation_GUI/@grd2+AcknowledgeAlarm/@act1+INITIALISATION/@act3,84,partial_mapping
+30-30-30,M085,T_M007_M008_M014,3,triple,CTRL+ALRM+ALRM,Ventilation Delivery Failures + Alarm Activation Faults,EscalateToFailSafe/@act2+ActivatePressureAlarm/@grd2+ActivateTemperatureAlarm/@grd2,85,exact_mapping
+30-30-30,M086,T_M001_M005_M019,3,triple,CTRL+ALRM+ALRM,Ventilation Delivery Failures + Alarm Activation Faults + Sensor Initialisation Tampering,StopVentilation_System/@act1+ActivateBatteryAlarm/@grd2+INITIALISATION/@act4,86,exact_mapping
+30-30-30,M087,T_M003_M010_M020,3,triple,CTRL+ALRM+ALRM,Ventilation Delivery Failures + Alarm Lifecycle Faults + Sensor Initialisation Tampering,SelectPCV_System/@act1+DeactivateAlarm_System/@act2+INITIALISATION/@act5,87,exact_mapping
+30-30-30,M088,T_M005_M017_M018,3,triple,CTRL+CTRL+ALRM,Fail-Safe Degradation + Alarm Activation Faults,EscalateToFailSafe/@act3+EscalateToFailSafe/@act4+ActivateBatteryAlarm/@grd2,88,exact_mapping
+30-30-30,M089,T_M002_M012_M015,3,triple,CTRL+CTRL+ALRM,Respiratory Parameter Violations + Ventilation Delivery Failures + Sensor Initialisation Tampering,IncrementRespRate/@grd2+StartVentilation_System_PCV/@act3+INITIALISATION/@act6,89,exact_mapping
+30-30-30,M090,,3,triple,CTRL+CTRL+GUI,Unauthorized Controller Startup,INITIALISATION/@act7,90,malformed

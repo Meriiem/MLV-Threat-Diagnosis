@@ -1,0 +1,82 @@
+curve_family,initial_set,task,diagnostic_classifier,selection_strategy,practical_percent,practical_f1,best_observed_percent,best_observed_f1,fitted_plateau_f1,rate_k,x95_percent,r_squared
+Classifier sensitivity,5-5-5,Task A: Component,LightGBM,Entropy,8.0,91.1,16.0,91.28,91.31793,0.510038,5.873543,0.998934
+Classifier sensitivity,5-5-5,Task A: Component,XGBoost,Entropy,8.0,89.23,16.0,89.39,89.42941,0.507342,5.90476,0.998858
+Classifier sensitivity,5-5-5,Task A: Component,Gradient Boosting,Entropy,8.0,91.11,16.0,91.31,91.331416,0.518145,5.78165,0.998958
+Classifier sensitivity,5-5-5,Task A: Component,Random Forest,Entropy,8.0,58.23,16.0,58.29,58.376884,0.515719,5.808849,0.998779
+Classifier sensitivity,5-5-5,Task A: Component,Logistic Regression,Entropy,8.0,30.45,16.0,30.6,30.624225,0.507313,5.905092,0.998834
+Classifier sensitivity,5-5-5,Task B: Threat Type,LightGBM,Entropy,8.0,88.81,16.0,88.95,88.983284,0.50872,5.888763,0.998862
+Classifier sensitivity,5-5-5,Task B: Threat Type,XGBoost,Entropy,8.0,88.95,16.0,89.14,89.175325,0.50792,5.898035,0.998857
+Classifier sensitivity,5-5-5,Task B: Threat Type,Gradient Boosting,Entropy,8.0,87.42,16.0,87.59,87.608574,0.519799,5.763253,0.998937
+Classifier sensitivity,5-5-5,Task B: Threat Type,Random Forest,Entropy,8.0,57.41,16.0,57.42,57.495416,0.517154,5.792732,0.998608
+Classifier sensitivity,5-5-5,Task B: Threat Type,Logistic Regression,Entropy,8.0,24.18,16.0,24.32,24.343263,0.506232,5.917705,0.998867
+Classifier sensitivity,5-5-5,Task C: Joint,LightGBM,Entropy,8.0,87.94,16.0,88.14,88.175208,0.509936,5.874718,0.998924
+Classifier sensitivity,5-5-5,Task C: Joint,XGBoost,Entropy,8.0,84.87,16.0,85.03,85.070982,0.507143,5.907078,0.998832
+Classifier sensitivity,5-5-5,Task C: Joint,Gradient Boosting,Entropy,8.0,85.86,16.0,86.03,86.039389,0.519099,5.771021,0.998949
+Classifier sensitivity,5-5-5,Task C: Joint,Random Forest,Entropy,8.0,50.91,16.0,50.96,51.043589,0.516338,5.801882,0.998784
+Classifier sensitivity,5-5-5,Task C: Joint,Logistic Regression,Entropy,8.0,16.77,16.0,16.92,16.945235,0.506766,5.911476,0.998878
+Classifier sensitivity,10-10-10,Task A: Component,LightGBM,Entropy,8.0,91.63,16.0,91.68,91.71126,0.732327,4.090705,0.999224
+Classifier sensitivity,10-10-10,Task A: Component,XGBoost,Entropy,4.0,89.62,16.0,89.79,89.839936,0.744546,4.023568,0.998047
+Classifier sensitivity,10-10-10,Task A: Component,Gradient Boosting,Entropy,8.0,91.75,16.0,91.81,91.853857,0.723221,4.142206,0.998691
+Classifier sensitivity,10-10-10,Task A: Component,Random Forest,Entropy,8.0,58.74,16.0,58.79,58.82728,0.718708,4.168219,0.998583
+Classifier sensitivity,10-10-10,Task A: Component,Logistic Regression,Entropy,4.0,30.78,16.0,30.99,31.003012,0.751903,3.984201,0.99867
+Classifier sensitivity,10-10-10,Task B: Threat Type,LightGBM,Entropy,4.0,89.12,16.0,89.35,89.368841,0.734012,4.081315,0.999393
+Classifier sensitivity,10-10-10,Task B: Threat Type,XGBoost,Entropy,4.0,89.32,16.0,89.53,89.586211,0.742659,4.033793,0.9982
+Classifier sensitivity,10-10-10,Task B: Threat Type,Gradient Boosting,Entropy,8.0,88.04,16.0,88.09,88.126535,0.723204,4.142308,0.998686
+Classifier sensitivity,10-10-10,Task B: Threat Type,Random Forest,Entropy,4.0,57.75,16.0,57.92,57.940212,0.711532,4.210255,0.998512
+Classifier sensitivity,10-10-10,Task B: Threat Type,Logistic Regression,Entropy,4.0,24.51,16.0,24.71,24.719141,0.753909,3.973598,0.998658
+Classifier sensitivity,10-10-10,Task C: Joint,LightGBM,Entropy,8.0,88.47,16.0,88.53,88.560486,0.734981,4.07593,0.999198
+Classifier sensitivity,10-10-10,Task C: Joint,XGBoost,Entropy,4.0,85.26,16.0,85.43,85.479201,0.745131,4.020409,0.998107
+Classifier sensitivity,10-10-10,Task C: Joint,Gradient Boosting,Entropy,8.0,86.48,16.0,86.53,86.55677,0.71902,4.16641,0.998694
+Classifier sensitivity,10-10-10,Task C: Joint,Random Forest,Entropy,4.0,51.21,16.0,51.46,51.495342,0.718663,4.168479,0.998564
+Classifier sensitivity,10-10-10,Task C: Joint,Logistic Regression,Entropy,4.0,17.1,16.0,17.31,17.324139,0.751736,3.985086,0.998545
+Classifier sensitivity,30-30-30,Task A: Component,LightGBM,Entropy,4.0,91.93,8.0,92.0,91.988674,0.903211,3.316758,0.998174
+Classifier sensitivity,30-30-30,Task A: Component,XGBoost,Entropy,4.0,90.06,16.0,90.13,90.136284,0.867369,3.453816,0.999036
+Classifier sensitivity,30-30-30,Task A: Component,Gradient Boosting,Entropy,4.0,91.94,16.0,92.04,92.048222,0.909135,3.295145,0.999683
+Classifier sensitivity,30-30-30,Task A: Component,Random Forest,Entropy,4.0,59.06,4.0,59.06,59.064334,0.932745,3.211737,0.997524
+Classifier sensitivity,30-30-30,Task A: Component,Logistic Regression,Entropy,2.0,31.13,16.0,31.33,31.323969,0.830381,3.607659,0.99876
+Classifier sensitivity,30-30-30,Task B: Threat Type,LightGBM,Entropy,4.0,89.63,8.0,89.67,89.649436,0.906265,3.30558,0.996755
+Classifier sensitivity,30-30-30,Task B: Threat Type,XGBoost,Entropy,4.0,89.77,16.0,89.87,89.884342,0.881207,3.399577,0.998971
+Classifier sensitivity,30-30-30,Task B: Threat Type,Gradient Boosting,Entropy,4.0,88.24,16.0,88.33,88.329323,0.917449,3.265284,0.999798
+Classifier sensitivity,30-30-30,Task B: Threat Type,Random Forest,Entropy,1.0,58.04,4.0,58.23,58.180403,1.171061,2.558135,0.949533
+Classifier sensitivity,30-30-30,Task B: Threat Type,Logistic Regression,Entropy,2.0,24.86,16.0,25.05,25.042427,0.832784,3.597252,0.99902
+Classifier sensitivity,30-30-30,Task C: Joint,LightGBM,Entropy,4.0,88.78,8.0,88.85,88.843509,0.904458,3.312186,0.998391
+Classifier sensitivity,30-30-30,Task C: Joint,XGBoost,Entropy,4.0,85.7,16.0,85.77,85.772379,0.862055,3.475106,0.998967
+Classifier sensitivity,30-30-30,Task C: Joint,Gradient Boosting,Entropy,4.0,86.7,16.0,86.76,86.748331,0.932049,3.214135,0.999907
+Classifier sensitivity,30-30-30,Task C: Joint,Random Forest,Entropy,4.0,51.74,4.0,51.74,51.72569,0.953922,3.140438,0.99618
+Classifier sensitivity,30-30-30,Task C: Joint,Logistic Regression,Entropy,2.0,17.5,16.0,17.65,17.642515,0.803539,3.728174,0.998863
+Selection strategy,5-5-5,Task A: Component,LightGBM,Random,8.0,86.93,16.0,87.1,87.098987,0.503268,5.952554,0.99958
+Selection strategy,5-5-5,Task A: Component,LightGBM,Entropy,8.0,90.43,16.0,90.65,90.662599,0.510313,5.870378,0.999246
+Selection strategy,5-5-5,Task A: Component,LightGBM,Margin,8.0,90.35,16.0,90.58,90.572591,0.516152,5.803967,0.999157
+Selection strategy,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,8.0,86.81,16.0,86.98,86.987307,0.499043,6.002953,0.999085
+Selection strategy,5-5-5,Task B: Threat Type,LightGBM,Random,8.0,86.33,16.0,86.49,86.488871,0.501928,5.968447,0.99961
+Selection strategy,5-5-5,Task B: Threat Type,LightGBM,Entropy,8.0,88.06,16.0,88.24,88.248001,0.509111,5.884242,0.99925
+Selection strategy,5-5-5,Task B: Threat Type,LightGBM,Margin,8.0,86.4,16.0,86.56,86.54551,0.518523,5.777436,0.99919
+Selection strategy,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,8.0,86.29,16.0,86.45,86.458249,0.497296,6.024048,0.999116
+Selection strategy,5-5-5,Task C: Joint,LightGBM,Random,8.0,83.09,16.0,83.26,83.260058,0.502775,5.9584,0.999549
+Selection strategy,5-5-5,Task C: Joint,LightGBM,Entropy,8.0,87.12,16.0,87.36,87.369881,0.510199,5.871688,0.999218
+Selection strategy,5-5-5,Task C: Joint,LightGBM,Margin,8.0,84.4,16.0,84.6,84.586362,0.517066,5.79371,0.999151
+Selection strategy,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,8.0,84.14,16.0,84.33,84.34146,0.500799,5.981901,0.999104
+Selection strategy,10-10-10,Task A: Component,LightGBM,Random,4.0,87.54,8.0,87.77,87.789236,0.697493,4.295,0.998948
+Selection strategy,10-10-10,Task A: Component,LightGBM,Entropy,8.0,91.21,16.0,91.3,91.296083,0.72159,4.151573,0.999607
+Selection strategy,10-10-10,Task A: Component,LightGBM,Margin,8.0,91.23,16.0,91.33,91.331411,0.709197,4.22412,0.999195
+Selection strategy,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,8.0,87.55,16.0,87.63,87.605128,0.717058,4.177813,0.999035
+Selection strategy,10-10-10,Task B: Threat Type,LightGBM,Random,4.0,86.94,8.0,87.16,87.182276,0.695998,4.304227,0.999044
+Selection strategy,10-10-10,Task B: Threat Type,LightGBM,Entropy,8.0,88.81,16.0,88.89,88.873798,0.719657,4.162719,0.999774
+Selection strategy,10-10-10,Task B: Threat Type,LightGBM,Margin,8.0,87.24,16.0,87.31,87.29883,0.693632,4.318909,0.999354
+Selection strategy,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,8.0,87.02,16.0,87.1,87.073945,0.714864,4.190631,0.999007
+Selection strategy,10-10-10,Task C: Joint,LightGBM,Random,4.0,83.7,8.0,83.93,83.948365,0.700592,4.276002,0.999013
+Selection strategy,10-10-10,Task C: Joint,LightGBM,Entropy,8.0,87.9,16.0,88.0,87.99516,0.724789,4.133248,0.999565
+Selection strategy,10-10-10,Task C: Joint,LightGBM,Margin,8.0,85.26,16.0,85.35,85.338994,0.700597,4.27597,0.999224
+Selection strategy,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,8.0,84.89,16.0,84.98,84.959362,0.720116,4.160068,0.998957
+Selection strategy,30-30-30,Task A: Component,LightGBM,Random,4.0,88.08,16.0,88.23,88.210948,0.48328,6.198747,0.99748
+Selection strategy,30-30-30,Task A: Component,LightGBM,Entropy,4.0,91.58,8.0,91.7,91.678004,0.881403,3.398823,0.999057
+Selection strategy,30-30-30,Task A: Component,LightGBM,Margin,4.0,91.5,16.0,91.68,91.658628,0.868709,3.448488,0.99989
+Selection strategy,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,4.0,87.96,16.0,88.12,88.096433,0.446089,6.715546,0.994396
+Selection strategy,30-30-30,Task B: Threat Type,LightGBM,Random,4.0,87.47,16.0,87.63,87.602184,0.529218,5.660675,0.996571
+Selection strategy,30-30-30,Task B: Threat Type,LightGBM,Entropy,4.0,89.2,8.0,89.32,89.297531,0.839512,3.568421,0.999514
+Selection strategy,30-30-30,Task B: Threat Type,LightGBM,Margin,4.0,87.54,16.0,87.7,87.648295,0.70614,4.242407,0.982981
+Selection strategy,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,4.0,87.43,16.0,87.59,87.560477,0.530166,5.650554,0.99577
+Selection strategy,30-30-30,Task C: Joint,LightGBM,Random,2.0,84.15,16.0,84.39,84.397867,0.250881,11.940856,0.997403
+Selection strategy,30-30-30,Task C: Joint,LightGBM,Entropy,4.0,88.28,8.0,88.43,88.421108,0.865518,3.461202,0.99956
+Selection strategy,30-30-30,Task C: Joint,LightGBM,Margin,4.0,85.56,16.0,85.73,85.677773,0.801657,3.736923,0.996105
+Selection strategy,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,4.0,85.3,16.0,85.47,85.43397,0.673373,4.448843,0.998104

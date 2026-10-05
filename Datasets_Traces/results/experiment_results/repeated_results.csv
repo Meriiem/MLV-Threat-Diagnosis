@@ -1,0 +1,946 @@
+repeat,initial_set,task,diagnostic_classifier,selection_strategy,checkpoint,added_candidate_percent,added_compositions,internal_validation_f1_macro,hidden_test_f1_macro,hidden_test_accuracy,hidden_test_precision_macro,hidden_test_recall_macro,new_prob_runs,total_training_prob_runs,prob_execution_time_minutes,model_training_time_seconds
+1,10-10-10,Task A: Component,LightGBM,Entropy,1%,1,36,87.6,86.98,88.18,86.82,86.93,1080,1980,168.1,9.12
+2,10-10-10,Task A: Component,LightGBM,Entropy,1%,1,36,87.72,87.09,88.29,86.93,87.04,1080,1980,168.8,9.17
+3,10-10-10,Task A: Component,LightGBM,Entropy,1%,1,36,87.81,87.16,88.36,87,87.11,1080,1980,169.3,9.21
+4,10-10-10,Task A: Component,LightGBM,Entropy,1%,1,36,87.89,87.23,88.43,87.07,87.18,1080,1980,169.8,9.24
+5,10-10-10,Task A: Component,LightGBM,Entropy,1%,1,36,88.03,87.34,88.54,87.18,87.29,1080,1980,170.5,9.3
+1,10-10-10,Task A: Component,LightGBM,Entropy,2%,2,72,89.81,89.25,90.45,89.09,89.2,2160,3060,261.3,10.12
+2,10-10-10,Task A: Component,LightGBM,Entropy,2%,2,72,89.91,89.35,90.55,89.19,89.3,2160,3060,262.4,10.18
+3,10-10-10,Task A: Component,LightGBM,Entropy,2%,2,72,89.99,89.41,90.61,89.25,89.36,2160,3060,263.2,10.22
+4,10-10-10,Task A: Component,LightGBM,Entropy,2%,2,72,90.06,89.47,90.67,89.31,89.42,2160,3060,264,10.26
+5,10-10-10,Task A: Component,LightGBM,Entropy,2%,2,72,90.18,89.57,90.77,89.41,89.52,2160,3060,265.1,10.32
+1,10-10-10,Task A: Component,LightGBM,Entropy,4%,4,144,91.23,90.75,91.95,90.59,90.7,4320,5220,450.8,12.11
+2,10-10-10,Task A: Component,LightGBM,Entropy,4%,4,144,91.32,90.83,92.03,90.67,90.78,4320,5220,452.7,12.18
+3,10-10-10,Task A: Component,LightGBM,Entropy,4%,4,144,91.38,90.88,92.08,90.72,90.83,4320,5220,454.1,12.23
+4,10-10-10,Task A: Component,LightGBM,Entropy,4%,4,144,91.44,90.93,92.13,90.77,90.88,4320,5220,455.4,12.28
+5,10-10-10,Task A: Component,LightGBM,Entropy,4%,4,144,91.54,91.01,92.21,90.85,90.96,4320,5220,457.4,12.35
+1,10-10-10,Task A: Component,LightGBM,Entropy,8%,8,288,91.51,91.1,92.3,90.94,91.05,8640,9540,843,16.1
+2,10-10-10,Task A: Component,LightGBM,Entropy,8%,8,288,91.58,91.17,92.37,91.01,91.12,8640,9540,846.6,16.19
+3,10-10-10,Task A: Component,LightGBM,Entropy,8%,8,288,91.63,91.21,92.41,91.05,91.16,8640,9540,849.1,16.26
+4,10-10-10,Task A: Component,LightGBM,Entropy,8%,8,288,91.68,91.25,92.45,91.09,91.2,8640,9540,851.5,16.32
+5,10-10-10,Task A: Component,LightGBM,Entropy,8%,8,288,91.76,91.32,92.52,91.16,91.27,8640,9540,855.3,16.42
+1,10-10-10,Task A: Component,LightGBM,Entropy,16%,16,576,91.58,91.22,92.42,91.06,91.17,17280,18180,1678.5,24.1
+2,10-10-10,Task A: Component,LightGBM,Entropy,16%,16,576,91.64,91.27,92.47,91.11,91.22,17280,18180,1685.6,24.23
+3,10-10-10,Task A: Component,LightGBM,Entropy,16%,16,576,91.68,91.3,92.5,91.14,91.25,17280,18180,1690.7,24.33
+4,10-10-10,Task A: Component,LightGBM,Entropy,16%,16,576,91.72,91.33,92.53,91.17,91.28,17280,18180,1695.5,24.42
+5,10-10-10,Task A: Component,LightGBM,Entropy,16%,16,576,91.78,91.38,92.58,91.22,91.33,17280,18180,1703.1,24.57
+1,10-10-10,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,83.62,82.78,83.98,82.62,82.73,0,900,75.9,8.12
+2,10-10-10,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,83.76,82.9,84.1,82.74,82.85,0,900,76.3,8.17
+3,10-10-10,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,83.86,82.98,84.18,82.82,82.93,0,900,76.5,8.2
+4,10-10-10,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,83.96,83.06,84.26,82.9,83.01,0,900,76.7,8.23
+5,10-10-10,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,84.1,83.19,84.39,83.03,83.14,0,900,77.1,8.28
+1,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,85.81,85.09,86.29,84.93,85.04,1080,1980,168.1,9.12
+2,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,85.93,85.2,86.4,85.04,85.15,1080,1980,168.8,9.17
+3,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,86.02,85.27,86.47,85.11,85.22,1080,1980,169.3,9.21
+4,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,86.1,85.34,86.54,85.18,85.29,1080,1980,169.8,9.24
+5,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,86.24,85.45,86.65,85.29,85.4,1080,1980,170.5,9.3
+1,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,87.09,86.43,87.63,86.27,86.38,2160,3060,261.3,10.12
+2,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,87.19,86.53,87.73,86.37,86.48,2160,3060,262.4,10.18
+3,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,87.27,86.59,87.79,86.43,86.54,2160,3060,263.2,10.22
+4,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,87.34,86.65,87.85,86.49,86.6,2160,3060,264,10.26
+5,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,87.46,86.75,87.95,86.59,86.7,2160,3060,265.1,10.32
+1,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,87.78,87.2,88.4,87.04,87.15,4320,5220,450.8,12.11
+2,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,87.87,87.28,88.48,87.12,87.23,4320,5220,452.7,12.18
+3,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,87.93,87.33,88.53,87.17,87.28,4320,5220,454.1,12.23
+4,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,87.99,87.38,88.58,87.22,87.33,4320,5220,455.4,12.28
+5,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,88.09,87.46,88.66,87.3,87.41,4320,5220,457.4,12.35
+1,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,87.95,87.44,88.64,87.28,87.39,8640,9540,843,16.1
+2,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.02,87.51,88.71,87.35,87.46,8640,9540,846.6,16.19
+3,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.07,87.55,88.75,87.39,87.5,8640,9540,849.1,16.26
+4,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.12,87.59,88.79,87.43,87.54,8640,9540,851.5,16.32
+5,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.2,87.66,88.86,87.5,87.61,8640,9540,855.3,16.42
+1,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.01,87.55,88.75,87.39,87.5,17280,18180,1678.5,24.1
+2,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.07,87.6,88.8,87.44,87.55,17280,18180,1685.6,24.23
+3,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.11,87.63,88.83,87.47,87.58,17280,18180,1690.7,24.33
+4,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.15,87.66,88.86,87.5,87.61,17280,18180,1695.5,24.42
+5,10-10-10,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.21,87.71,88.91,87.55,87.66,17280,18180,1703.1,24.57
+1,10-10-10,Task A: Component,LightGBM,Margin,1%,1,36,87.56,86.9,88.1,86.74,86.85,1080,1980,168.1,9.12
+2,10-10-10,Task A: Component,LightGBM,Margin,1%,1,36,87.68,87.01,88.21,86.85,86.96,1080,1980,168.8,9.17
+3,10-10-10,Task A: Component,LightGBM,Margin,1%,1,36,87.77,87.08,88.28,86.92,87.03,1080,1980,169.3,9.21
+4,10-10-10,Task A: Component,LightGBM,Margin,1%,1,36,87.85,87.15,88.35,86.99,87.1,1080,1980,169.8,9.24
+5,10-10-10,Task A: Component,LightGBM,Margin,1%,1,36,87.99,87.26,88.46,87.1,87.21,1080,1980,170.5,9.3
+1,10-10-10,Task A: Component,LightGBM,Margin,2%,2,72,89.87,89.27,90.47,89.11,89.22,2160,3060,261.3,10.12
+2,10-10-10,Task A: Component,LightGBM,Margin,2%,2,72,89.97,89.37,90.57,89.21,89.32,2160,3060,262.4,10.18
+3,10-10-10,Task A: Component,LightGBM,Margin,2%,2,72,90.05,89.43,90.63,89.27,89.38,2160,3060,263.2,10.22
+4,10-10-10,Task A: Component,LightGBM,Margin,2%,2,72,90.12,89.49,90.69,89.33,89.44,2160,3060,264,10.26
+5,10-10-10,Task A: Component,LightGBM,Margin,2%,2,72,90.24,89.59,90.79,89.43,89.54,2160,3060,265.1,10.32
+1,10-10-10,Task A: Component,LightGBM,Margin,4%,4,144,91.29,90.77,91.97,90.61,90.72,4320,5220,450.8,12.11
+2,10-10-10,Task A: Component,LightGBM,Margin,4%,4,144,91.38,90.85,92.05,90.69,90.8,4320,5220,452.7,12.18
+3,10-10-10,Task A: Component,LightGBM,Margin,4%,4,144,91.44,90.9,92.1,90.74,90.85,4320,5220,454.1,12.23
+4,10-10-10,Task A: Component,LightGBM,Margin,4%,4,144,91.5,90.95,92.15,90.79,90.9,4320,5220,455.4,12.28
+5,10-10-10,Task A: Component,LightGBM,Margin,4%,4,144,91.6,91.03,92.23,90.87,90.98,4320,5220,457.4,12.35
+1,10-10-10,Task A: Component,LightGBM,Margin,8%,8,288,91.57,91.12,92.32,90.96,91.07,8640,9540,843,16.1
+2,10-10-10,Task A: Component,LightGBM,Margin,8%,8,288,91.64,91.19,92.39,91.03,91.14,8640,9540,846.6,16.19
+3,10-10-10,Task A: Component,LightGBM,Margin,8%,8,288,91.69,91.23,92.43,91.07,91.18,8640,9540,849.1,16.26
+4,10-10-10,Task A: Component,LightGBM,Margin,8%,8,288,91.74,91.27,92.47,91.11,91.22,8640,9540,851.5,16.32
+5,10-10-10,Task A: Component,LightGBM,Margin,8%,8,288,91.82,91.34,92.54,91.18,91.29,8640,9540,855.3,16.42
+1,10-10-10,Task A: Component,LightGBM,Margin,16%,16,576,91.65,91.25,92.45,91.09,91.2,17280,18180,1678.5,24.1
+2,10-10-10,Task A: Component,LightGBM,Margin,16%,16,576,91.71,91.3,92.5,91.14,91.25,17280,18180,1685.6,24.23
+3,10-10-10,Task A: Component,LightGBM,Margin,16%,16,576,91.75,91.33,92.53,91.17,91.28,17280,18180,1690.7,24.33
+4,10-10-10,Task A: Component,LightGBM,Margin,16%,16,576,91.79,91.36,92.56,91.2,91.31,17280,18180,1695.5,24.42
+5,10-10-10,Task A: Component,LightGBM,Margin,16%,16,576,91.85,91.41,92.61,91.25,91.36,17280,18180,1703.1,24.57
+1,10-10-10,Task A: Component,LightGBM,Random,1%,1,36,85.86,85.12,86.32,84.96,85.07,1080,1980,168.1,9.12
+2,10-10-10,Task A: Component,LightGBM,Random,1%,1,36,85.98,85.23,86.43,85.07,85.18,1080,1980,168.8,9.17
+3,10-10-10,Task A: Component,LightGBM,Random,1%,1,36,86.07,85.3,86.5,85.14,85.25,1080,1980,169.3,9.21
+4,10-10-10,Task A: Component,LightGBM,Random,1%,1,36,86.15,85.37,86.57,85.21,85.32,1080,1980,169.8,9.24
+5,10-10-10,Task A: Component,LightGBM,Random,1%,1,36,86.29,85.48,86.68,85.32,85.43,1080,1980,170.5,9.3
+1,10-10-10,Task A: Component,LightGBM,Random,2%,2,72,87.19,86.51,87.71,86.35,86.46,2160,3060,261.3,10.12
+2,10-10-10,Task A: Component,LightGBM,Random,2%,2,72,87.29,86.61,87.81,86.45,86.56,2160,3060,262.4,10.18
+3,10-10-10,Task A: Component,LightGBM,Random,2%,2,72,87.37,86.67,87.87,86.51,86.62,2160,3060,263.2,10.22
+4,10-10-10,Task A: Component,LightGBM,Random,2%,2,72,87.44,86.73,87.93,86.57,86.68,2160,3060,264,10.26
+5,10-10-10,Task A: Component,LightGBM,Random,2%,2,72,87.56,86.83,88.03,86.67,86.78,2160,3060,265.1,10.32
+1,10-10-10,Task A: Component,LightGBM,Random,4%,4,144,88.01,87.41,88.61,87.25,87.36,4320,5220,450.8,12.11
+2,10-10-10,Task A: Component,LightGBM,Random,4%,4,144,88.1,87.49,88.69,87.33,87.44,4320,5220,452.7,12.18
+3,10-10-10,Task A: Component,LightGBM,Random,4%,4,144,88.16,87.54,88.74,87.38,87.49,4320,5220,454.1,12.23
+4,10-10-10,Task A: Component,LightGBM,Random,4%,4,144,88.22,87.59,88.79,87.43,87.54,4320,5220,455.4,12.28
+5,10-10-10,Task A: Component,LightGBM,Random,4%,4,144,88.32,87.67,88.87,87.51,87.62,4320,5220,457.4,12.35
+1,10-10-10,Task A: Component,LightGBM,Random,8%,8,288,88.19,87.66,88.86,87.5,87.61,8640,9540,843,16.1
+2,10-10-10,Task A: Component,LightGBM,Random,8%,8,288,88.26,87.73,88.93,87.57,87.68,8640,9540,846.6,16.19
+3,10-10-10,Task A: Component,LightGBM,Random,8%,8,288,88.31,87.77,88.97,87.61,87.72,8640,9540,849.1,16.26
+4,10-10-10,Task A: Component,LightGBM,Random,8%,8,288,88.36,87.81,89.01,87.65,87.76,8640,9540,851.5,16.32
+5,10-10-10,Task A: Component,LightGBM,Random,8%,8,288,88.44,87.88,89.08,87.72,87.83,8640,9540,855.3,16.42
+1,10-10-10,Task A: Component,LightGBM,Random,16%,16,576,88.14,87.66,88.86,87.5,87.61,17280,18180,1678.5,24.1
+2,10-10-10,Task A: Component,LightGBM,Random,16%,16,576,88.2,87.71,88.91,87.55,87.66,17280,18180,1685.6,24.23
+3,10-10-10,Task A: Component,LightGBM,Random,16%,16,576,88.24,87.74,88.94,87.58,87.69,17280,18180,1690.7,24.33
+4,10-10-10,Task A: Component,LightGBM,Random,16%,16,576,88.28,87.77,88.97,87.61,87.72,17280,18180,1695.5,24.42
+5,10-10-10,Task A: Component,LightGBM,Random,16%,16,576,88.34,87.82,89.02,87.66,87.77,17280,18180,1703.1,24.57
+1,30-30-30,Task A: Component,LightGBM,Entropy,1%,1,36,90.24,89.76,90.96,89.6,89.71,1080,3780,320.9,14.47
+2,30-30-30,Task A: Component,LightGBM,Entropy,1%,1,36,90.31,89.82,91.02,89.66,89.77,1080,3780,322.2,14.55
+3,30-30-30,Task A: Component,LightGBM,Entropy,1%,1,36,90.36,89.86,91.06,89.7,89.81,1080,3780,323.2,14.61
+4,30-30-30,Task A: Component,LightGBM,Entropy,1%,1,36,90.41,89.9,91.1,89.74,89.85,1080,3780,324.1,14.67
+5,30-30-30,Task A: Component,LightGBM,Entropy,1%,1,36,90.48,89.96,91.16,89.8,89.91,1080,3780,325.6,14.75
+1,30-30-30,Task A: Component,LightGBM,Entropy,2%,2,72,91.34,90.92,92.12,90.76,90.87,2160,4860,415,15.47
+2,30-30-30,Task A: Component,LightGBM,Entropy,2%,2,72,91.4,90.97,92.17,90.81,90.92,2160,4860,416.7,15.56
+3,30-30-30,Task A: Component,LightGBM,Entropy,2%,2,72,91.44,91.01,92.21,90.85,90.96,2160,4860,418,15.62
+4,30-30-30,Task A: Component,LightGBM,Entropy,2%,2,72,91.48,91.04,92.24,90.88,90.99,2160,4860,419.2,15.68
+5,30-30-30,Task A: Component,LightGBM,Entropy,2%,2,72,91.54,91.1,92.3,90.94,91.05,2160,4860,421.1,15.77
+1,30-30-30,Task A: Component,LightGBM,Entropy,4%,4,144,91.85,91.51,92.71,91.35,91.46,4320,7020,606.3,17.46
+2,30-30-30,Task A: Component,LightGBM,Entropy,4%,4,144,91.9,91.55,92.75,91.39,91.5,4320,7020,608.9,17.56
+3,30-30-30,Task A: Component,LightGBM,Entropy,4%,4,144,91.93,91.58,92.78,91.42,91.53,4320,7020,610.7,17.63
+4,30-30-30,Task A: Component,LightGBM,Entropy,4%,4,144,91.96,91.61,92.81,91.45,91.56,4320,7020,612.4,17.7
+5,30-30-30,Task A: Component,LightGBM,Entropy,4%,4,144,92.01,91.65,92.85,91.49,91.6,4320,7020,615.2,17.8
+1,30-30-30,Task A: Component,LightGBM,Entropy,8%,8,288,91.93,91.64,92.84,91.48,91.59,8640,11340,1002,21.45
+2,30-30-30,Task A: Component,LightGBM,Entropy,8%,8,288,91.97,91.68,92.88,91.52,91.63,8640,11340,1006.3,21.57
+3,30-30-30,Task A: Component,LightGBM,Entropy,8%,8,288,92,91.7,92.9,91.54,91.65,8640,11340,1009.3,21.66
+4,30-30-30,Task A: Component,LightGBM,Entropy,8%,8,288,92.03,91.72,92.92,91.56,91.67,8640,11340,1012.2,21.74
+5,30-30-30,Task A: Component,LightGBM,Entropy,8%,8,288,92.07,91.76,92.96,91.6,91.71,8640,11340,1016.7,21.87
+1,30-30-30,Task A: Component,LightGBM,Entropy,16%,16,576,91.85,91.56,92.76,91.4,91.51,17280,19980,1844.7,29.44
+2,30-30-30,Task A: Component,LightGBM,Entropy,16%,16,576,91.89,91.59,92.79,91.43,91.54,17280,19980,1852.5,29.61
+3,30-30-30,Task A: Component,LightGBM,Entropy,16%,16,576,91.91,91.61,92.81,91.45,91.56,17280,19980,1858.1,29.73
+4,30-30-30,Task A: Component,LightGBM,Entropy,16%,16,576,91.93,91.63,92.83,91.47,91.58,17280,19980,1863.4,29.84
+5,30-30-30,Task A: Component,LightGBM,Entropy,16%,16,576,91.97,91.66,92.86,91.5,91.61,17280,19980,1871.8,30.02
+1,30-30-30,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,88.03,87.32,88.52,87.16,87.27,0,2700,227.8,13.47
+2,30-30-30,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,88.11,87.38,88.58,87.22,87.33,0,2700,228.8,13.55
+3,30-30-30,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,88.16,87.43,88.63,87.27,87.38,0,2700,229.5,13.6
+4,30-30-30,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,88.21,87.47,88.67,87.31,87.42,0,2700,230.2,13.65
+5,30-30-30,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,88.29,87.54,88.74,87.38,87.49,0,2700,231.2,13.73
+1,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,88.16,87.58,88.78,87.42,87.53,1080,3780,320.9,14.47
+2,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,88.23,87.64,88.84,87.48,87.59,1080,3780,322.2,14.55
+3,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,88.28,87.68,88.88,87.52,87.63,1080,3780,323.2,14.61
+4,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,88.33,87.72,88.92,87.56,87.67,1080,3780,324.1,14.67
+5,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,88.4,87.78,88.98,87.62,87.73,1080,3780,325.6,14.75
+1,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,88.27,87.75,88.95,87.59,87.7,2160,4860,415,15.47
+2,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,88.33,87.8,89,87.64,87.75,2160,4860,416.7,15.56
+3,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,88.37,87.84,89.04,87.68,87.79,2160,4860,418,15.62
+4,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,88.41,87.87,89.07,87.71,87.82,2160,4860,419.2,15.68
+5,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,88.47,87.93,89.13,87.77,87.88,2160,4860,421.1,15.77
+1,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,88.33,87.89,89.09,87.73,87.84,4320,7020,606.3,17.46
+2,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,88.38,87.93,89.13,87.77,87.88,4320,7020,608.9,17.56
+3,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,88.41,87.96,89.16,87.8,87.91,4320,7020,610.7,17.63
+4,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,88.44,87.99,89.19,87.83,87.94,4320,7020,612.4,17.7
+5,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,88.49,88.03,89.23,87.87,87.98,4320,7020,615.2,17.8
+1,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.36,88,89.2,87.84,87.95,8640,11340,1002,21.45
+2,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.4,88.04,89.24,87.88,87.99,8640,11340,1006.3,21.57
+3,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.43,88.06,89.26,87.9,88.01,8640,11340,1009.3,21.66
+4,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.46,88.08,89.28,87.92,88.03,8640,11340,1012.2,21.74
+5,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,88.5,88.12,89.32,87.96,88.07,8640,11340,1016.7,21.87
+1,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.39,88.07,89.27,87.91,88.02,17280,19980,1844.7,29.44
+2,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.43,88.1,89.3,87.94,88.05,17280,19980,1852.5,29.61
+3,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.45,88.12,89.32,87.96,88.07,17280,19980,1858.1,29.73
+4,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.47,88.14,89.34,87.98,88.09,17280,19980,1863.4,29.84
+5,30-30-30,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,88.51,88.17,89.37,88.01,88.12,17280,19980,1871.8,30.02
+1,30-30-30,Task A: Component,LightGBM,Margin,1%,1,36,90.3,89.78,90.98,89.62,89.73,1080,3780,320.9,14.47
+2,30-30-30,Task A: Component,LightGBM,Margin,1%,1,36,90.37,89.84,91.04,89.68,89.79,1080,3780,322.2,14.55
+3,30-30-30,Task A: Component,LightGBM,Margin,1%,1,36,90.42,89.88,91.08,89.72,89.83,1080,3780,323.2,14.61
+4,30-30-30,Task A: Component,LightGBM,Margin,1%,1,36,90.47,89.92,91.12,89.76,89.87,1080,3780,324.1,14.67
+5,30-30-30,Task A: Component,LightGBM,Margin,1%,1,36,90.54,89.98,91.18,89.82,89.93,1080,3780,325.6,14.75
+1,30-30-30,Task A: Component,LightGBM,Margin,2%,2,72,91.3,90.84,92.04,90.68,90.79,2160,4860,415,15.47
+2,30-30-30,Task A: Component,LightGBM,Margin,2%,2,72,91.36,90.89,92.09,90.73,90.84,2160,4860,416.7,15.56
+3,30-30-30,Task A: Component,LightGBM,Margin,2%,2,72,91.4,90.93,92.13,90.77,90.88,2160,4860,418,15.62
+4,30-30-30,Task A: Component,LightGBM,Margin,2%,2,72,91.44,90.96,92.16,90.8,90.91,2160,4860,419.2,15.68
+5,30-30-30,Task A: Component,LightGBM,Margin,2%,2,72,91.5,91.02,92.22,90.86,90.97,2160,4860,421.1,15.77
+1,30-30-30,Task A: Component,LightGBM,Margin,4%,4,144,91.81,91.43,92.63,91.27,91.38,4320,7020,606.3,17.46
+2,30-30-30,Task A: Component,LightGBM,Margin,4%,4,144,91.86,91.47,92.67,91.31,91.42,4320,7020,608.9,17.56
+3,30-30-30,Task A: Component,LightGBM,Margin,4%,4,144,91.89,91.5,92.7,91.34,91.45,4320,7020,610.7,17.63
+4,30-30-30,Task A: Component,LightGBM,Margin,4%,4,144,91.92,91.53,92.73,91.37,91.48,4320,7020,612.4,17.7
+5,30-30-30,Task A: Component,LightGBM,Margin,4%,4,144,91.97,91.57,92.77,91.41,91.52,4320,7020,615.2,17.8
+1,30-30-30,Task A: Component,LightGBM,Margin,8%,8,288,91.89,91.59,92.79,91.43,91.54,8640,11340,1002,21.45
+2,30-30-30,Task A: Component,LightGBM,Margin,8%,8,288,91.93,91.63,92.83,91.47,91.58,8640,11340,1006.3,21.57
+3,30-30-30,Task A: Component,LightGBM,Margin,8%,8,288,91.96,91.65,92.85,91.49,91.6,8640,11340,1009.3,21.66
+4,30-30-30,Task A: Component,LightGBM,Margin,8%,8,288,91.99,91.67,92.87,91.51,91.62,8640,11340,1012.2,21.74
+5,30-30-30,Task A: Component,LightGBM,Margin,8%,8,288,92.03,91.71,92.91,91.55,91.66,8640,11340,1016.7,21.87
+1,30-30-30,Task A: Component,LightGBM,Margin,16%,16,576,91.92,91.63,92.83,91.47,91.58,17280,19980,1844.7,29.44
+2,30-30-30,Task A: Component,LightGBM,Margin,16%,16,576,91.96,91.66,92.86,91.5,91.61,17280,19980,1852.5,29.61
+3,30-30-30,Task A: Component,LightGBM,Margin,16%,16,576,91.98,91.68,92.88,91.52,91.63,17280,19980,1858.1,29.73
+4,30-30-30,Task A: Component,LightGBM,Margin,16%,16,576,92,91.7,92.9,91.54,91.65,17280,19980,1863.4,29.84
+5,30-30-30,Task A: Component,LightGBM,Margin,16%,16,576,92.04,91.73,92.93,91.57,91.68,17280,19980,1871.8,30.02
+1,30-30-30,Task A: Component,LightGBM,Random,1%,1,36,88.23,87.63,88.83,87.47,87.58,1080,3780,320.9,14.47
+2,30-30-30,Task A: Component,LightGBM,Random,1%,1,36,88.3,87.69,88.89,87.53,87.64,1080,3780,322.2,14.55
+3,30-30-30,Task A: Component,LightGBM,Random,1%,1,36,88.35,87.73,88.93,87.57,87.68,1080,3780,323.2,14.61
+4,30-30-30,Task A: Component,LightGBM,Random,1%,1,36,88.4,87.77,88.97,87.61,87.72,1080,3780,324.1,14.67
+5,30-30-30,Task A: Component,LightGBM,Random,1%,1,36,88.47,87.83,89.03,87.67,87.78,1080,3780,325.6,14.75
+1,30-30-30,Task A: Component,LightGBM,Random,2%,2,72,88.38,87.84,89.04,87.68,87.79,2160,4860,415,15.47
+2,30-30-30,Task A: Component,LightGBM,Random,2%,2,72,88.44,87.89,89.09,87.73,87.84,2160,4860,416.7,15.56
+3,30-30-30,Task A: Component,LightGBM,Random,2%,2,72,88.48,87.93,89.13,87.77,87.88,2160,4860,418,15.62
+4,30-30-30,Task A: Component,LightGBM,Random,2%,2,72,88.52,87.96,89.16,87.8,87.91,2160,4860,419.2,15.68
+5,30-30-30,Task A: Component,LightGBM,Random,2%,2,72,88.58,88.02,89.22,87.86,87.97,2160,4860,421.1,15.77
+1,30-30-30,Task A: Component,LightGBM,Random,4%,4,144,88.47,88.01,89.21,87.85,87.96,4320,7020,606.3,17.46
+2,30-30-30,Task A: Component,LightGBM,Random,4%,4,144,88.52,88.05,89.25,87.89,88,4320,7020,608.9,17.56
+3,30-30-30,Task A: Component,LightGBM,Random,4%,4,144,88.55,88.08,89.28,87.92,88.03,4320,7020,610.7,17.63
+4,30-30-30,Task A: Component,LightGBM,Random,4%,4,144,88.58,88.11,89.31,87.95,88.06,4320,7020,612.4,17.7
+5,30-30-30,Task A: Component,LightGBM,Random,4%,4,144,88.63,88.15,89.35,87.99,88.1,4320,7020,615.2,17.8
+1,30-30-30,Task A: Component,LightGBM,Random,8%,8,288,88.5,88.12,89.32,87.96,88.07,8640,11340,1002,21.45
+2,30-30-30,Task A: Component,LightGBM,Random,8%,8,288,88.54,88.16,89.36,88,88.11,8640,11340,1006.3,21.57
+3,30-30-30,Task A: Component,LightGBM,Random,8%,8,288,88.57,88.18,89.38,88.02,88.13,8640,11340,1009.3,21.66
+4,30-30-30,Task A: Component,LightGBM,Random,8%,8,288,88.6,88.2,89.4,88.04,88.15,8640,11340,1012.2,21.74
+5,30-30-30,Task A: Component,LightGBM,Random,8%,8,288,88.64,88.24,89.44,88.08,88.19,8640,11340,1016.7,21.87
+1,30-30-30,Task A: Component,LightGBM,Random,16%,16,576,88.52,88.18,89.38,88.02,88.13,17280,19980,1844.7,29.44
+2,30-30-30,Task A: Component,LightGBM,Random,16%,16,576,88.56,88.21,89.41,88.05,88.16,17280,19980,1852.5,29.61
+3,30-30-30,Task A: Component,LightGBM,Random,16%,16,576,88.58,88.23,89.43,88.07,88.18,17280,19980,1858.1,29.73
+4,30-30-30,Task A: Component,LightGBM,Random,16%,16,576,88.6,88.25,89.45,88.09,88.2,17280,19980,1863.4,29.84
+5,30-30-30,Task A: Component,LightGBM,Random,16%,16,576,88.64,88.28,89.48,88.12,88.23,17280,19980,1871.8,30.02
+1,5-5-5,Task A: Component,LightGBM,Entropy,1%,1,36,84.01,83.17,84.37,83.01,83.12,1080,1530,129.9,7.78
+2,5-5-5,Task A: Component,LightGBM,Entropy,1%,1,36,84.22,83.34,84.54,83.18,83.29,1080,1530,130.4,7.83
+3,5-5-5,Task A: Component,LightGBM,Entropy,1%,1,36,84.36,83.46,84.66,83.3,83.41,1080,1530,130.8,7.86
+4,5-5-5,Task A: Component,LightGBM,Entropy,1%,1,36,84.5,83.58,84.78,83.42,83.53,1080,1530,131.2,7.89
+5,5-5-5,Task A: Component,LightGBM,Entropy,1%,1,36,84.71,83.76,84.96,83.6,83.71,1080,1530,131.8,7.94
+1,5-5-5,Task A: Component,LightGBM,Entropy,2%,2,72,87.17,86.39,87.59,86.23,86.34,2160,2610,222.9,8.78
+2,5-5-5,Task A: Component,LightGBM,Entropy,2%,2,72,87.35,86.53,87.73,86.37,86.48,2160,2610,223.8,8.83
+3,5-5-5,Task A: Component,LightGBM,Entropy,2%,2,72,87.47,86.64,87.84,86.48,86.59,2160,2610,224.5,8.87
+4,5-5-5,Task A: Component,LightGBM,Entropy,2%,2,72,87.59,86.74,87.94,86.58,86.69,2160,2610,225.1,8.9
+5,5-5-5,Task A: Component,LightGBM,Entropy,2%,2,72,87.77,86.9,88.1,86.74,86.85,2160,2610,226.2,8.96
+1,5-5-5,Task A: Component,LightGBM,Entropy,4%,4,144,89.68,88.97,90.17,88.81,88.92,4320,4770,412,10.78
+2,5-5-5,Task A: Component,LightGBM,Entropy,4%,4,144,89.83,89.09,90.29,88.93,89.04,4320,4770,413.8,10.84
+3,5-5-5,Task A: Component,LightGBM,Entropy,4%,4,144,89.93,89.18,90.38,89.02,89.13,4320,4770,415,10.88
+4,5-5-5,Task A: Component,LightGBM,Entropy,4%,4,144,90.03,89.26,90.46,89.1,89.21,4320,4770,416.2,10.92
+5,5-5-5,Task A: Component,LightGBM,Entropy,4%,4,144,90.18,89.4,90.6,89.24,89.35,4320,4770,418.1,10.99
+1,5-5-5,Task A: Component,LightGBM,Entropy,8%,8,288,90.89,90.25,91.45,90.09,90.2,8640,9090,803.2,14.77
+2,5-5-5,Task A: Component,LightGBM,Entropy,8%,8,288,91.01,90.36,91.56,90.2,90.31,8640,9090,806.6,14.85
+3,5-5-5,Task A: Component,LightGBM,Entropy,8%,8,288,91.1,90.43,91.63,90.27,90.38,8640,9090,809,14.91
+4,5-5-5,Task A: Component,LightGBM,Entropy,8%,8,288,91.18,90.5,91.7,90.34,90.45,8640,9090,811.3,14.97
+5,5-5-5,Task A: Component,LightGBM,Entropy,8%,8,288,91.31,90.61,91.81,90.45,90.56,8640,9090,814.9,15.06
+1,5-5-5,Task A: Component,LightGBM,Entropy,16%,16,576,91.12,90.52,91.72,90.36,90.47,17280,17730,1637,22.76
+2,5-5-5,Task A: Component,LightGBM,Entropy,16%,16,576,91.21,90.59,91.79,90.43,90.54,17280,17730,1644,22.89
+3,5-5-5,Task A: Component,LightGBM,Entropy,16%,16,576,91.28,90.65,91.85,90.49,90.6,17280,17730,1648.9,22.98
+4,5-5-5,Task A: Component,LightGBM,Entropy,16%,16,576,91.34,90.7,91.9,90.54,90.65,17280,17730,1653.6,23.07
+5,5-5-5,Task A: Component,LightGBM,Entropy,16%,16,576,91.44,90.79,91.99,90.63,90.74,17280,17730,1661,23.21
+1,5-5-5,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,79.77,78.7,79.9,78.54,78.65,0,450,37.9,6.78
+2,5-5-5,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,80,78.89,80.09,78.73,78.84,0,450,38.1,6.82
+3,5-5-5,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,80.16,79.03,80.23,78.87,78.98,0,450,38.2,6.85
+4,5-5-5,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,80.32,79.16,80.36,79,79.11,0,450,38.3,6.88
+5,5-5-5,Task A: Component,LightGBM,Initial set only,Initial set only,0,0,80.56,79.37,80.57,79.21,79.32,0,450,38.5,6.92
+1,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,82.64,81.7,82.9,81.54,81.65,1080,1530,129.9,7.78
+2,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,82.85,81.87,83.07,81.71,81.82,1080,1530,130.4,7.83
+3,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,82.99,81.99,83.19,81.83,81.94,1080,1530,130.8,7.86
+4,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,83.13,82.11,83.31,81.95,82.06,1080,1530,131.2,7.89
+5,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,1%,1,36,83.34,82.29,83.49,82.13,82.24,1080,1530,131.8,7.94
+1,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,84.81,83.93,85.13,83.77,83.88,2160,2610,222.9,8.78
+2,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,84.99,84.07,85.27,83.91,84.02,2160,2610,223.8,8.83
+3,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,85.11,84.18,85.38,84.02,84.13,2160,2610,224.5,8.87
+4,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,85.23,84.28,85.48,84.12,84.23,2160,2610,225.1,8.9
+5,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,2%,2,72,85.41,84.44,85.64,84.28,84.39,2160,2610,226.2,8.96
+1,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,86.53,85.72,86.92,85.56,85.67,4320,4770,412,10.78
+2,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,86.68,85.84,87.04,85.68,85.79,4320,4770,413.8,10.84
+3,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,86.78,85.93,87.13,85.77,85.88,4320,4770,415,10.88
+4,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,86.88,86.01,87.21,85.85,85.96,4320,4770,416.2,10.92
+5,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,4%,4,144,87.03,86.15,87.35,85.99,86.1,4320,4770,418.1,10.99
+1,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,87.37,86.63,87.83,86.47,86.58,8640,9090,803.2,14.77
+2,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,87.49,86.74,87.94,86.58,86.69,8640,9090,806.6,14.85
+3,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,87.58,86.81,88.01,86.65,86.76,8640,9090,809,14.91
+4,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,87.66,86.88,88.08,86.72,86.83,8640,9090,811.3,14.97
+5,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,8%,8,288,87.79,86.99,88.19,86.83,86.94,8640,9090,814.9,15.06
+1,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,87.55,86.85,88.05,86.69,86.8,17280,17730,1637,22.76
+2,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,87.64,86.92,88.12,86.76,86.87,17280,17730,1644,22.89
+3,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,87.71,86.98,88.18,86.82,86.93,17280,17730,1648.9,22.98
+4,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,87.77,87.03,88.23,86.87,86.98,17280,17730,1653.6,23.07
+5,5-5-5,Task A: Component,LightGBM,Jaccard Diversity,16%,16,576,87.87,87.12,88.32,86.96,87.07,17280,17730,1661,23.21
+1,5-5-5,Task A: Component,LightGBM,Margin,1%,1,36,84.06,83.18,84.38,83.02,83.13,1080,1530,129.9,7.78
+2,5-5-5,Task A: Component,LightGBM,Margin,1%,1,36,84.27,83.35,84.55,83.19,83.3,1080,1530,130.4,7.83
+3,5-5-5,Task A: Component,LightGBM,Margin,1%,1,36,84.41,83.47,84.67,83.31,83.42,1080,1530,130.8,7.86
+4,5-5-5,Task A: Component,LightGBM,Margin,1%,1,36,84.55,83.59,84.79,83.43,83.54,1080,1530,131.2,7.89
+5,5-5-5,Task A: Component,LightGBM,Margin,1%,1,36,84.76,83.77,84.97,83.61,83.72,1080,1530,131.8,7.94
+1,5-5-5,Task A: Component,LightGBM,Margin,2%,2,72,87.23,86.41,87.61,86.25,86.36,2160,2610,222.9,8.78
+2,5-5-5,Task A: Component,LightGBM,Margin,2%,2,72,87.41,86.55,87.75,86.39,86.5,2160,2610,223.8,8.83
+3,5-5-5,Task A: Component,LightGBM,Margin,2%,2,72,87.53,86.66,87.86,86.5,86.61,2160,2610,224.5,8.87
+4,5-5-5,Task A: Component,LightGBM,Margin,2%,2,72,87.65,86.76,87.96,86.6,86.71,2160,2610,225.1,8.9
+5,5-5-5,Task A: Component,LightGBM,Margin,2%,2,72,87.83,86.92,88.12,86.76,86.87,2160,2610,226.2,8.96
+1,5-5-5,Task A: Component,LightGBM,Margin,4%,4,144,89.63,88.88,90.08,88.72,88.83,4320,4770,412,10.78
+2,5-5-5,Task A: Component,LightGBM,Margin,4%,4,144,89.78,89,90.2,88.84,88.95,4320,4770,413.8,10.84
+3,5-5-5,Task A: Component,LightGBM,Margin,4%,4,144,89.88,89.09,90.29,88.93,89.04,4320,4770,415,10.88
+4,5-5-5,Task A: Component,LightGBM,Margin,4%,4,144,89.98,89.17,90.37,89.01,89.12,4320,4770,416.2,10.92
+5,5-5-5,Task A: Component,LightGBM,Margin,4%,4,144,90.13,89.31,90.51,89.15,89.26,4320,4770,418.1,10.99
+1,5-5-5,Task A: Component,LightGBM,Margin,8%,8,288,90.85,90.17,91.37,90.01,90.12,8640,9090,803.2,14.77
+2,5-5-5,Task A: Component,LightGBM,Margin,8%,8,288,90.97,90.28,91.48,90.12,90.23,8640,9090,806.6,14.85
+3,5-5-5,Task A: Component,LightGBM,Margin,8%,8,288,91.06,90.35,91.55,90.19,90.3,8640,9090,809,14.91
+4,5-5-5,Task A: Component,LightGBM,Margin,8%,8,288,91.14,90.42,91.62,90.26,90.37,8640,9090,811.3,14.97
+5,5-5-5,Task A: Component,LightGBM,Margin,8%,8,288,91.27,90.53,91.73,90.37,90.48,8640,9090,814.9,15.06
+1,5-5-5,Task A: Component,LightGBM,Margin,16%,16,576,91.09,90.45,91.65,90.29,90.4,17280,17730,1637,22.76
+2,5-5-5,Task A: Component,LightGBM,Margin,16%,16,576,91.18,90.52,91.72,90.36,90.47,17280,17730,1644,22.89
+3,5-5-5,Task A: Component,LightGBM,Margin,16%,16,576,91.25,90.58,91.78,90.42,90.53,17280,17730,1648.9,22.98
+4,5-5-5,Task A: Component,LightGBM,Margin,16%,16,576,91.31,90.63,91.83,90.47,90.58,17280,17730,1653.6,23.07
+5,5-5-5,Task A: Component,LightGBM,Margin,16%,16,576,91.41,90.72,91.92,90.56,90.67,17280,17730,1661,23.21
+1,5-5-5,Task A: Component,LightGBM,Random,1%,1,36,82.78,81.82,83.02,81.66,81.77,1080,1530,129.9,7.78
+2,5-5-5,Task A: Component,LightGBM,Random,1%,1,36,82.99,81.99,83.19,81.83,81.94,1080,1530,130.4,7.83
+3,5-5-5,Task A: Component,LightGBM,Random,1%,1,36,83.13,82.11,83.31,81.95,82.06,1080,1530,130.8,7.86
+4,5-5-5,Task A: Component,LightGBM,Random,1%,1,36,83.27,82.23,83.43,82.07,82.18,1080,1530,131.2,7.89
+5,5-5-5,Task A: Component,LightGBM,Random,1%,1,36,83.48,82.41,83.61,82.25,82.36,1080,1530,131.8,7.94
+1,5-5-5,Task A: Component,LightGBM,Random,2%,2,72,84.89,83.99,85.19,83.83,83.94,2160,2610,222.9,8.78
+2,5-5-5,Task A: Component,LightGBM,Random,2%,2,72,85.07,84.13,85.33,83.97,84.08,2160,2610,223.8,8.83
+3,5-5-5,Task A: Component,LightGBM,Random,2%,2,72,85.19,84.24,85.44,84.08,84.19,2160,2610,224.5,8.87
+4,5-5-5,Task A: Component,LightGBM,Random,2%,2,72,85.31,84.34,85.54,84.18,84.29,2160,2610,225.1,8.9
+5,5-5-5,Task A: Component,LightGBM,Random,2%,2,72,85.49,84.5,85.7,84.34,84.45,2160,2610,226.2,8.96
+1,5-5-5,Task A: Component,LightGBM,Random,4%,4,144,86.65,85.82,87.02,85.66,85.77,4320,4770,412,10.78
+2,5-5-5,Task A: Component,LightGBM,Random,4%,4,144,86.8,85.94,87.14,85.78,85.89,4320,4770,413.8,10.84
+3,5-5-5,Task A: Component,LightGBM,Random,4%,4,144,86.9,86.03,87.23,85.87,85.98,4320,4770,415,10.88
+4,5-5-5,Task A: Component,LightGBM,Random,4%,4,144,87,86.11,87.31,85.95,86.06,4320,4770,416.2,10.92
+5,5-5-5,Task A: Component,LightGBM,Random,4%,4,144,87.15,86.25,87.45,86.09,86.2,4320,4770,418.1,10.99
+1,5-5-5,Task A: Component,LightGBM,Random,8%,8,288,87.51,86.75,87.95,86.59,86.7,8640,9090,803.2,14.77
+2,5-5-5,Task A: Component,LightGBM,Random,8%,8,288,87.63,86.86,88.06,86.7,86.81,8640,9090,806.6,14.85
+3,5-5-5,Task A: Component,LightGBM,Random,8%,8,288,87.72,86.93,88.13,86.77,86.88,8640,9090,809,14.91
+4,5-5-5,Task A: Component,LightGBM,Random,8%,8,288,87.8,87,88.2,86.84,86.95,8640,9090,811.3,14.97
+5,5-5-5,Task A: Component,LightGBM,Random,8%,8,288,87.93,87.11,88.31,86.95,87.06,8640,9090,814.9,15.06
+1,5-5-5,Task A: Component,LightGBM,Random,16%,16,576,87.69,86.97,88.17,86.81,86.92,17280,17730,1637,22.76
+2,5-5-5,Task A: Component,LightGBM,Random,16%,16,576,87.78,87.04,88.24,86.88,86.99,17280,17730,1644,22.89
+3,5-5-5,Task A: Component,LightGBM,Random,16%,16,576,87.85,87.1,88.3,86.94,87.05,17280,17730,1648.9,22.98
+4,5-5-5,Task A: Component,LightGBM,Random,16%,16,576,87.91,87.15,88.35,86.99,87.1,17280,17730,1653.6,23.07
+5,5-5-5,Task A: Component,LightGBM,Random,16%,16,576,88.01,87.24,88.44,87.08,87.19,17280,17730,1661,23.21
+1,10-10-10,Task B: Threat Type,LightGBM,Entropy,1%,1,36,86.27,85.57,86.77,85.41,85.52,1080,1980,168.1,9.81
+2,10-10-10,Task B: Threat Type,LightGBM,Entropy,1%,1,36,86.39,85.68,86.88,85.52,85.63,1080,1980,168.8,9.87
+3,10-10-10,Task B: Threat Type,LightGBM,Entropy,1%,1,36,86.48,85.75,86.95,85.59,85.7,1080,1980,169.3,9.91
+4,10-10-10,Task B: Threat Type,LightGBM,Entropy,1%,1,36,86.56,85.82,87.02,85.66,85.77,1080,1980,169.8,9.95
+5,10-10-10,Task B: Threat Type,LightGBM,Entropy,1%,1,36,86.7,85.93,87.13,85.77,85.88,1080,1980,170.5,10.01
+1,10-10-10,Task B: Threat Type,LightGBM,Entropy,2%,2,72,87.9,87.26,88.46,87.1,87.21,2160,3060,261.3,10.82
+2,10-10-10,Task B: Threat Type,LightGBM,Entropy,2%,2,72,88,87.36,88.56,87.2,87.31,2160,3060,262.4,10.88
+3,10-10-10,Task B: Threat Type,LightGBM,Entropy,2%,2,72,88.08,87.42,88.62,87.26,87.37,2160,3060,263.2,10.92
+4,10-10-10,Task B: Threat Type,LightGBM,Entropy,2%,2,72,88.15,87.48,88.68,87.32,87.43,2160,3060,264,10.96
+5,10-10-10,Task B: Threat Type,LightGBM,Entropy,2%,2,72,88.27,87.58,88.78,87.42,87.53,2160,3060,265.1,11.03
+1,10-10-10,Task B: Threat Type,LightGBM,Entropy,4%,4,144,88.97,88.41,89.61,88.25,88.36,4320,5220,450.8,12.81
+2,10-10-10,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.06,88.49,89.69,88.33,88.44,4320,5220,452.7,12.88
+3,10-10-10,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.12,88.54,89.74,88.38,88.49,4320,5220,454.1,12.93
+4,10-10-10,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.18,88.59,89.79,88.43,88.54,4320,5220,455.4,12.98
+5,10-10-10,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.28,88.67,89.87,88.51,88.62,4320,5220,457.4,13.06
+1,10-10-10,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.19,88.7,89.9,88.54,88.65,8640,9540,843,16.8
+2,10-10-10,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.26,88.77,89.97,88.61,88.72,8640,9540,846.6,16.89
+3,10-10-10,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.31,88.81,90.01,88.65,88.76,8640,9540,849.1,16.96
+4,10-10-10,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.36,88.85,90.05,88.69,88.8,8640,9540,851.5,17.02
+5,10-10-10,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.44,88.92,90.12,88.76,88.87,8640,9540,855.3,17.13
+1,10-10-10,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.25,88.81,90.01,88.65,88.76,17280,18180,1678.5,24.79
+2,10-10-10,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.31,88.86,90.06,88.7,88.81,17280,18180,1685.6,24.93
+3,10-10-10,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.35,88.89,90.09,88.73,88.84,17280,18180,1690.7,25.03
+4,10-10-10,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.39,88.92,90.12,88.76,88.87,17280,18180,1695.5,25.13
+5,10-10-10,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.45,88.97,90.17,88.81,88.92,17280,18180,1703.1,25.28
+1,10-10-10,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,83.28,82.36,83.56,82.2,82.31,0,900,75.9,8.81
+2,10-10-10,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,83.42,82.48,83.68,82.32,82.43,0,900,76.3,8.86
+3,10-10-10,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,83.52,82.56,83.76,82.4,82.51,0,900,76.5,8.9
+4,10-10-10,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,83.62,82.64,83.84,82.48,82.59,0,900,76.7,8.93
+5,10-10-10,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,83.76,82.77,83.97,82.61,82.72,0,900,77.1,8.99
+1,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,85.41,84.61,85.81,84.45,84.56,1080,1980,168.1,9.81
+2,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,85.53,84.72,85.92,84.56,84.67,1080,1980,168.8,9.87
+3,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,85.62,84.79,85.99,84.63,84.74,1080,1980,169.3,9.91
+4,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,85.7,84.86,86.06,84.7,84.81,1080,1980,169.8,9.95
+5,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,85.84,84.97,86.17,84.81,84.92,1080,1980,170.5,10.01
+1,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,86.66,85.92,87.12,85.76,85.87,2160,3060,261.3,10.82
+2,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,86.76,86.02,87.22,85.86,85.97,2160,3060,262.4,10.88
+3,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,86.84,86.08,87.28,85.92,86.03,2160,3060,263.2,10.92
+4,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,86.91,86.14,87.34,85.98,86.09,2160,3060,264,10.96
+5,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,87.03,86.24,87.44,86.08,86.19,2160,3060,265.1,11.03
+1,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.33,86.67,87.87,86.51,86.62,4320,5220,450.8,12.81
+2,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.42,86.75,87.95,86.59,86.7,4320,5220,452.7,12.88
+3,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.48,86.8,88,86.64,86.75,4320,5220,454.1,12.93
+4,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.54,86.85,88.05,86.69,86.8,4320,5220,455.4,12.98
+5,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.64,86.93,88.13,86.77,86.88,4320,5220,457.4,13.06
+1,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.5,86.91,88.11,86.75,86.86,8640,9540,843,16.8
+2,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.57,86.98,88.18,86.82,86.93,8640,9540,846.6,16.89
+3,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.62,87.02,88.22,86.86,86.97,8640,9540,849.1,16.96
+4,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.67,87.06,88.26,86.9,87.01,8640,9540,851.5,17.02
+5,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.75,87.13,88.33,86.97,87.08,8640,9540,855.3,17.13
+1,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.56,87.02,88.22,86.86,86.97,17280,18180,1678.5,24.79
+2,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.62,87.07,88.27,86.91,87.02,17280,18180,1685.6,24.93
+3,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.66,87.1,88.3,86.94,87.05,17280,18180,1690.7,25.03
+4,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.7,87.13,88.33,86.97,87.08,17280,18180,1695.5,25.13
+5,10-10-10,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.76,87.18,88.38,87.02,87.13,17280,18180,1703.1,25.28
+1,10-10-10,Task B: Threat Type,LightGBM,Margin,1%,1,36,85.42,84.68,85.88,84.52,84.63,1080,1980,168.1,9.81
+2,10-10-10,Task B: Threat Type,LightGBM,Margin,1%,1,36,85.54,84.79,85.99,84.63,84.74,1080,1980,168.8,9.87
+3,10-10-10,Task B: Threat Type,LightGBM,Margin,1%,1,36,85.63,84.86,86.06,84.7,84.81,1080,1980,169.3,9.91
+4,10-10-10,Task B: Threat Type,LightGBM,Margin,1%,1,36,85.71,84.93,86.13,84.77,84.88,1080,1980,169.8,9.95
+5,10-10-10,Task B: Threat Type,LightGBM,Margin,1%,1,36,85.85,85.04,86.24,84.88,84.99,1080,1980,170.5,10.01
+1,10-10-10,Task B: Threat Type,LightGBM,Margin,2%,2,72,86.7,86.02,87.22,85.86,85.97,2160,3060,261.3,10.82
+2,10-10-10,Task B: Threat Type,LightGBM,Margin,2%,2,72,86.8,86.12,87.32,85.96,86.07,2160,3060,262.4,10.88
+3,10-10-10,Task B: Threat Type,LightGBM,Margin,2%,2,72,86.88,86.18,87.38,86.02,86.13,2160,3060,263.2,10.92
+4,10-10-10,Task B: Threat Type,LightGBM,Margin,2%,2,72,86.95,86.24,87.44,86.08,86.19,2160,3060,264,10.96
+5,10-10-10,Task B: Threat Type,LightGBM,Margin,2%,2,72,87.07,86.34,87.54,86.18,86.29,2160,3060,265.1,11.03
+1,10-10-10,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.49,86.89,88.09,86.73,86.84,4320,5220,450.8,12.81
+2,10-10-10,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.58,86.97,88.17,86.81,86.92,4320,5220,452.7,12.88
+3,10-10-10,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.64,87.02,88.22,86.86,86.97,4320,5220,454.1,12.93
+4,10-10-10,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.7,87.07,88.27,86.91,87.02,4320,5220,455.4,12.98
+5,10-10-10,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.8,87.15,88.35,86.99,87.1,4320,5220,457.4,13.06
+1,10-10-10,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.66,87.13,88.33,86.97,87.08,8640,9540,843,16.8
+2,10-10-10,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.73,87.2,88.4,87.04,87.15,8640,9540,846.6,16.89
+3,10-10-10,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.78,87.24,88.44,87.08,87.19,8640,9540,849.1,16.96
+4,10-10-10,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.83,87.28,88.48,87.12,87.23,8640,9540,851.5,17.02
+5,10-10-10,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.91,87.35,88.55,87.19,87.3,8640,9540,855.3,17.13
+1,10-10-10,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.71,87.23,88.43,87.07,87.18,17280,18180,1678.5,24.79
+2,10-10-10,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.77,87.28,88.48,87.12,87.23,17280,18180,1685.6,24.93
+3,10-10-10,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.81,87.31,88.51,87.15,87.26,17280,18180,1690.7,25.03
+4,10-10-10,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.85,87.34,88.54,87.18,87.29,17280,18180,1695.5,25.13
+5,10-10-10,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.91,87.39,88.59,87.23,87.34,17280,18180,1703.1,25.28
+1,10-10-10,Task B: Threat Type,LightGBM,Random,1%,1,36,85.43,84.61,85.81,84.45,84.56,1080,1980,168.1,9.81
+2,10-10-10,Task B: Threat Type,LightGBM,Random,1%,1,36,85.55,84.72,85.92,84.56,84.67,1080,1980,168.8,9.87
+3,10-10-10,Task B: Threat Type,LightGBM,Random,1%,1,36,85.64,84.79,85.99,84.63,84.74,1080,1980,169.3,9.91
+4,10-10-10,Task B: Threat Type,LightGBM,Random,1%,1,36,85.72,84.86,86.06,84.7,84.81,1080,1980,169.8,9.95
+5,10-10-10,Task B: Threat Type,LightGBM,Random,1%,1,36,85.86,84.97,86.17,84.81,84.92,1080,1980,170.5,10.01
+1,10-10-10,Task B: Threat Type,LightGBM,Random,2%,2,72,86.7,85.94,87.14,85.78,85.89,2160,3060,261.3,10.82
+2,10-10-10,Task B: Threat Type,LightGBM,Random,2%,2,72,86.8,86.04,87.24,85.88,85.99,2160,3060,262.4,10.88
+3,10-10-10,Task B: Threat Type,LightGBM,Random,2%,2,72,86.88,86.1,87.3,85.94,86.05,2160,3060,263.2,10.92
+4,10-10-10,Task B: Threat Type,LightGBM,Random,2%,2,72,86.95,86.16,87.36,86,86.11,2160,3060,264,10.96
+5,10-10-10,Task B: Threat Type,LightGBM,Random,2%,2,72,87.07,86.26,87.46,86.1,86.21,2160,3060,265.1,11.03
+1,10-10-10,Task B: Threat Type,LightGBM,Random,4%,4,144,87.49,86.81,88.01,86.65,86.76,4320,5220,450.8,12.81
+2,10-10-10,Task B: Threat Type,LightGBM,Random,4%,4,144,87.58,86.89,88.09,86.73,86.84,4320,5220,452.7,12.88
+3,10-10-10,Task B: Threat Type,LightGBM,Random,4%,4,144,87.64,86.94,88.14,86.78,86.89,4320,5220,454.1,12.93
+4,10-10-10,Task B: Threat Type,LightGBM,Random,4%,4,144,87.7,86.99,88.19,86.83,86.94,4320,5220,455.4,12.98
+5,10-10-10,Task B: Threat Type,LightGBM,Random,4%,4,144,87.8,87.07,88.27,86.91,87.02,4320,5220,457.4,13.06
+1,10-10-10,Task B: Threat Type,LightGBM,Random,8%,8,288,87.66,87.05,88.25,86.89,87,8640,9540,843,16.8
+2,10-10-10,Task B: Threat Type,LightGBM,Random,8%,8,288,87.73,87.12,88.32,86.96,87.07,8640,9540,846.6,16.89
+3,10-10-10,Task B: Threat Type,LightGBM,Random,8%,8,288,87.78,87.16,88.36,87,87.11,8640,9540,849.1,16.96
+4,10-10-10,Task B: Threat Type,LightGBM,Random,8%,8,288,87.83,87.2,88.4,87.04,87.15,8640,9540,851.5,17.02
+5,10-10-10,Task B: Threat Type,LightGBM,Random,8%,8,288,87.91,87.27,88.47,87.11,87.22,8640,9540,855.3,17.13
+1,10-10-10,Task B: Threat Type,LightGBM,Random,16%,16,576,87.62,87.06,88.26,86.9,87.01,17280,18180,1678.5,24.79
+2,10-10-10,Task B: Threat Type,LightGBM,Random,16%,16,576,87.68,87.11,88.31,86.95,87.06,17280,18180,1685.6,24.93
+3,10-10-10,Task B: Threat Type,LightGBM,Random,16%,16,576,87.72,87.14,88.34,86.98,87.09,17280,18180,1690.7,25.03
+4,10-10-10,Task B: Threat Type,LightGBM,Random,16%,16,576,87.76,87.17,88.37,87.01,87.12,17280,18180,1695.5,25.13
+5,10-10-10,Task B: Threat Type,LightGBM,Random,16%,16,576,87.82,87.22,88.42,87.06,87.17,17280,18180,1703.1,25.28
+1,30-30-30,Task B: Threat Type,LightGBM,Entropy,1%,1,36,88.62,88.06,89.26,87.9,88.01,1080,3780,320.9,15.16
+2,30-30-30,Task B: Threat Type,LightGBM,Entropy,1%,1,36,88.69,88.12,89.32,87.96,88.07,1080,3780,322.2,15.25
+3,30-30-30,Task B: Threat Type,LightGBM,Entropy,1%,1,36,88.74,88.16,89.36,88,88.11,1080,3780,323.2,15.31
+4,30-30-30,Task B: Threat Type,LightGBM,Entropy,1%,1,36,88.79,88.2,89.4,88.04,88.15,1080,3780,324.1,15.37
+5,30-30-30,Task B: Threat Type,LightGBM,Entropy,1%,1,36,88.86,88.26,89.46,88.1,88.21,1080,3780,325.6,15.46
+1,30-30-30,Task B: Threat Type,LightGBM,Entropy,2%,2,72,89.25,88.75,89.95,88.59,88.7,2160,4860,415,16.16
+2,30-30-30,Task B: Threat Type,LightGBM,Entropy,2%,2,72,89.31,88.8,90,88.64,88.75,2160,4860,416.7,16.25
+3,30-30-30,Task B: Threat Type,LightGBM,Entropy,2%,2,72,89.35,88.84,90.04,88.68,88.79,2160,4860,418,16.32
+4,30-30-30,Task B: Threat Type,LightGBM,Entropy,2%,2,72,89.39,88.87,90.07,88.71,88.82,2160,4860,419.2,16.38
+5,30-30-30,Task B: Threat Type,LightGBM,Entropy,2%,2,72,89.45,88.93,90.13,88.77,88.88,2160,4860,421.1,16.48
+1,30-30-30,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.55,89.13,90.33,88.97,89.08,4320,7020,606.3,18.15
+2,30-30-30,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.6,89.17,90.37,89.01,89.12,4320,7020,608.9,18.26
+3,30-30-30,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.63,89.2,90.4,89.04,89.15,4320,7020,610.7,18.33
+4,30-30-30,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.66,89.23,90.43,89.07,89.18,4320,7020,612.4,18.4
+5,30-30-30,Task B: Threat Type,LightGBM,Entropy,4%,4,144,89.71,89.27,90.47,89.11,89.22,4320,7020,615.2,18.51
+1,30-30-30,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.6,89.26,90.46,89.1,89.21,8640,11340,1002,22.15
+2,30-30-30,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.64,89.3,90.5,89.14,89.25,8640,11340,1006.3,22.27
+3,30-30-30,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.67,89.32,90.52,89.16,89.27,8640,11340,1009.3,22.36
+4,30-30-30,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.7,89.34,90.54,89.18,89.29,8640,11340,1012.2,22.44
+5,30-30-30,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.74,89.38,90.58,89.22,89.33,8640,11340,1016.7,22.58
+1,30-30-30,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.52,89.22,90.42,89.06,89.17,17280,19980,1844.7,30.14
+2,30-30-30,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.56,89.25,90.45,89.09,89.2,17280,19980,1852.5,30.31
+3,30-30-30,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.58,89.27,90.47,89.11,89.22,17280,19980,1858.1,30.43
+4,30-30-30,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.6,89.29,90.49,89.13,89.24,17280,19980,1863.4,30.55
+5,30-30-30,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.64,89.32,90.52,89.16,89.27,17280,19980,1871.8,30.73
+1,30-30-30,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,87.39,86.6,87.8,86.44,86.55,0,2700,227.8,14.16
+2,30-30-30,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,87.47,86.66,87.86,86.5,86.61,0,2700,228.8,14.24
+3,30-30-30,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,87.52,86.71,87.91,86.55,86.66,0,2700,229.5,14.3
+4,30-30-30,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,87.57,86.75,87.95,86.59,86.7,0,2700,230.2,14.35
+5,30-30-30,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,87.65,86.82,88.02,86.66,86.77,0,2700,231.2,14.44
+1,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,87.63,86.97,88.17,86.81,86.92,1080,3780,320.9,15.16
+2,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,87.7,87.03,88.23,86.87,86.98,1080,3780,322.2,15.25
+3,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,87.75,87.07,88.27,86.91,87.02,1080,3780,323.2,15.31
+4,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,87.8,87.11,88.31,86.95,87.06,1080,3780,324.1,15.37
+5,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,87.87,87.17,88.37,87.01,87.12,1080,3780,325.6,15.46
+1,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,87.79,87.19,88.39,87.03,87.14,2160,4860,415,16.16
+2,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,87.85,87.24,88.44,87.08,87.19,2160,4860,416.7,16.25
+3,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,87.89,87.28,88.48,87.12,87.23,2160,4860,418,16.32
+4,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,87.93,87.31,88.51,87.15,87.26,2160,4860,419.2,16.38
+5,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,87.99,87.37,88.57,87.21,87.32,2160,4860,421.1,16.48
+1,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.88,87.36,88.56,87.2,87.31,4320,7020,606.3,18.15
+2,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.93,87.4,88.6,87.24,87.35,4320,7020,608.9,18.26
+3,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.96,87.43,88.63,87.27,87.38,4320,7020,610.7,18.33
+4,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,87.99,87.46,88.66,87.3,87.41,4320,7020,612.4,18.4
+5,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,88.04,87.5,88.7,87.34,87.45,4320,7020,615.2,18.51
+1,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.91,87.47,88.67,87.31,87.42,8640,11340,1002,22.15
+2,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.95,87.51,88.71,87.35,87.46,8640,11340,1006.3,22.27
+3,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.98,87.53,88.73,87.37,87.48,8640,11340,1009.3,22.36
+4,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,88.01,87.55,88.75,87.39,87.5,8640,11340,1012.2,22.44
+5,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,88.05,87.59,88.79,87.43,87.54,8640,11340,1016.7,22.58
+1,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.94,87.54,88.74,87.38,87.49,17280,19980,1844.7,30.14
+2,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.98,87.57,88.77,87.41,87.52,17280,19980,1852.5,30.31
+3,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,88,87.59,88.79,87.43,87.54,17280,19980,1858.1,30.43
+4,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,88.02,87.61,88.81,87.45,87.56,17280,19980,1863.4,30.55
+5,30-30-30,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,88.06,87.64,88.84,87.48,87.59,17280,19980,1871.8,30.73
+1,30-30-30,Task B: Threat Type,LightGBM,Margin,1%,1,36,87.75,87.15,88.35,86.99,87.1,1080,3780,320.9,15.16
+2,30-30-30,Task B: Threat Type,LightGBM,Margin,1%,1,36,87.82,87.21,88.41,87.05,87.16,1080,3780,322.2,15.25
+3,30-30-30,Task B: Threat Type,LightGBM,Margin,1%,1,36,87.87,87.25,88.45,87.09,87.2,1080,3780,323.2,15.31
+4,30-30-30,Task B: Threat Type,LightGBM,Margin,1%,1,36,87.92,87.29,88.49,87.13,87.24,1080,3780,324.1,15.37
+5,30-30-30,Task B: Threat Type,LightGBM,Margin,1%,1,36,87.99,87.35,88.55,87.19,87.3,1080,3780,325.6,15.46
+1,30-30-30,Task B: Threat Type,LightGBM,Margin,2%,2,72,87.83,87.29,88.49,87.13,87.24,2160,4860,415,16.16
+2,30-30-30,Task B: Threat Type,LightGBM,Margin,2%,2,72,87.89,87.34,88.54,87.18,87.29,2160,4860,416.7,16.25
+3,30-30-30,Task B: Threat Type,LightGBM,Margin,2%,2,72,87.93,87.38,88.58,87.22,87.33,2160,4860,418,16.32
+4,30-30-30,Task B: Threat Type,LightGBM,Margin,2%,2,72,87.97,87.41,88.61,87.25,87.36,2160,4860,419.2,16.38
+5,30-30-30,Task B: Threat Type,LightGBM,Margin,2%,2,72,88.03,87.47,88.67,87.31,87.42,2160,4860,421.1,16.48
+1,30-30-30,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.93,87.47,88.67,87.31,87.42,4320,7020,606.3,18.15
+2,30-30-30,Task B: Threat Type,LightGBM,Margin,4%,4,144,87.98,87.51,88.71,87.35,87.46,4320,7020,608.9,18.26
+3,30-30-30,Task B: Threat Type,LightGBM,Margin,4%,4,144,88.01,87.54,88.74,87.38,87.49,4320,7020,610.7,18.33
+4,30-30-30,Task B: Threat Type,LightGBM,Margin,4%,4,144,88.04,87.57,88.77,87.41,87.52,4320,7020,612.4,18.4
+5,30-30-30,Task B: Threat Type,LightGBM,Margin,4%,4,144,88.09,87.61,88.81,87.45,87.56,4320,7020,615.2,18.51
+1,30-30-30,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.96,87.58,88.78,87.42,87.53,8640,11340,1002,22.15
+2,30-30-30,Task B: Threat Type,LightGBM,Margin,8%,8,288,88,87.62,88.82,87.46,87.57,8640,11340,1006.3,22.27
+3,30-30-30,Task B: Threat Type,LightGBM,Margin,8%,8,288,88.03,87.64,88.84,87.48,87.59,8640,11340,1009.3,22.36
+4,30-30-30,Task B: Threat Type,LightGBM,Margin,8%,8,288,88.06,87.66,88.86,87.5,87.61,8640,11340,1012.2,22.44
+5,30-30-30,Task B: Threat Type,LightGBM,Margin,8%,8,288,88.1,87.7,88.9,87.54,87.65,8640,11340,1016.7,22.58
+1,30-30-30,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.99,87.65,88.85,87.49,87.6,17280,19980,1844.7,30.14
+2,30-30-30,Task B: Threat Type,LightGBM,Margin,16%,16,576,88.03,87.68,88.88,87.52,87.63,17280,19980,1852.5,30.31
+3,30-30-30,Task B: Threat Type,LightGBM,Margin,16%,16,576,88.05,87.7,88.9,87.54,87.65,17280,19980,1858.1,30.43
+4,30-30-30,Task B: Threat Type,LightGBM,Margin,16%,16,576,88.07,87.72,88.92,87.56,87.67,17280,19980,1863.4,30.55
+5,30-30-30,Task B: Threat Type,LightGBM,Margin,16%,16,576,88.11,87.75,88.95,87.59,87.7,17280,19980,1871.8,30.73
+1,30-30-30,Task B: Threat Type,LightGBM,Random,1%,1,36,87.66,86.98,88.18,86.82,86.93,1080,3780,320.9,15.16
+2,30-30-30,Task B: Threat Type,LightGBM,Random,1%,1,36,87.73,87.04,88.24,86.88,86.99,1080,3780,322.2,15.25
+3,30-30-30,Task B: Threat Type,LightGBM,Random,1%,1,36,87.78,87.08,88.28,86.92,87.03,1080,3780,323.2,15.31
+4,30-30-30,Task B: Threat Type,LightGBM,Random,1%,1,36,87.83,87.12,88.32,86.96,87.07,1080,3780,324.1,15.37
+5,30-30-30,Task B: Threat Type,LightGBM,Random,1%,1,36,87.9,87.18,88.38,87.02,87.13,1080,3780,325.6,15.46
+1,30-30-30,Task B: Threat Type,LightGBM,Random,2%,2,72,87.84,87.22,88.42,87.06,87.17,2160,4860,415,16.16
+2,30-30-30,Task B: Threat Type,LightGBM,Random,2%,2,72,87.9,87.27,88.47,87.11,87.22,2160,4860,416.7,16.25
+3,30-30-30,Task B: Threat Type,LightGBM,Random,2%,2,72,87.94,87.31,88.51,87.15,87.26,2160,4860,418,16.32
+4,30-30-30,Task B: Threat Type,LightGBM,Random,2%,2,72,87.98,87.34,88.54,87.18,87.29,2160,4860,419.2,16.38
+5,30-30-30,Task B: Threat Type,LightGBM,Random,2%,2,72,88.04,87.4,88.6,87.24,87.35,2160,4860,421.1,16.48
+1,30-30-30,Task B: Threat Type,LightGBM,Random,4%,4,144,87.94,87.4,88.6,87.24,87.35,4320,7020,606.3,18.15
+2,30-30-30,Task B: Threat Type,LightGBM,Random,4%,4,144,87.99,87.44,88.64,87.28,87.39,4320,7020,608.9,18.26
+3,30-30-30,Task B: Threat Type,LightGBM,Random,4%,4,144,88.02,87.47,88.67,87.31,87.42,4320,7020,610.7,18.33
+4,30-30-30,Task B: Threat Type,LightGBM,Random,4%,4,144,88.05,87.5,88.7,87.34,87.45,4320,7020,612.4,18.4
+5,30-30-30,Task B: Threat Type,LightGBM,Random,4%,4,144,88.1,87.54,88.74,87.38,87.49,4320,7020,615.2,18.51
+1,30-30-30,Task B: Threat Type,LightGBM,Random,8%,8,288,87.97,87.51,88.71,87.35,87.46,8640,11340,1002,22.15
+2,30-30-30,Task B: Threat Type,LightGBM,Random,8%,8,288,88.01,87.55,88.75,87.39,87.5,8640,11340,1006.3,22.27
+3,30-30-30,Task B: Threat Type,LightGBM,Random,8%,8,288,88.04,87.57,88.77,87.41,87.52,8640,11340,1009.3,22.36
+4,30-30-30,Task B: Threat Type,LightGBM,Random,8%,8,288,88.07,87.59,88.79,87.43,87.54,8640,11340,1012.2,22.44
+5,30-30-30,Task B: Threat Type,LightGBM,Random,8%,8,288,88.11,87.63,88.83,87.47,87.58,8640,11340,1016.7,22.58
+1,30-30-30,Task B: Threat Type,LightGBM,Random,16%,16,576,88,87.58,88.78,87.42,87.53,17280,19980,1844.7,30.14
+2,30-30-30,Task B: Threat Type,LightGBM,Random,16%,16,576,88.04,87.61,88.81,87.45,87.56,17280,19980,1852.5,30.31
+3,30-30-30,Task B: Threat Type,LightGBM,Random,16%,16,576,88.06,87.63,88.83,87.47,87.58,17280,19980,1858.1,30.43
+4,30-30-30,Task B: Threat Type,LightGBM,Random,16%,16,576,88.08,87.65,88.85,87.49,87.6,17280,19980,1863.4,30.55
+5,30-30-30,Task B: Threat Type,LightGBM,Random,16%,16,576,88.12,87.68,88.88,87.52,87.63,17280,19980,1871.8,30.73
+1,5-5-5,Task B: Threat Type,LightGBM,Entropy,1%,1,36,83.03,82.11,83.31,81.95,82.06,1080,1530,129.9,8.48
+2,5-5-5,Task B: Threat Type,LightGBM,Entropy,1%,1,36,83.24,82.28,83.48,82.12,82.23,1080,1530,130.4,8.53
+3,5-5-5,Task B: Threat Type,LightGBM,Entropy,1%,1,36,83.38,82.4,83.6,82.24,82.35,1080,1530,130.8,8.56
+4,5-5-5,Task B: Threat Type,LightGBM,Entropy,1%,1,36,83.52,82.52,83.72,82.36,82.47,1080,1530,131.2,8.59
+5,5-5-5,Task B: Threat Type,LightGBM,Entropy,1%,1,36,83.73,82.7,83.9,82.54,82.65,1080,1530,131.8,8.64
+1,5-5-5,Task B: Threat Type,LightGBM,Entropy,2%,2,72,85.59,84.73,85.93,84.57,84.68,2160,2610,222.9,9.48
+2,5-5-5,Task B: Threat Type,LightGBM,Entropy,2%,2,72,85.77,84.87,86.07,84.71,84.82,2160,2610,223.8,9.53
+3,5-5-5,Task B: Threat Type,LightGBM,Entropy,2%,2,72,85.89,84.98,86.18,84.82,84.93,2160,2610,224.5,9.57
+4,5-5-5,Task B: Threat Type,LightGBM,Entropy,2%,2,72,86.01,85.08,86.28,84.92,85.03,2160,2610,225.1,9.61
+5,5-5-5,Task B: Threat Type,LightGBM,Entropy,2%,2,72,86.19,85.24,86.44,85.08,85.19,2160,2610,226.2,9.66
+1,5-5-5,Task B: Threat Type,LightGBM,Entropy,4%,4,144,87.61,86.82,88.02,86.66,86.77,4320,4770,412,11.47
+2,5-5-5,Task B: Threat Type,LightGBM,Entropy,4%,4,144,87.76,86.94,88.14,86.78,86.89,4320,4770,413.8,11.53
+3,5-5-5,Task B: Threat Type,LightGBM,Entropy,4%,4,144,87.86,87.03,88.23,86.87,86.98,4320,4770,415,11.58
+4,5-5-5,Task B: Threat Type,LightGBM,Entropy,4%,4,144,87.96,87.11,88.31,86.95,87.06,4320,4770,416.2,11.62
+5,5-5-5,Task B: Threat Type,LightGBM,Entropy,4%,4,144,88.11,87.25,88.45,87.09,87.2,4320,4770,418.1,11.69
+1,5-5-5,Task B: Threat Type,LightGBM,Entropy,8%,8,288,88.6,87.88,89.08,87.72,87.83,8640,9090,803.2,15.46
+2,5-5-5,Task B: Threat Type,LightGBM,Entropy,8%,8,288,88.72,87.99,89.19,87.83,87.94,8640,9090,806.6,15.55
+3,5-5-5,Task B: Threat Type,LightGBM,Entropy,8%,8,288,88.81,88.06,89.26,87.9,88.01,8640,9090,809,15.61
+4,5-5-5,Task B: Threat Type,LightGBM,Entropy,8%,8,288,88.89,88.13,89.33,87.97,88.08,8640,9090,811.3,15.67
+5,5-5-5,Task B: Threat Type,LightGBM,Entropy,8%,8,288,89.02,88.24,89.44,88.08,88.19,8640,9090,814.9,15.76
+1,5-5-5,Task B: Threat Type,LightGBM,Entropy,16%,16,576,88.79,88.11,89.31,87.95,88.06,17280,17730,1637,23.45
+2,5-5-5,Task B: Threat Type,LightGBM,Entropy,16%,16,576,88.88,88.18,89.38,88.02,88.13,17280,17730,1644,23.59
+3,5-5-5,Task B: Threat Type,LightGBM,Entropy,16%,16,576,88.95,88.24,89.44,88.08,88.19,17280,17730,1648.9,23.68
+4,5-5-5,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.01,88.29,89.49,88.13,88.24,17280,17730,1653.6,23.77
+5,5-5-5,Task B: Threat Type,LightGBM,Entropy,16%,16,576,89.11,88.38,89.58,88.22,88.33,17280,17730,1661,23.91
+1,5-5-5,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,79.63,78.48,79.68,78.32,78.43,0,450,37.9,7.48
+2,5-5-5,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,79.86,78.67,79.87,78.51,78.62,0,450,38.1,7.52
+3,5-5-5,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,80.02,78.81,80.01,78.65,78.76,0,450,38.2,7.55
+4,5-5-5,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,80.18,78.94,80.14,78.78,78.89,0,450,38.3,7.58
+5,5-5-5,Task B: Threat Type,LightGBM,Initial set only,Initial set only,0,0,80.42,79.15,80.35,78.99,79.1,0,450,38.5,7.62
+1,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,82.38,81.36,82.56,81.2,81.31,1080,1530,129.9,8.48
+2,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,82.59,81.53,82.73,81.37,81.48,1080,1530,130.4,8.53
+3,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,82.73,81.65,82.85,81.49,81.6,1080,1530,130.8,8.56
+4,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,82.87,81.77,82.97,81.61,81.72,1080,1530,131.2,8.59
+5,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,1%,1,36,83.08,81.95,83.15,81.79,81.9,1080,1530,131.8,8.64
+1,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,84.46,83.5,84.7,83.34,83.45,2160,2610,222.9,9.48
+2,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,84.64,83.64,84.84,83.48,83.59,2160,2610,223.8,9.53
+3,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,84.76,83.75,84.95,83.59,83.7,2160,2610,224.5,9.57
+4,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,84.88,83.85,85.05,83.69,83.8,2160,2610,225.1,9.61
+5,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,2%,2,72,85.06,84.01,85.21,83.85,83.96,2160,2610,226.2,9.66
+1,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,86.11,85.22,86.42,85.06,85.17,4320,4770,412,11.47
+2,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,86.26,85.34,86.54,85.18,85.29,4320,4770,413.8,11.53
+3,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,86.36,85.43,86.63,85.27,85.38,4320,4770,415,11.58
+4,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,86.46,85.51,86.71,85.35,85.46,4320,4770,416.2,11.62
+5,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,4%,4,144,86.61,85.65,86.85,85.49,85.6,4320,4770,418.1,11.69
+1,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,86.93,86.11,87.31,85.95,86.06,8640,9090,803.2,15.46
+2,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.05,86.22,87.42,86.06,86.17,8640,9090,806.6,15.55
+3,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.14,86.29,87.49,86.13,86.24,8640,9090,809,15.61
+4,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.22,86.36,87.56,86.2,86.31,8640,9090,811.3,15.67
+5,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,8%,8,288,87.35,86.47,87.67,86.31,86.42,8640,9090,814.9,15.76
+1,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.1,86.32,87.52,86.16,86.27,17280,17730,1637,23.45
+2,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.19,86.39,87.59,86.23,86.34,17280,17730,1644,23.59
+3,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.26,86.45,87.65,86.29,86.4,17280,17730,1648.9,23.68
+4,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.32,86.5,87.7,86.34,86.45,17280,17730,1653.6,23.77
+5,5-5-5,Task B: Threat Type,LightGBM,Jaccard Diversity,16%,16,576,87.42,86.59,87.79,86.43,86.54,17280,17730,1661,23.91
+1,5-5-5,Task B: Threat Type,LightGBM,Margin,1%,1,36,82.48,81.52,82.72,81.36,81.47,1080,1530,129.9,8.48
+2,5-5-5,Task B: Threat Type,LightGBM,Margin,1%,1,36,82.69,81.69,82.89,81.53,81.64,1080,1530,130.4,8.53
+3,5-5-5,Task B: Threat Type,LightGBM,Margin,1%,1,36,82.83,81.81,83.01,81.65,81.76,1080,1530,130.8,8.56
+4,5-5-5,Task B: Threat Type,LightGBM,Margin,1%,1,36,82.97,81.93,83.13,81.77,81.88,1080,1530,131.2,8.59
+5,5-5-5,Task B: Threat Type,LightGBM,Margin,1%,1,36,83.18,82.11,83.31,81.95,82.06,1080,1530,131.8,8.64
+1,5-5-5,Task B: Threat Type,LightGBM,Margin,2%,2,72,84.59,83.69,84.89,83.53,83.64,2160,2610,222.9,9.48
+2,5-5-5,Task B: Threat Type,LightGBM,Margin,2%,2,72,84.77,83.83,85.03,83.67,83.78,2160,2610,223.8,9.53
+3,5-5-5,Task B: Threat Type,LightGBM,Margin,2%,2,72,84.89,83.94,85.14,83.78,83.89,2160,2610,224.5,9.57
+4,5-5-5,Task B: Threat Type,LightGBM,Margin,2%,2,72,85.01,84.04,85.24,83.88,83.99,2160,2610,225.1,9.61
+5,5-5-5,Task B: Threat Type,LightGBM,Margin,2%,2,72,85.19,84.2,85.4,84.04,84.15,2160,2610,226.2,9.66
+1,5-5-5,Task B: Threat Type,LightGBM,Margin,4%,4,144,86.16,85.33,86.53,85.17,85.28,4320,4770,412,11.47
+2,5-5-5,Task B: Threat Type,LightGBM,Margin,4%,4,144,86.31,85.45,86.65,85.29,85.4,4320,4770,413.8,11.53
+3,5-5-5,Task B: Threat Type,LightGBM,Margin,4%,4,144,86.41,85.54,86.74,85.38,85.49,4320,4770,415,11.58
+4,5-5-5,Task B: Threat Type,LightGBM,Margin,4%,4,144,86.51,85.62,86.82,85.46,85.57,4320,4770,416.2,11.62
+5,5-5-5,Task B: Threat Type,LightGBM,Margin,4%,4,144,86.66,85.76,86.96,85.6,85.71,4320,4770,418.1,11.69
+1,5-5-5,Task B: Threat Type,LightGBM,Margin,8%,8,288,86.98,86.22,87.42,86.06,86.17,8640,9090,803.2,15.46
+2,5-5-5,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.1,86.33,87.53,86.17,86.28,8640,9090,806.6,15.55
+3,5-5-5,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.19,86.4,87.6,86.24,86.35,8640,9090,809,15.61
+4,5-5-5,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.27,86.47,87.67,86.31,86.42,8640,9090,811.3,15.67
+5,5-5-5,Task B: Threat Type,LightGBM,Margin,8%,8,288,87.4,86.58,87.78,86.42,86.53,8640,9090,814.9,15.76
+1,5-5-5,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.15,86.43,87.63,86.27,86.38,17280,17730,1637,23.45
+2,5-5-5,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.24,86.5,87.7,86.34,86.45,17280,17730,1644,23.59
+3,5-5-5,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.31,86.56,87.76,86.4,86.51,17280,17730,1648.9,23.68
+4,5-5-5,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.37,86.61,87.81,86.45,86.56,17280,17730,1653.6,23.77
+5,5-5-5,Task B: Threat Type,LightGBM,Margin,16%,16,576,87.47,86.7,87.9,86.54,86.65,17280,17730,1661,23.91
+1,5-5-5,Task B: Threat Type,LightGBM,Random,1%,1,36,82.49,81.45,82.65,81.29,81.4,1080,1530,129.9,8.48
+2,5-5-5,Task B: Threat Type,LightGBM,Random,1%,1,36,82.7,81.62,82.82,81.46,81.57,1080,1530,130.4,8.53
+3,5-5-5,Task B: Threat Type,LightGBM,Random,1%,1,36,82.84,81.74,82.94,81.58,81.69,1080,1530,130.8,8.56
+4,5-5-5,Task B: Threat Type,LightGBM,Random,1%,1,36,82.98,81.86,83.06,81.7,81.81,1080,1530,131.2,8.59
+5,5-5-5,Task B: Threat Type,LightGBM,Random,1%,1,36,83.19,82.04,83.24,81.88,81.99,1080,1530,131.8,8.64
+1,5-5-5,Task B: Threat Type,LightGBM,Random,2%,2,72,84.49,83.51,84.71,83.35,83.46,2160,2610,222.9,9.48
+2,5-5-5,Task B: Threat Type,LightGBM,Random,2%,2,72,84.67,83.65,84.85,83.49,83.6,2160,2610,223.8,9.53
+3,5-5-5,Task B: Threat Type,LightGBM,Random,2%,2,72,84.79,83.76,84.96,83.6,83.71,2160,2610,224.5,9.57
+4,5-5-5,Task B: Threat Type,LightGBM,Random,2%,2,72,84.91,83.86,85.06,83.7,83.81,2160,2610,225.1,9.61
+5,5-5-5,Task B: Threat Type,LightGBM,Random,2%,2,72,85.09,84.02,85.22,83.86,83.97,2160,2610,226.2,9.66
+1,5-5-5,Task B: Threat Type,LightGBM,Random,4%,4,144,86.16,85.25,86.45,85.09,85.2,4320,4770,412,11.47
+2,5-5-5,Task B: Threat Type,LightGBM,Random,4%,4,144,86.31,85.37,86.57,85.21,85.32,4320,4770,413.8,11.53
+3,5-5-5,Task B: Threat Type,LightGBM,Random,4%,4,144,86.41,85.46,86.66,85.3,85.41,4320,4770,415,11.58
+4,5-5-5,Task B: Threat Type,LightGBM,Random,4%,4,144,86.51,85.54,86.74,85.38,85.49,4320,4770,416.2,11.62
+5,5-5-5,Task B: Threat Type,LightGBM,Random,4%,4,144,86.66,85.68,86.88,85.52,85.63,4320,4770,418.1,11.69
+1,5-5-5,Task B: Threat Type,LightGBM,Random,8%,8,288,86.99,86.15,87.35,85.99,86.1,8640,9090,803.2,15.46
+2,5-5-5,Task B: Threat Type,LightGBM,Random,8%,8,288,87.11,86.26,87.46,86.1,86.21,8640,9090,806.6,15.55
+3,5-5-5,Task B: Threat Type,LightGBM,Random,8%,8,288,87.2,86.33,87.53,86.17,86.28,8640,9090,809,15.61
+4,5-5-5,Task B: Threat Type,LightGBM,Random,8%,8,288,87.28,86.4,87.6,86.24,86.35,8640,9090,811.3,15.67
+5,5-5-5,Task B: Threat Type,LightGBM,Random,8%,8,288,87.41,86.51,87.71,86.35,86.46,8640,9090,814.9,15.76
+1,5-5-5,Task B: Threat Type,LightGBM,Random,16%,16,576,87.16,86.36,87.56,86.2,86.31,17280,17730,1637,23.45
+2,5-5-5,Task B: Threat Type,LightGBM,Random,16%,16,576,87.25,86.43,87.63,86.27,86.38,17280,17730,1644,23.59
+3,5-5-5,Task B: Threat Type,LightGBM,Random,16%,16,576,87.32,86.49,87.69,86.33,86.44,17280,17730,1648.9,23.68
+4,5-5-5,Task B: Threat Type,LightGBM,Random,16%,16,576,87.38,86.54,87.74,86.38,86.49,17280,17730,1653.6,23.77
+5,5-5-5,Task B: Threat Type,LightGBM,Random,16%,16,576,87.48,86.63,87.83,86.47,86.58,17280,17730,1661,23.91
+1,10-10-10,Task C: Joint,LightGBM,Entropy,1%,1,36,84.18,83.41,84.61,83.25,83.36,1080,1980,168.1,10.61
+2,10-10-10,Task C: Joint,LightGBM,Entropy,1%,1,36,84.3,83.52,84.72,83.36,83.47,1080,1980,168.8,10.67
+3,10-10-10,Task C: Joint,LightGBM,Entropy,1%,1,36,84.39,83.59,84.79,83.43,83.54,1080,1980,169.3,10.71
+4,10-10-10,Task C: Joint,LightGBM,Entropy,1%,1,36,84.47,83.66,84.86,83.5,83.61,1080,1980,169.8,10.75
+5,10-10-10,Task C: Joint,LightGBM,Entropy,1%,1,36,84.61,83.77,84.97,83.61,83.72,1080,1980,170.5,10.81
+1,10-10-10,Task C: Joint,LightGBM,Entropy,2%,2,72,86.55,85.84,87.04,85.68,85.79,2160,3060,261.3,11.61
+2,10-10-10,Task C: Joint,LightGBM,Entropy,2%,2,72,86.65,85.94,87.14,85.78,85.89,2160,3060,262.4,11.67
+3,10-10-10,Task C: Joint,LightGBM,Entropy,2%,2,72,86.73,86,87.2,85.84,85.95,2160,3060,263.2,11.72
+4,10-10-10,Task C: Joint,LightGBM,Entropy,2%,2,72,86.8,86.06,87.26,85.9,86.01,2160,3060,264,11.76
+5,10-10-10,Task C: Joint,LightGBM,Entropy,2%,2,72,86.92,86.16,87.36,86,86.11,2160,3060,265.1,11.83
+1,10-10-10,Task C: Joint,LightGBM,Entropy,4%,4,144,88.06,87.43,88.63,87.27,87.38,4320,5220,450.8,13.6
+2,10-10-10,Task C: Joint,LightGBM,Entropy,4%,4,144,88.15,87.51,88.71,87.35,87.46,4320,5220,452.7,13.68
+3,10-10-10,Task C: Joint,LightGBM,Entropy,4%,4,144,88.21,87.56,88.76,87.4,87.51,4320,5220,454.1,13.73
+4,10-10-10,Task C: Joint,LightGBM,Entropy,4%,4,144,88.27,87.61,88.81,87.45,87.56,4320,5220,455.4,13.78
+5,10-10-10,Task C: Joint,LightGBM,Entropy,4%,4,144,88.37,87.69,88.89,87.53,87.64,4320,5220,457.4,13.86
+1,10-10-10,Task C: Joint,LightGBM,Entropy,8%,8,288,88.35,87.79,88.99,87.63,87.74,8640,9540,843,17.59
+2,10-10-10,Task C: Joint,LightGBM,Entropy,8%,8,288,88.42,87.86,89.06,87.7,87.81,8640,9540,846.6,17.69
+3,10-10-10,Task C: Joint,LightGBM,Entropy,8%,8,288,88.47,87.9,89.1,87.74,87.85,8640,9540,849.1,17.76
+4,10-10-10,Task C: Joint,LightGBM,Entropy,8%,8,288,88.52,87.94,89.14,87.78,87.89,8640,9540,851.5,17.83
+5,10-10-10,Task C: Joint,LightGBM,Entropy,8%,8,288,88.6,88.01,89.21,87.85,87.96,8640,9540,855.3,17.93
+1,10-10-10,Task C: Joint,LightGBM,Entropy,16%,16,576,88.43,87.92,89.12,87.76,87.87,17280,18180,1678.5,25.58
+2,10-10-10,Task C: Joint,LightGBM,Entropy,16%,16,576,88.49,87.97,89.17,87.81,87.92,17280,18180,1685.6,25.73
+3,10-10-10,Task C: Joint,LightGBM,Entropy,16%,16,576,88.53,88,89.2,87.84,87.95,17280,18180,1690.7,25.83
+4,10-10-10,Task C: Joint,LightGBM,Entropy,16%,16,576,88.57,88.03,89.23,87.87,87.98,17280,18180,1695.5,25.93
+5,10-10-10,Task C: Joint,LightGBM,Entropy,16%,16,576,88.63,88.08,89.28,87.92,88.03,17280,18180,1703.1,26.08
+1,10-10-10,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,79.91,78.92,80.12,78.76,78.87,0,900,75.9,9.61
+2,10-10-10,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,80.05,79.04,80.24,78.88,78.99,0,900,76.3,9.66
+3,10-10-10,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,80.15,79.12,80.32,78.96,79.07,0,900,76.5,9.7
+4,10-10-10,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,80.24,79.2,80.4,79.04,79.15,0,900,76.7,9.74
+5,10-10-10,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,80.4,79.33,80.53,79.17,79.28,0,900,77.1,9.8
+1,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,82.7,81.83,83.03,81.67,81.78,1080,1980,168.1,10.61
+2,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,82.82,81.94,83.14,81.78,81.89,1080,1980,168.8,10.67
+3,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,82.91,82.01,83.21,81.85,81.96,1080,1980,169.3,10.71
+4,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,82.99,82.08,83.28,81.92,82.03,1080,1980,169.8,10.75
+5,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,83.13,82.19,83.39,82.03,82.14,1080,1980,170.5,10.81
+1,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,84.34,83.53,84.73,83.37,83.48,2160,3060,261.3,11.61
+2,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,84.44,83.63,84.83,83.47,83.58,2160,3060,262.4,11.67
+3,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,84.52,83.69,84.89,83.53,83.64,2160,3060,263.2,11.72
+4,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,84.59,83.75,84.95,83.59,83.7,2160,3060,264,11.76
+5,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,84.71,83.85,85.05,83.69,83.8,2160,3060,265.1,11.83
+1,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.23,84.5,85.7,84.34,84.45,4320,5220,450.8,13.6
+2,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.32,84.58,85.78,84.42,84.53,4320,5220,452.7,13.68
+3,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.38,84.63,85.83,84.47,84.58,4320,5220,454.1,13.73
+4,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.44,84.68,85.88,84.52,84.63,4320,5220,455.4,13.78
+5,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.54,84.76,85.96,84.6,84.71,4320,5220,457.4,13.86
+1,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.44,84.78,85.98,84.62,84.73,8640,9540,843,17.59
+2,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.51,84.85,86.05,84.69,84.8,8640,9540,846.6,17.69
+3,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.56,84.89,86.09,84.73,84.84,8640,9540,849.1,17.76
+4,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.61,84.93,86.13,84.77,84.88,8640,9540,851.5,17.83
+5,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.69,85,86.2,84.84,84.95,8640,9540,855.3,17.93
+1,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.51,84.9,86.1,84.74,84.85,17280,18180,1678.5,25.58
+2,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.57,84.95,86.15,84.79,84.9,17280,18180,1685.6,25.73
+3,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.61,84.98,86.18,84.82,84.93,17280,18180,1690.7,25.83
+4,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.65,85.01,86.21,84.85,84.96,17280,18180,1695.5,25.93
+5,10-10-10,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.71,85.06,86.26,84.9,85.01,17280,18180,1703.1,26.08
+1,10-10-10,Task C: Joint,LightGBM,Margin,1%,1,36,82.78,81.97,83.17,81.81,81.92,1080,1980,168.1,10.61
+2,10-10-10,Task C: Joint,LightGBM,Margin,1%,1,36,82.9,82.08,83.28,81.92,82.03,1080,1980,168.8,10.67
+3,10-10-10,Task C: Joint,LightGBM,Margin,1%,1,36,82.99,82.15,83.35,81.99,82.1,1080,1980,169.3,10.71
+4,10-10-10,Task C: Joint,LightGBM,Margin,1%,1,36,83.07,82.22,83.42,82.06,82.17,1080,1980,169.8,10.75
+5,10-10-10,Task C: Joint,LightGBM,Margin,1%,1,36,83.21,82.33,83.53,82.17,82.28,1080,1980,170.5,10.81
+1,10-10-10,Task C: Joint,LightGBM,Margin,2%,2,72,84.49,83.74,84.94,83.58,83.69,2160,3060,261.3,11.61
+2,10-10-10,Task C: Joint,LightGBM,Margin,2%,2,72,84.59,83.84,85.04,83.68,83.79,2160,3060,262.4,11.67
+3,10-10-10,Task C: Joint,LightGBM,Margin,2%,2,72,84.67,83.9,85.1,83.74,83.85,2160,3060,263.2,11.72
+4,10-10-10,Task C: Joint,LightGBM,Margin,2%,2,72,84.74,83.96,85.16,83.8,83.91,2160,3060,264,11.76
+5,10-10-10,Task C: Joint,LightGBM,Margin,2%,2,72,84.86,84.06,85.26,83.9,84.01,2160,3060,265.1,11.83
+1,10-10-10,Task C: Joint,LightGBM,Margin,4%,4,144,85.53,84.86,86.06,84.7,84.81,4320,5220,450.8,13.6
+2,10-10-10,Task C: Joint,LightGBM,Margin,4%,4,144,85.62,84.94,86.14,84.78,84.89,4320,5220,452.7,13.68
+3,10-10-10,Task C: Joint,LightGBM,Margin,4%,4,144,85.68,84.99,86.19,84.83,84.94,4320,5220,454.1,13.73
+4,10-10-10,Task C: Joint,LightGBM,Margin,4%,4,144,85.74,85.04,86.24,84.88,84.99,4320,5220,455.4,13.78
+5,10-10-10,Task C: Joint,LightGBM,Margin,4%,4,144,85.84,85.12,86.32,84.96,85.07,4320,5220,457.4,13.86
+1,10-10-10,Task C: Joint,LightGBM,Margin,8%,8,288,85.75,85.15,86.35,84.99,85.1,8640,9540,843,17.59
+2,10-10-10,Task C: Joint,LightGBM,Margin,8%,8,288,85.82,85.22,86.42,85.06,85.17,8640,9540,846.6,17.69
+3,10-10-10,Task C: Joint,LightGBM,Margin,8%,8,288,85.87,85.26,86.46,85.1,85.21,8640,9540,849.1,17.76
+4,10-10-10,Task C: Joint,LightGBM,Margin,8%,8,288,85.92,85.3,86.5,85.14,85.25,8640,9540,851.5,17.83
+5,10-10-10,Task C: Joint,LightGBM,Margin,8%,8,288,86,85.37,86.57,85.21,85.32,8640,9540,855.3,17.93
+1,10-10-10,Task C: Joint,LightGBM,Margin,16%,16,576,85.82,85.27,86.47,85.11,85.22,17280,18180,1678.5,25.58
+2,10-10-10,Task C: Joint,LightGBM,Margin,16%,16,576,85.88,85.32,86.52,85.16,85.27,17280,18180,1685.6,25.73
+3,10-10-10,Task C: Joint,LightGBM,Margin,16%,16,576,85.92,85.35,86.55,85.19,85.3,17280,18180,1690.7,25.83
+4,10-10-10,Task C: Joint,LightGBM,Margin,16%,16,576,85.96,85.38,86.58,85.22,85.33,17280,18180,1695.5,25.93
+5,10-10-10,Task C: Joint,LightGBM,Margin,16%,16,576,86.02,85.43,86.63,85.27,85.38,17280,18180,1703.1,26.08
+1,10-10-10,Task C: Joint,LightGBM,Random,1%,1,36,82.17,81.28,82.48,81.12,81.23,1080,1980,168.1,10.61
+2,10-10-10,Task C: Joint,LightGBM,Random,1%,1,36,82.29,81.39,82.59,81.23,81.34,1080,1980,168.8,10.67
+3,10-10-10,Task C: Joint,LightGBM,Random,1%,1,36,82.38,81.46,82.66,81.3,81.41,1080,1980,169.3,10.71
+4,10-10-10,Task C: Joint,LightGBM,Random,1%,1,36,82.46,81.53,82.73,81.37,81.48,1080,1980,169.8,10.75
+5,10-10-10,Task C: Joint,LightGBM,Random,1%,1,36,82.6,81.64,82.84,81.48,81.59,1080,1980,170.5,10.81
+1,10-10-10,Task C: Joint,LightGBM,Random,2%,2,72,83.5,82.67,83.87,82.51,82.62,2160,3060,261.3,11.61
+2,10-10-10,Task C: Joint,LightGBM,Random,2%,2,72,83.6,82.77,83.97,82.61,82.72,2160,3060,262.4,11.67
+3,10-10-10,Task C: Joint,LightGBM,Random,2%,2,72,83.68,82.83,84.03,82.67,82.78,2160,3060,263.2,11.72
+4,10-10-10,Task C: Joint,LightGBM,Random,2%,2,72,83.75,82.89,84.09,82.73,82.84,2160,3060,264,11.76
+5,10-10-10,Task C: Joint,LightGBM,Random,2%,2,72,83.87,82.99,84.19,82.83,82.94,2160,3060,265.1,11.83
+1,10-10-10,Task C: Joint,LightGBM,Random,4%,4,144,84.32,83.57,84.77,83.41,83.52,4320,5220,450.8,13.6
+2,10-10-10,Task C: Joint,LightGBM,Random,4%,4,144,84.41,83.65,84.85,83.49,83.6,4320,5220,452.7,13.68
+3,10-10-10,Task C: Joint,LightGBM,Random,4%,4,144,84.47,83.7,84.9,83.54,83.65,4320,5220,454.1,13.73
+4,10-10-10,Task C: Joint,LightGBM,Random,4%,4,144,84.53,83.75,84.95,83.59,83.7,4320,5220,455.4,13.78
+5,10-10-10,Task C: Joint,LightGBM,Random,4%,4,144,84.63,83.83,85.03,83.67,83.78,4320,5220,457.4,13.86
+1,10-10-10,Task C: Joint,LightGBM,Random,8%,8,288,84.5,83.82,85.02,83.66,83.77,8640,9540,843,17.59
+2,10-10-10,Task C: Joint,LightGBM,Random,8%,8,288,84.57,83.89,85.09,83.73,83.84,8640,9540,846.6,17.69
+3,10-10-10,Task C: Joint,LightGBM,Random,8%,8,288,84.62,83.93,85.13,83.77,83.88,8640,9540,849.1,17.76
+4,10-10-10,Task C: Joint,LightGBM,Random,8%,8,288,84.67,83.97,85.17,83.81,83.92,8640,9540,851.5,17.83
+5,10-10-10,Task C: Joint,LightGBM,Random,8%,8,288,84.75,84.04,85.24,83.88,83.99,8640,9540,855.3,17.93
+1,10-10-10,Task C: Joint,LightGBM,Random,16%,16,576,84.45,83.82,85.02,83.66,83.77,17280,18180,1678.5,25.58
+2,10-10-10,Task C: Joint,LightGBM,Random,16%,16,576,84.51,83.87,85.07,83.71,83.82,17280,18180,1685.6,25.73
+3,10-10-10,Task C: Joint,LightGBM,Random,16%,16,576,84.55,83.9,85.1,83.74,83.85,17280,18180,1690.7,25.83
+4,10-10-10,Task C: Joint,LightGBM,Random,16%,16,576,84.59,83.93,85.13,83.77,83.88,17280,18180,1695.5,25.93
+5,10-10-10,Task C: Joint,LightGBM,Random,16%,16,576,84.65,83.98,85.18,83.82,83.93,17280,18180,1703.1,26.08
+1,30-30-30,Task C: Joint,LightGBM,Entropy,1%,1,36,87.03,86.4,87.6,86.24,86.35,1080,3780,320.9,15.96
+2,30-30-30,Task C: Joint,LightGBM,Entropy,1%,1,36,87.1,86.46,87.66,86.3,86.41,1080,3780,322.2,16.05
+3,30-30-30,Task C: Joint,LightGBM,Entropy,1%,1,36,87.15,86.5,87.7,86.34,86.45,1080,3780,323.2,16.11
+4,30-30-30,Task C: Joint,LightGBM,Entropy,1%,1,36,87.2,86.54,87.74,86.38,86.49,1080,3780,324.1,16.17
+5,30-30-30,Task C: Joint,LightGBM,Entropy,1%,1,36,87.27,86.6,87.8,86.44,86.55,1080,3780,325.6,16.27
+1,30-30-30,Task C: Joint,LightGBM,Entropy,2%,2,72,88.17,87.6,88.8,87.44,87.55,2160,4860,415,16.96
+2,30-30-30,Task C: Joint,LightGBM,Entropy,2%,2,72,88.23,87.65,88.85,87.49,87.6,2160,4860,416.7,17.05
+3,30-30-30,Task C: Joint,LightGBM,Entropy,2%,2,72,88.27,87.69,88.89,87.53,87.64,2160,4860,418,17.12
+4,30-30-30,Task C: Joint,LightGBM,Entropy,2%,2,72,88.31,87.72,88.92,87.56,87.67,2160,4860,419.2,17.19
+5,30-30-30,Task C: Joint,LightGBM,Entropy,2%,2,72,88.37,87.78,88.98,87.62,87.73,2160,4860,421.1,17.29
+1,30-30-30,Task C: Joint,LightGBM,Entropy,4%,4,144,88.7,88.21,89.41,88.05,88.16,4320,7020,606.3,18.95
+2,30-30-30,Task C: Joint,LightGBM,Entropy,4%,4,144,88.75,88.25,89.45,88.09,88.2,4320,7020,608.9,19.05
+3,30-30-30,Task C: Joint,LightGBM,Entropy,4%,4,144,88.78,88.28,89.48,88.12,88.23,4320,7020,610.7,19.13
+4,30-30-30,Task C: Joint,LightGBM,Entropy,4%,4,144,88.81,88.31,89.51,88.15,88.26,4320,7020,612.4,19.2
+5,30-30-30,Task C: Joint,LightGBM,Entropy,4%,4,144,88.86,88.35,89.55,88.19,88.3,4320,7020,615.2,19.32
+1,30-30-30,Task C: Joint,LightGBM,Entropy,8%,8,288,88.78,88.37,89.57,88.21,88.32,8640,11340,1002,22.94
+2,30-30-30,Task C: Joint,LightGBM,Entropy,8%,8,288,88.82,88.41,89.61,88.25,88.36,8640,11340,1006.3,23.07
+3,30-30-30,Task C: Joint,LightGBM,Entropy,8%,8,288,88.85,88.43,89.63,88.27,88.38,8640,11340,1009.3,23.16
+4,30-30-30,Task C: Joint,LightGBM,Entropy,8%,8,288,88.88,88.45,89.65,88.29,88.4,8640,11340,1012.2,23.25
+5,30-30-30,Task C: Joint,LightGBM,Entropy,8%,8,288,88.92,88.49,89.69,88.33,88.44,8640,11340,1016.7,23.39
+1,30-30-30,Task C: Joint,LightGBM,Entropy,16%,16,576,88.71,88.34,89.54,88.18,88.29,17280,19980,1844.7,30.93
+2,30-30-30,Task C: Joint,LightGBM,Entropy,16%,16,576,88.75,88.37,89.57,88.21,88.32,17280,19980,1852.5,31.11
+3,30-30-30,Task C: Joint,LightGBM,Entropy,16%,16,576,88.77,88.39,89.59,88.23,88.34,17280,19980,1858.1,31.23
+4,30-30-30,Task C: Joint,LightGBM,Entropy,16%,16,576,88.79,88.41,89.61,88.25,88.36,17280,19980,1863.4,31.35
+5,30-30-30,Task C: Joint,LightGBM,Entropy,16%,16,576,88.83,88.44,89.64,88.28,88.39,17280,19980,1871.8,31.54
+1,30-30-30,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,84.72,83.86,85.06,83.7,83.81,0,2700,227.8,14.96
+2,30-30-30,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,84.8,83.92,85.12,83.76,83.87,0,2700,228.8,15.04
+3,30-30-30,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,84.85,83.97,85.17,83.81,83.92,0,2700,229.5,15.1
+4,30-30-30,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,84.9,84.01,85.21,83.85,83.96,0,2700,230.2,15.16
+5,30-30-30,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,84.98,84.08,85.28,83.92,84.03,0,2700,231.2,15.25
+1,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,85.32,84.59,85.79,84.43,84.54,1080,3780,320.9,15.96
+2,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,85.39,84.65,85.85,84.49,84.6,1080,3780,322.2,16.05
+3,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,85.44,84.69,85.89,84.53,84.64,1080,3780,323.2,16.11
+4,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,85.49,84.73,85.93,84.57,84.68,1080,3780,324.1,16.17
+5,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,85.56,84.79,85.99,84.63,84.74,1080,3780,325.6,16.27
+1,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,85.65,84.98,86.18,84.82,84.93,2160,4860,415,16.96
+2,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,85.71,85.03,86.23,84.87,84.98,2160,4860,416.7,17.05
+3,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,85.75,85.07,86.27,84.91,85.02,2160,4860,418,17.12
+4,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,85.79,85.1,86.3,84.94,85.05,2160,4860,419.2,17.19
+5,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,85.85,85.16,86.36,85,85.11,2160,4860,421.1,17.29
+1,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.82,85.23,86.43,85.07,85.18,4320,7020,606.3,18.95
+2,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.87,85.27,86.47,85.11,85.22,4320,7020,608.9,19.05
+3,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.9,85.3,86.5,85.14,85.25,4320,7020,610.7,19.13
+4,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.93,85.33,86.53,85.17,85.28,4320,7020,612.4,19.2
+5,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,85.98,85.37,86.57,85.21,85.32,4320,7020,615.2,19.32
+1,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.86,85.35,86.55,85.19,85.3,8640,11340,1002,22.94
+2,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.9,85.39,86.59,85.23,85.34,8640,11340,1006.3,23.07
+3,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.93,85.41,86.61,85.25,85.36,8640,11340,1009.3,23.16
+4,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.96,85.43,86.63,85.27,85.38,8640,11340,1012.2,23.25
+5,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,86,85.47,86.67,85.31,85.42,8640,11340,1016.7,23.39
+1,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.89,85.42,86.62,85.26,85.37,17280,19980,1844.7,30.93
+2,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.93,85.45,86.65,85.29,85.4,17280,19980,1852.5,31.11
+3,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.95,85.47,86.67,85.31,85.42,17280,19980,1858.1,31.23
+4,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.97,85.49,86.69,85.33,85.44,17280,19980,1863.4,31.35
+5,30-30-30,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,86.01,85.52,86.72,85.36,85.47,17280,19980,1871.8,31.54
+1,30-30-30,Task C: Joint,LightGBM,Margin,1%,1,36,85.53,84.86,86.06,84.7,84.81,1080,3780,320.9,15.96
+2,30-30-30,Task C: Joint,LightGBM,Margin,1%,1,36,85.6,84.92,86.12,84.76,84.87,1080,3780,322.2,16.05
+3,30-30-30,Task C: Joint,LightGBM,Margin,1%,1,36,85.65,84.96,86.16,84.8,84.91,1080,3780,323.2,16.11
+4,30-30-30,Task C: Joint,LightGBM,Margin,1%,1,36,85.7,85,86.2,84.84,84.95,1080,3780,324.1,16.17
+5,30-30-30,Task C: Joint,LightGBM,Margin,1%,1,36,85.77,85.06,86.26,84.9,85.01,1080,3780,325.6,16.27
+1,30-30-30,Task C: Joint,LightGBM,Margin,2%,2,72,85.82,85.21,86.41,85.05,85.16,2160,4860,415,16.96
+2,30-30-30,Task C: Joint,LightGBM,Margin,2%,2,72,85.88,85.26,86.46,85.1,85.21,2160,4860,416.7,17.05
+3,30-30-30,Task C: Joint,LightGBM,Margin,2%,2,72,85.92,85.3,86.5,85.14,85.25,2160,4860,418,17.12
+4,30-30-30,Task C: Joint,LightGBM,Margin,2%,2,72,85.96,85.33,86.53,85.17,85.28,2160,4860,419.2,17.19
+5,30-30-30,Task C: Joint,LightGBM,Margin,2%,2,72,86.02,85.39,86.59,85.23,85.34,2160,4860,421.1,17.29
+1,30-30-30,Task C: Joint,LightGBM,Margin,4%,4,144,86.02,85.49,86.69,85.33,85.44,4320,7020,606.3,18.95
+2,30-30-30,Task C: Joint,LightGBM,Margin,4%,4,144,86.07,85.53,86.73,85.37,85.48,4320,7020,608.9,19.05
+3,30-30-30,Task C: Joint,LightGBM,Margin,4%,4,144,86.1,85.56,86.76,85.4,85.51,4320,7020,610.7,19.13
+4,30-30-30,Task C: Joint,LightGBM,Margin,4%,4,144,86.13,85.59,86.79,85.43,85.54,4320,7020,612.4,19.2
+5,30-30-30,Task C: Joint,LightGBM,Margin,4%,4,144,86.18,85.63,86.83,85.47,85.58,4320,7020,615.2,19.32
+1,30-30-30,Task C: Joint,LightGBM,Margin,8%,8,288,86.06,85.61,86.81,85.45,85.56,8640,11340,1002,22.94
+2,30-30-30,Task C: Joint,LightGBM,Margin,8%,8,288,86.1,85.65,86.85,85.49,85.6,8640,11340,1006.3,23.07
+3,30-30-30,Task C: Joint,LightGBM,Margin,8%,8,288,86.13,85.67,86.87,85.51,85.62,8640,11340,1009.3,23.16
+4,30-30-30,Task C: Joint,LightGBM,Margin,8%,8,288,86.16,85.69,86.89,85.53,85.64,8640,11340,1012.2,23.25
+5,30-30-30,Task C: Joint,LightGBM,Margin,8%,8,288,86.2,85.73,86.93,85.57,85.68,8640,11340,1016.7,23.39
+1,30-30-30,Task C: Joint,LightGBM,Margin,16%,16,576,86.09,85.68,86.88,85.52,85.63,17280,19980,1844.7,30.93
+2,30-30-30,Task C: Joint,LightGBM,Margin,16%,16,576,86.13,85.71,86.91,85.55,85.66,17280,19980,1852.5,31.11
+3,30-30-30,Task C: Joint,LightGBM,Margin,16%,16,576,86.15,85.73,86.93,85.57,85.68,17280,19980,1858.1,31.23
+4,30-30-30,Task C: Joint,LightGBM,Margin,16%,16,576,86.17,85.75,86.95,85.59,85.7,17280,19980,1863.4,31.35
+5,30-30-30,Task C: Joint,LightGBM,Margin,16%,16,576,86.21,85.78,86.98,85.62,85.73,17280,19980,1871.8,31.54
+1,30-30-30,Task C: Joint,LightGBM,Random,1%,1,36,84.7,83.95,85.15,83.79,83.9,1080,3780,320.9,15.96
+2,30-30-30,Task C: Joint,LightGBM,Random,1%,1,36,84.77,84.01,85.21,83.85,83.96,1080,3780,322.2,16.05
+3,30-30-30,Task C: Joint,LightGBM,Random,1%,1,36,84.82,84.05,85.25,83.89,84,1080,3780,323.2,16.11
+4,30-30-30,Task C: Joint,LightGBM,Random,1%,1,36,84.87,84.09,85.29,83.93,84.04,1080,3780,324.1,16.17
+5,30-30-30,Task C: Joint,LightGBM,Random,1%,1,36,84.94,84.15,85.35,83.99,84.1,1080,3780,325.6,16.27
+1,30-30-30,Task C: Joint,LightGBM,Random,2%,2,72,84.75,84.06,85.26,83.9,84.01,2160,4860,415,16.96
+2,30-30-30,Task C: Joint,LightGBM,Random,2%,2,72,84.81,84.11,85.31,83.95,84.06,2160,4860,416.7,17.05
+3,30-30-30,Task C: Joint,LightGBM,Random,2%,2,72,84.85,84.15,85.35,83.99,84.1,2160,4860,418,17.12
+4,30-30-30,Task C: Joint,LightGBM,Random,2%,2,72,84.89,84.18,85.38,84.02,84.13,2160,4860,419.2,17.19
+5,30-30-30,Task C: Joint,LightGBM,Random,2%,2,72,84.95,84.24,85.44,84.08,84.19,2160,4860,421.1,17.29
+1,30-30-30,Task C: Joint,LightGBM,Random,4%,4,144,84.78,84.17,85.37,84.01,84.12,4320,7020,606.3,18.95
+2,30-30-30,Task C: Joint,LightGBM,Random,4%,4,144,84.83,84.21,85.41,84.05,84.16,4320,7020,608.9,19.05
+3,30-30-30,Task C: Joint,LightGBM,Random,4%,4,144,84.86,84.24,85.44,84.08,84.19,4320,7020,610.7,19.13
+4,30-30-30,Task C: Joint,LightGBM,Random,4%,4,144,84.89,84.27,85.47,84.11,84.22,4320,7020,612.4,19.2
+5,30-30-30,Task C: Joint,LightGBM,Random,4%,4,144,84.94,84.31,85.51,84.15,84.26,4320,7020,615.2,19.32
+1,30-30-30,Task C: Joint,LightGBM,Random,8%,8,288,84.81,84.28,85.48,84.12,84.23,8640,11340,1002,22.94
+2,30-30-30,Task C: Joint,LightGBM,Random,8%,8,288,84.85,84.32,85.52,84.16,84.27,8640,11340,1006.3,23.07
+3,30-30-30,Task C: Joint,LightGBM,Random,8%,8,288,84.88,84.34,85.54,84.18,84.29,8640,11340,1009.3,23.16
+4,30-30-30,Task C: Joint,LightGBM,Random,8%,8,288,84.91,84.36,85.56,84.2,84.31,8640,11340,1012.2,23.25
+5,30-30-30,Task C: Joint,LightGBM,Random,8%,8,288,84.95,84.4,85.6,84.24,84.35,8640,11340,1016.7,23.39
+1,30-30-30,Task C: Joint,LightGBM,Random,16%,16,576,84.83,84.34,85.54,84.18,84.29,17280,19980,1844.7,30.93
+2,30-30-30,Task C: Joint,LightGBM,Random,16%,16,576,84.87,84.37,85.57,84.21,84.32,17280,19980,1852.5,31.11
+3,30-30-30,Task C: Joint,LightGBM,Random,16%,16,576,84.89,84.39,85.59,84.23,84.34,17280,19980,1858.1,31.23
+4,30-30-30,Task C: Joint,LightGBM,Random,16%,16,576,84.91,84.41,85.61,84.25,84.36,17280,19980,1863.4,31.35
+5,30-30-30,Task C: Joint,LightGBM,Random,16%,16,576,84.95,84.44,85.64,84.28,84.39,17280,19980,1871.8,31.54
+1,5-5-5,Task C: Joint,LightGBM,Entropy,1%,1,36,80.45,79.46,80.66,79.3,79.41,1080,1530,129.9,9.27
+2,5-5-5,Task C: Joint,LightGBM,Entropy,1%,1,36,80.66,79.63,80.83,79.47,79.58,1080,1530,130.4,9.32
+3,5-5-5,Task C: Joint,LightGBM,Entropy,1%,1,36,80.8,79.75,80.95,79.59,79.7,1080,1530,130.8,9.36
+4,5-5-5,Task C: Joint,LightGBM,Entropy,1%,1,36,80.94,79.87,81.07,79.71,79.82,1080,1530,131.2,9.4
+5,5-5-5,Task C: Joint,LightGBM,Entropy,1%,1,36,81.15,80.05,81.25,79.89,80,1080,1530,131.8,9.45
+1,5-5-5,Task C: Joint,LightGBM,Entropy,2%,2,72,83.8,82.87,84.07,82.71,82.82,2160,2610,222.9,10.27
+2,5-5-5,Task C: Joint,LightGBM,Entropy,2%,2,72,83.98,83.01,84.21,82.85,82.96,2160,2610,223.8,10.33
+3,5-5-5,Task C: Joint,LightGBM,Entropy,2%,2,72,84.1,83.12,84.32,82.96,83.07,2160,2610,224.5,10.37
+4,5-5-5,Task C: Joint,LightGBM,Entropy,2%,2,72,84.22,83.22,84.42,83.06,83.17,2160,2610,225.1,10.41
+5,5-5-5,Task C: Joint,LightGBM,Entropy,2%,2,72,84.4,83.38,84.58,83.22,83.33,2160,2610,226.2,10.47
+1,5-5-5,Task C: Joint,LightGBM,Entropy,4%,4,144,86.45,85.59,86.79,85.43,85.54,4320,4770,412,12.26
+2,5-5-5,Task C: Joint,LightGBM,Entropy,4%,4,144,86.6,85.71,86.91,85.55,85.66,4320,4770,413.8,12.33
+3,5-5-5,Task C: Joint,LightGBM,Entropy,4%,4,144,86.7,85.8,87,85.64,85.75,4320,4770,415,12.38
+4,5-5-5,Task C: Joint,LightGBM,Entropy,4%,4,144,86.8,85.88,87.08,85.72,85.83,4320,4770,416.2,12.43
+5,5-5-5,Task C: Joint,LightGBM,Entropy,4%,4,144,86.95,86.02,87.22,85.86,85.97,4320,4770,418.1,12.5
+1,5-5-5,Task C: Joint,LightGBM,Entropy,8%,8,288,87.73,86.94,88.14,86.78,86.89,8640,9090,803.2,16.25
+2,5-5-5,Task C: Joint,LightGBM,Entropy,8%,8,288,87.85,87.05,88.25,86.89,87,8640,9090,806.6,16.34
+3,5-5-5,Task C: Joint,LightGBM,Entropy,8%,8,288,87.94,87.12,88.32,86.96,87.07,8640,9090,809,16.41
+4,5-5-5,Task C: Joint,LightGBM,Entropy,8%,8,288,88.02,87.19,88.39,87.03,87.14,8640,9090,811.3,16.47
+5,5-5-5,Task C: Joint,LightGBM,Entropy,8%,8,288,88.15,87.3,88.5,87.14,87.25,8640,9090,814.9,16.57
+1,5-5-5,Task C: Joint,LightGBM,Entropy,16%,16,576,87.98,87.23,88.43,87.07,87.18,17280,17730,1637,24.24
+2,5-5-5,Task C: Joint,LightGBM,Entropy,16%,16,576,88.07,87.3,88.5,87.14,87.25,17280,17730,1644,24.38
+3,5-5-5,Task C: Joint,LightGBM,Entropy,16%,16,576,88.14,87.36,88.56,87.2,87.31,17280,17730,1648.9,24.48
+4,5-5-5,Task C: Joint,LightGBM,Entropy,16%,16,576,88.2,87.41,88.61,87.25,87.36,17280,17730,1653.6,24.57
+5,5-5-5,Task C: Joint,LightGBM,Entropy,16%,16,576,88.3,87.5,88.7,87.34,87.45,17280,17730,1661,24.72
+1,5-5-5,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,75.96,74.74,75.94,74.58,74.69,0,450,37.9,8.27
+2,5-5-5,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,76.19,74.93,76.13,74.77,74.88,0,450,38.1,8.32
+3,5-5-5,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,76.35,75.07,76.27,74.91,75.02,0,450,38.2,8.35
+4,5-5-5,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,76.51,75.2,76.4,75.04,75.15,0,450,38.3,8.38
+5,5-5-5,Task C: Joint,LightGBM,Initial set only,Initial set only,0,0,76.75,75.41,76.61,75.25,75.36,0,450,38.5,8.43
+1,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,79.33,78.24,79.44,78.08,78.19,1080,1530,129.9,9.27
+2,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,79.54,78.41,79.61,78.25,78.36,1080,1530,130.4,9.32
+3,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,79.68,78.53,79.73,78.37,78.48,1080,1530,130.8,9.36
+4,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,79.82,78.65,79.85,78.49,78.6,1080,1530,131.2,9.4
+5,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,1%,1,36,80.03,78.83,80.03,78.67,78.78,1080,1530,131.8,9.45
+1,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,81.86,80.83,82.03,80.67,80.78,2160,2610,222.9,10.27
+2,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,82.04,80.97,82.17,80.81,80.92,2160,2610,223.8,10.33
+3,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,82.16,81.08,82.28,80.92,81.03,2160,2610,224.5,10.37
+4,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,82.28,81.18,82.38,81.02,81.13,2160,2610,225.1,10.41
+5,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,2%,2,72,82.46,81.34,82.54,81.18,81.29,2160,2610,226.2,10.47
+1,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,83.87,82.91,84.11,82.75,82.86,4320,4770,412,12.26
+2,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,84.02,83.03,84.23,82.87,82.98,4320,4770,413.8,12.33
+3,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,84.12,83.12,84.32,82.96,83.07,4320,4770,415,12.38
+4,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,84.22,83.2,84.4,83.04,83.15,4320,4770,416.2,12.43
+5,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,4%,4,144,84.37,83.34,84.54,83.18,83.29,4320,4770,418.1,12.5
+1,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,84.85,83.96,85.16,83.8,83.91,8640,9090,803.2,16.25
+2,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,84.97,84.07,85.27,83.91,84.02,8640,9090,806.6,16.34
+3,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.06,84.14,85.34,83.98,84.09,8640,9090,809,16.41
+4,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.14,84.21,85.41,84.05,84.16,8640,9090,811.3,16.47
+5,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,8%,8,288,85.27,84.32,85.52,84.16,84.27,8640,9090,814.9,16.57
+1,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.05,84.2,85.4,84.04,84.15,17280,17730,1637,24.24
+2,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.14,84.27,85.47,84.11,84.22,17280,17730,1644,24.38
+3,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.21,84.33,85.53,84.17,84.28,17280,17730,1648.9,24.48
+4,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.27,84.38,85.58,84.22,84.33,17280,17730,1653.6,24.57
+5,5-5-5,Task C: Joint,LightGBM,Jaccard Diversity,16%,16,576,85.37,84.47,85.67,84.31,84.42,17280,17730,1661,24.72
+1,5-5-5,Task C: Joint,LightGBM,Margin,1%,1,36,79.48,78.45,79.65,78.29,78.4,1080,1530,129.9,9.27
+2,5-5-5,Task C: Joint,LightGBM,Margin,1%,1,36,79.69,78.62,79.82,78.46,78.57,1080,1530,130.4,9.32
+3,5-5-5,Task C: Joint,LightGBM,Margin,1%,1,36,79.83,78.74,79.94,78.58,78.69,1080,1530,130.8,9.36
+4,5-5-5,Task C: Joint,LightGBM,Margin,1%,1,36,79.97,78.86,80.06,78.7,78.81,1080,1530,131.2,9.4
+5,5-5-5,Task C: Joint,LightGBM,Margin,1%,1,36,80.18,79.04,80.24,78.88,78.99,1080,1530,131.8,9.45
+1,5-5-5,Task C: Joint,LightGBM,Margin,2%,2,72,82.09,81.12,82.32,80.96,81.07,2160,2610,222.9,10.27
+2,5-5-5,Task C: Joint,LightGBM,Margin,2%,2,72,82.27,81.26,82.46,81.1,81.21,2160,2610,223.8,10.33
+3,5-5-5,Task C: Joint,LightGBM,Margin,2%,2,72,82.39,81.37,82.57,81.21,81.32,2160,2610,224.5,10.37
+4,5-5-5,Task C: Joint,LightGBM,Margin,2%,2,72,82.51,81.47,82.67,81.31,81.42,2160,2610,225.1,10.41
+5,5-5-5,Task C: Joint,LightGBM,Margin,2%,2,72,82.69,81.63,82.83,81.47,81.58,2160,2610,226.2,10.47
+1,5-5-5,Task C: Joint,LightGBM,Margin,4%,4,144,84.05,83.15,84.35,82.99,83.1,4320,4770,412,12.26
+2,5-5-5,Task C: Joint,LightGBM,Margin,4%,4,144,84.2,83.27,84.47,83.11,83.22,4320,4770,413.8,12.33
+3,5-5-5,Task C: Joint,LightGBM,Margin,4%,4,144,84.3,83.36,84.56,83.2,83.31,4320,4770,415,12.38
+4,5-5-5,Task C: Joint,LightGBM,Margin,4%,4,144,84.4,83.44,84.64,83.28,83.39,4320,4770,416.2,12.43
+5,5-5-5,Task C: Joint,LightGBM,Margin,4%,4,144,84.55,83.58,84.78,83.42,83.53,4320,4770,418.1,12.5
+1,5-5-5,Task C: Joint,LightGBM,Margin,8%,8,288,85.05,84.22,85.42,84.06,84.17,8640,9090,803.2,16.25
+2,5-5-5,Task C: Joint,LightGBM,Margin,8%,8,288,85.17,84.33,85.53,84.17,84.28,8640,9090,806.6,16.34
+3,5-5-5,Task C: Joint,LightGBM,Margin,8%,8,288,85.26,84.4,85.6,84.24,84.35,8640,9090,809,16.41
+4,5-5-5,Task C: Joint,LightGBM,Margin,8%,8,288,85.34,84.47,85.67,84.31,84.42,8640,9090,811.3,16.47
+5,5-5-5,Task C: Joint,LightGBM,Margin,8%,8,288,85.47,84.58,85.78,84.42,84.53,8640,9090,814.9,16.57
+1,5-5-5,Task C: Joint,LightGBM,Margin,16%,16,576,85.26,84.47,85.67,84.31,84.42,17280,17730,1637,24.24
+2,5-5-5,Task C: Joint,LightGBM,Margin,16%,16,576,85.35,84.54,85.74,84.38,84.49,17280,17730,1644,24.38
+3,5-5-5,Task C: Joint,LightGBM,Margin,16%,16,576,85.42,84.6,85.8,84.44,84.55,17280,17730,1648.9,24.48
+4,5-5-5,Task C: Joint,LightGBM,Margin,16%,16,576,85.48,84.65,85.85,84.49,84.6,17280,17730,1653.6,24.57
+5,5-5-5,Task C: Joint,LightGBM,Margin,16%,16,576,85.58,84.74,85.94,84.58,84.69,17280,17730,1661,24.72
+1,5-5-5,Task C: Joint,LightGBM,Random,1%,1,36,79.01,77.9,79.1,77.74,77.85,1080,1530,129.9,9.27
+2,5-5-5,Task C: Joint,LightGBM,Random,1%,1,36,79.22,78.07,79.27,77.91,78.02,1080,1530,130.4,9.32
+3,5-5-5,Task C: Joint,LightGBM,Random,1%,1,36,79.36,78.19,79.39,78.03,78.14,1080,1530,130.8,9.36
+4,5-5-5,Task C: Joint,LightGBM,Random,1%,1,36,79.5,78.31,79.51,78.15,78.26,1080,1530,131.2,9.4
+5,5-5-5,Task C: Joint,LightGBM,Random,1%,1,36,79.71,78.49,79.69,78.33,78.44,1080,1530,131.8,9.45
+1,5-5-5,Task C: Joint,LightGBM,Random,2%,2,72,81.16,80.11,81.31,79.95,80.06,2160,2610,222.9,10.27
+2,5-5-5,Task C: Joint,LightGBM,Random,2%,2,72,81.34,80.25,81.45,80.09,80.2,2160,2610,223.8,10.33
+3,5-5-5,Task C: Joint,LightGBM,Random,2%,2,72,81.46,80.36,81.56,80.2,80.31,2160,2610,224.5,10.37
+4,5-5-5,Task C: Joint,LightGBM,Random,2%,2,72,81.58,80.46,81.66,80.3,80.41,2160,2610,225.1,10.41
+5,5-5-5,Task C: Joint,LightGBM,Random,2%,2,72,81.76,80.62,81.82,80.46,80.57,2160,2610,226.2,10.47
+1,5-5-5,Task C: Joint,LightGBM,Random,4%,4,144,82.94,81.96,83.16,81.8,81.91,4320,4770,412,12.26
+2,5-5-5,Task C: Joint,LightGBM,Random,4%,4,144,83.09,82.08,83.28,81.92,82.03,4320,4770,413.8,12.33
+3,5-5-5,Task C: Joint,LightGBM,Random,4%,4,144,83.19,82.17,83.37,82.01,82.12,4320,4770,415,12.38
+4,5-5-5,Task C: Joint,LightGBM,Random,4%,4,144,83.29,82.25,83.45,82.09,82.2,4320,4770,416.2,12.43
+5,5-5-5,Task C: Joint,LightGBM,Random,4%,4,144,83.44,82.39,83.59,82.23,82.34,4320,4770,418.1,12.5
+1,5-5-5,Task C: Joint,LightGBM,Random,8%,8,288,83.82,82.91,84.11,82.75,82.86,8640,9090,803.2,16.25
+2,5-5-5,Task C: Joint,LightGBM,Random,8%,8,288,83.94,83.02,84.22,82.86,82.97,8640,9090,806.6,16.34
+3,5-5-5,Task C: Joint,LightGBM,Random,8%,8,288,84.03,83.09,84.29,82.93,83.04,8640,9090,809,16.41
+4,5-5-5,Task C: Joint,LightGBM,Random,8%,8,288,84.11,83.16,84.36,83,83.11,8640,9090,811.3,16.47
+5,5-5-5,Task C: Joint,LightGBM,Random,8%,8,288,84.24,83.27,84.47,83.11,83.22,8640,9090,814.9,16.57
+1,5-5-5,Task C: Joint,LightGBM,Random,16%,16,576,84,83.13,84.33,82.97,83.08,17280,17730,1637,24.24
+2,5-5-5,Task C: Joint,LightGBM,Random,16%,16,576,84.09,83.2,84.4,83.04,83.15,17280,17730,1644,24.38
+3,5-5-5,Task C: Joint,LightGBM,Random,16%,16,576,84.16,83.26,84.46,83.1,83.21,17280,17730,1648.9,24.48
+4,5-5-5,Task C: Joint,LightGBM,Random,16%,16,576,84.22,83.31,84.51,83.15,83.26,17280,17730,1653.6,24.57
+5,5-5-5,Task C: Joint,LightGBM,Random,16%,16,576,84.32,83.4,84.6,83.24,83.35,17280,17730,1661,24.72

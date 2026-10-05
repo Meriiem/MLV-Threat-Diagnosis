@@ -1,0 +1,10 @@
+item,count,meaning
+Expected active experiment combinations,900,5 classifiers × 4 strategies × 3 tasks × 3 initial sets × 5 checkpoints
+Available combinations in supplied result package,360,LightGBM all strategies plus Entropy for the other four classifiers
+Missing real experiment combinations,540,Must be computed from real trace features; no values were invented
+Complete multi-threat candidate pool,4495,"435 double-threat plus 4,060 triple-threat compositions"
+Hidden test compositions,899,Reserved before active selection
+Available development compositions,3596,Pool used for starting sets and active acquisition
+Original systems with supplied traces,91,BASE plus 90 catalog systems
+Exact candidate aliases recovered from supplied traces,51,Candidate IDs mapped to identical existing double/triple systems
+Candidate compositions still lacking traces,4444,Conservative complete request list; active execution can run a smaller strategy-selected subset

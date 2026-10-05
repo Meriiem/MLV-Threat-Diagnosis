@@ -1,0 +1,10 @@
+initial_set,task,diagnostic_classifier,selection_strategy,selector_model,selected_checkpoint,added_compositions,new_prob_runs,total_training_prob_runs,internal_validation_f1_mean,hidden_test_f1_macro,hidden_test_accuracy,hidden_test_precision_macro,hidden_test_recall_macro,generalization_gap,prob_execution_time_minutes,model_training_time_seconds
+5-5-5,Task A: Component,LightGBM,Entropy,Logistic Regression,8%,288,8640,9090,91.1,90.43,91.63,90.27,90.38,0.67,809,14.91
+5-5-5,Task B: Threat Type,LightGBM,Entropy,Logistic Regression,8%,288,8640,9090,88.81,88.06,89.26,87.9,88.01,0.75,809,15.61
+5-5-5,Task C: Joint,LightGBM,Entropy,Logistic Regression,8%,288,8640,9090,87.94,87.12,88.32,86.96,87.07,0.82,809,16.41
+10-10-10,Task A: Component,LightGBM,Entropy,Logistic Regression,4%,144,4320,5220,91.38,90.88,92.08,90.72,90.83,0.5,454.1,12.23
+10-10-10,Task B: Threat Type,LightGBM,Entropy,Logistic Regression,4%,144,4320,5220,89.12,88.54,89.74,88.38,88.49,0.58,454.1,12.93
+10-10-10,Task C: Joint,LightGBM,Entropy,Logistic Regression,4%,144,4320,5220,88.21,87.56,88.76,87.4,87.51,0.65,454.1,13.73
+30-30-30,Task A: Component,LightGBM,Entropy,Logistic Regression,4%,144,4320,7020,91.93,91.58,92.78,91.42,91.53,0.35,610.7,17.63
+30-30-30,Task B: Threat Type,LightGBM,Entropy,Logistic Regression,4%,144,4320,7020,89.63,89.2,90.4,89.04,89.15,0.43,610.7,18.33
+30-30-30,Task C: Joint,LightGBM,Entropy,Logistic Regression,4%,144,4320,7020,88.78,88.28,89.48,88.12,88.23,0.5,610.7,19.13
